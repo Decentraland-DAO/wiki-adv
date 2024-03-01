@@ -1,1 +1,3 @@
 Footer
+
+Some information
