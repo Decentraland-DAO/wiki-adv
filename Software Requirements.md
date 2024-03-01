@@ -1,7 +1,8 @@
 List of tools required to create models, textures, animations according to pipelines that's written in Advanced Documentation articles. 
 # Main Tools
 ### [Blender](https://www.blender.org/) (4.0 or higher)
-![[/images/blender-banner.png]]
+[[/images/blender-banner.png]]
+
 Blender is main tool for creating models starting from very basic primitives, ending with final game-ready 3d models with skeleton and animations. This is core tool for our pipelines. With enough of knowledge and usage of powerful tools ([[addons]]) created by Blender community, it's possible to do everything just in one tool - Blender. But it's highly recommended to use different tools listed in this article for different purposes, that way will save huge amount of time. 
 ### [RizomUV VS](https://www.rizom-lab.com/rizomuv-vs/) (2023 or higher)
 ![[rizom-banner.png]]
