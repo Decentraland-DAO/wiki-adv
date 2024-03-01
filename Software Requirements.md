@@ -33,5 +33,7 @@ Stable Diffusion (AUTOMATIC1111) is AI tool required for generating concept desi
 [[/images/pure-banner.png]]
 
 PureRef is core tool that allows creators to collect images in one album and take a look on them in process of modelling. Usually it's a small handy window that's always stay on top of any other window.
-### FastFileRenamer (or alternatives)
+### [FastFileRenamer](https://download.cnet.com/fast-file-renamer/3000-2248_4-75788951.html) (or alternatives)
+[[/images/ffrenamer-banner.png]]
+
 FastFileRenamer is handy tool that allows to do bulk file name adjustments, this tool will be used to edit baked texture maps file names that's will be used in Adobe Substance 3D Painter. It's highly recommended to use this or any free alternatives for manipulations with file names.
