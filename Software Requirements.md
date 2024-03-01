@@ -14,19 +14,24 @@ RizomUV Virtual Space is very handy and advanced tool for unwrapping uv maps for
 Marmoset Toolbag 4 is core tool for texture baking and rendering. This tool allows creators to bake all details from complex models to optimized models that's ready to use for game engines. 
 ### [Adobe Substance 3D Painter](https://www.adobe.com/products/substance3d-painter.html) (9.1.1 or higher)
 [[/images/painter-banner.png]]
+
 Adobe Substance 3D Painter is core tool for creating textures. With usage of layers, masks, filters, anchor points and the most powerful thing - generators. This tool allows creators to do textures without any "manual" painting. It's possible to bake textures in Substance Painter, but, it's highly recommended to use Marmoset. 
 ### [Adobe Substance 3D Designer](https://www.adobe.com/products/substance3d-designer.html) (13.0.2 or higher)
 [[/images/designer-banner.png]]
+
 Adobe Substance 3D Designer is core tool for creating tiled seamlees textures for environment objects. With enough of knowledge, it's possible to create simple seamless textures in Substance Painter. But Substance Designer was created for this purposes and it's highly recommended to use it for creating powerful textures.
 ### [Adobe Photoshop](https://www.adobe.com/products/photoshop.html)
 [[/images/photoshop-banner.png]]
+
 Adobe Photoshop is core tool for creating thumbnails, texture optimizations, and bulk manipulations with images. 
 ### [Stable Diffusion](https://github.com/AUTOMATIC1111/stable-diffusion-webui) (AUTOMATIC1111)
 [[/images/ai-banner.png]]
+
 Stable Diffusion (AUTOMATIC1111) is AI tool required for generating concept designs for characters, wearables, and environment assets.
 # Handy Tools
 ### [PureRef](https://www.pureref.com/)
 [[/images/pure-banner.png]]
+
 PureRef is core tool that allows creators to collect images in one album and take a look on them in process of modelling. Usually it's a small handy window that's always stay on top of any other window.
 ### FastFileRenamer (or alternatives)
 FastFileRenamer is handy tool that allows to do bulk file name adjustments, this tool will be used to edit baked texture maps file names that's will be used in Adobe Substance 3D Painter. It's highly recommended to use this or any free alternatives for manipulations with file names.
