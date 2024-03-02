@@ -25,6 +25,7 @@ Color Management is another Blender setting that manages colors inside Blender v
 By default Blender Frame Rate is 24, which is industry standard for movies. It's highly recommended to change Frame Rate to 30, which is standard for games and this setting is important for creating game-ready character animations. 
 
 *Settings Location*
+
 [[/images/frame_rate.png]]
 
 ### Face Orientation
