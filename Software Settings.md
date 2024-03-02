@@ -7,6 +7,10 @@ On first start-up after installation, keep navigation and hotkey settings by def
 ### Viewport Denoising and Color Management
 Viewport Denoising setting reduce noise and smooth character animation preview in viewport. It's sounds as good feature, but on practice it adds more noise, than denoise. It's highly recommended to turn off this setting, to achieve clear and smooth animation results, that will look exactly like in game engine. 
 
+*Visual Comparison*
+
+[[/videos/viewport_denoising.mp4]]
+
 Color Management is another Blender setting that manages colors inside Blender viewport. By default View Transform setting, located in Color Management tab is set to Filmic. As result, this setting cause any textures, look a bit different, than they look in Substance Painter or in game engine. It's highly recommended to change View Transform setting from Filmic to Standard. Standard setting will display textures right way.
 
 *Visual Comparison*
