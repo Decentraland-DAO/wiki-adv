@@ -1,4 +1,4 @@
-List of tools required to create models, textures, animations according to pipelines that's written in Advanced Documentation articles. 
+List of tools required for creating models, textures, animations according to pipelines that's written in Advanced Documentation articles. 
 # Core Tools
 ### [Blender](https://www.blender.org/) (4.0 or higher)
 [[/images/blender-banner.png]]
