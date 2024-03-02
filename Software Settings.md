@@ -24,7 +24,23 @@ Color Management is another Blender setting that manages colors inside Blender v
 ### Frame Rate
 By default Blender Frame Rate is 24, which is industry standard for movies. It's highly recommended to change Frame Rate to 30, which is standard for games and this setting is important for creating game-ready character animations. 
 
+*Settings Location*
+[[/images/frame_rate.png]]
+
 ### Face Orientation
-Face Orientation display orientation of face normals. This setting allow creators to detect all inverted normals on a model. With some adjustments of face orientation display in Blender settings, it's highly recommended to keep this setting always on. 
+Face Orientation display orientation of face normals. This setting allow creators to detect all inverted normals on a model. it's highly recommended to keep this setting always on. 
 
+By default, when you turn on Face Orientation setting, "right" normals on model shown as blue color, and "wrong" inverted normals as red color, which cause creators to turn this setting on and off time from time to check if everything is good. 
 
+With right settings in Blender preferences, you can hide display of "right" normals and keep display only "wrong" normals. That way you're able to keep Face Orientation setting always on by default and always see what's right and what's wrong without need to always turn this setting on and off. 
+
+*Visual Comparison*
+
+[[/images/face_orientation_preview.png]]
+
+*Settings Location*
+
+[[/images/face_orientation.png]]
+
+[[/images/face_orientation_preferences.png]]
+ 
