@@ -9,7 +9,7 @@ Viewport Denoising setting reduce noise and smooth character animation preview i
 
 *Visual Comparison*
 
-![Video](/videos/viewport_denoising.mp4)
+![Video](videos/viewport_denoising.mp4)
 
 Color Management is another Blender setting that manages colors inside Blender viewport. By default View Transform setting, located in Color Management tab is set to Filmic. As result, this setting cause any textures, look a bit different, than they look in Substance Painter or in game engine. It's highly recommended to change View Transform setting from Filmic to Standard. Standard setting will display textures right way.
 
