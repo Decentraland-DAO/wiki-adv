@@ -13,6 +13,7 @@ Visual Comparison
 [[/images/color_management.png]]
 
 Settings Location
+
 [[/images/render_properties.png]]
 
 ### Frame Rate
