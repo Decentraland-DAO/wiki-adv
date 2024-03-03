@@ -70,16 +70,12 @@ For animations it's useful to keep two timelines, default one, but closed. For f
 ### Output Settings
 On first bakes and cage setup, it's recommended to use the lowest settings as possible to save bake time and speed up baking workflow. As soon as everything bakes well, you can increase settings to maximum and bake final maps.
 
-Recommended settings:
-
 **Samples: Minimum 4x**
 
 **Format: Always 16 Bits/Channel**, don't bake 8 and 32 bit maps. The reason for that is very low gradient quality on 8 bit maps (which will cause artifacts on texture painting and final textures), what about 32 bit maps it's not really important and only required for very high quality meshes, for example - 3d scans.
 
 **Soften: Always 1**
-
 **Padding: Custom**
-
 **Padding Size: 8px**
 
 By default padding size is moderate, but I recommend to change it to custom and set padding size to 8px, because we will bake only 1024x1024 textures.
@@ -111,3 +107,7 @@ All this maps have their own settings, I recommend to set Ray Count on some of t
 [[/images/bake_settings.png]]
 
 If you're looking for more information about maps that we will bake, you can find it [here](https://marmoset.co/posts/toolbag-baking-tutorial/) and [here](https://docs.marmoset.co/docs/map-types/)
+# Adobe Substance 3D Painter
+### New Project Settings
+*Recommended Settings*
+[[/images/spp_project_settings.png]]
