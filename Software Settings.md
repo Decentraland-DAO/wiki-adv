@@ -103,7 +103,7 @@ We will always bake all this maps, for future usage in Substance Painter:
 - Ambient Occlusion
 - Material ID
 
-All this maps have individual settings, you can keep them all in default state. If something will be required, it will be explained in one of pipeline articles.
+All this maps have their own settings, I recommend to set Ray Count on some of this maps to 1024 and keep the rest settings in default state. 
 
 *Settings Preview*
 
