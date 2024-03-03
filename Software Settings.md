@@ -109,8 +109,11 @@ All this maps have their own settings, I recommend to set Ray Count on some of t
 If you're looking for more information about maps that we will bake, you can find it [here](https://marmoset.co/posts/toolbag-baking-tutorial/) and [here](https://docs.marmoset.co/docs/map-types/)
 # Adobe Substance 3D Painter
 ### New Project Settings
-**Template:** just leave as is "Select template...", there are many templates, but we won't use them.
+**Template:** just leave as is "Select template...", 
+there are many templates, but we won't use them.
+
 **Document Resolution:** 1024 (1024x1024 textures)
+
 **Normal Map Format:** OpenGL (Blender, Marmoset, Decentraland (Unity) use OpenGL)
 
 **UV Tile Settings (UDIM's):** It's highly recommended to use UV tile workflow and preserve UV tile layout per material. This setting is very important for UDIMs workflow and fast work with models in process of creating (painting) textures. 
@@ -118,6 +121,7 @@ If you're looking for more information about maps that we will bake, you can fin
 I don't recommend to create any projects without UV tile workflow. It's outdated mode, that I don't recommend to use. You will encounter issues, bugs, and freezes. This mode requires creation of many materials for your models, which make process of preparations for texturing very complex. Just use UDIM's, it's faster and better. 
 
 **Import Cameras:** OFF
+
 **Auto-Unwrap:** OFF
 
 Other settings should stay default
