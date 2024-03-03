@@ -71,11 +71,16 @@ On first bakes and cage setup, it's recommended to use the lowest settings as po
 
 Recommended settings:
 
- **Samples: Minimum 4x**
+**Samples: Minimum 4x**
+
 **Format: Always 16 Bits/Channel**, don't bake 8 and 32 bit maps. The reason for that is very low gradient quality on 8 bit maps (which will cause artifacts on texture painting and final textures), what about 32 bit maps it's not really important and only required for very high quality meshes, for example - 3d scans.
-** Soften: Always 1**
+
+**Soften: Always 1**
+
 **Padding: Custom**
+
 **Padding Size: 8px**
+
 By default padding size is moderate, but I recommend to change it to custom and set padding size to 8px, because we will bake only 1024x1024 textures.
 
 On baking stage it's better to keep exact padding for exact texture size, later, in Substance Painter, we will export final textures with moderate padding that will fill all empty areas. 
