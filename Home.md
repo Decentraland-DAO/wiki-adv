@@ -1,13 +1,10 @@
-Right tree structure for Decentraland Content Creators page
+Wiki structure for Decentraland Content Creators page
 
-Advanced Documentation
+# Advanced Documentation
 - General Information
-	- Software Requirements
-	- Software Settings
-	- Addons
+	- [Software Requirements](https://github.com/the-ankou/advanced-documentation/wiki/Software-Requirements)
+	- [Software Settings](https://github.com/the-ankou/advanced-documentation/wiki/Software-Settings)
+	- [Addons](https://github.com/the-ankou/advanced-documentation/wiki/Addons)
 - Wearables Pipeline
-	- 1
 - NPC and Animations Pipeline
-	- 1
 - Environment Pipeline
-	- 
