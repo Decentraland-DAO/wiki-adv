@@ -1,6 +1,7 @@
 List of recommended settings for tools, this settings will speed-up process of creating models, and will make UI of some tools more user-friendly.
 - [Blender](https://github.com/the-ankou/advanced-documentation/wiki/Software-Settings#blender)
 - [Marmoset Toolbag 4](https://github.com/the-ankou/advanced-documentation/wiki/Software-Settings#marmoset-toolbag-4)
+- [Adobe Substance 3D Painter](https://github.com/the-ankou/advanced-documentation/wiki/Software-Settings#adobe-substance-3d-painter)
 # Blender
 ### Navigation Settings 
 On first start-up after installation, keep navigation and hotkey settings by default. It's not recommended to switch them to Maya or anything else. There will be issues with hotkeys on modes like "Weight Painting". 
