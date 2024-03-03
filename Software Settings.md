@@ -4,7 +4,7 @@ List of recommended settings for tools, this settings will speed-up process of c
 - [Adobe Substance 3D Painter](https://github.com/the-ankou/advanced-documentation/wiki/Software-Settings#adobe-substance-3d-painter)
 # Blender
 ### Navigation Settings 
-On first start-up after installation, keep navigation and hotkey settings by default. It's not recommended to switch them to Maya or anything else. There will be issues with hotkeys on modes like "Weight Painting". 
+On first start after installation, you will see welcome window with hotkey and navigation settings, keep navigation and hotkey settings by default. It's not recommended to switch them to Maya or anything else. There will be issues with hotkeys on modes like "Weight Painting". 
 
 ### Viewport Denoising and Color Management
 Viewport Denoising setting reduce noise and smooth character animation preview in viewport. It's sounds as good feature, but on practice it adds more noise, than denoise. It's highly recommended to turn off this setting, to achieve clear and smooth animation results, that will look exactly like in game engine. 
