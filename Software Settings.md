@@ -119,7 +119,7 @@ there are many templates, but we won't use them.
 
 **UV Tile Settings (UDIM's):** It's highly recommended to use UV tile workflow and preserve UV tile layout per material. This setting is very important for UDIMs workflow and fast work with models in process of creating (painting) textures. 
 
-I don't recommend to create any projects without UV tile workflow. It's outdated mode, that I don't recommend to use. You will encounter issues, bugs, and freezes. This mode requires creation of many materials for your models, which make process of preparations for texturing very complex. Just use UDIM's, it's faster and better. 
+I don't recommend to create any projects without UV tile workflow. You will encounter issues, bugs, and freezes. It also requires creation of many materials for your models, which make process of preparations for texturing very complex. Just use UDIM's (UV tile workflow), it's faster and better. 
 
 **Import Cameras:** OFF
 
