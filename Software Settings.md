@@ -8,20 +8,18 @@ On first start-up after installation, keep navigation and hotkey settings by def
 ### Viewport Denoising and Color Management
 Viewport Denoising setting reduce noise and smooth character animation preview in viewport. It's sounds as good feature, but on practice it adds more noise, than denoise. It's highly recommended to turn off this setting, to achieve clear and smooth animation results, that will look exactly like in game engine. 
 
-*Visual Comparison*
-
-
 [[viewport_denoising.mp4]]
 
-Color Management is another Blender setting that manages colors inside Blender viewport. By default View Transform setting, located in Color Management tab is set to Filmic or anything else, but not Standard. As result, this setting cause any textures, look a bit different, than they look in Substance Painter or in game engine. It's highly recommended to change View Transform setting from Filmic to Standard. Standard setting will display textures right way.
-
 *Visual Comparison*
+Color Management is another Blender setting that manages colors inside Blender viewport. By default View Transform setting, located in Color Management tab is set to Filmic or anything else, but not Standard. As result, this setting cause any textures, look a bit different, than they look in Substance Painter or in game engine. It's highly recommended to change View Transform setting from Filmic to Standard. Standard setting will display textures right way.
 
 [[/images/color_management.png]]
 
-*Settings Location*
+*Visual Comparison*
 
 [[/images/render_properties.png]]
+
+*Settings Location*
 
 ### Frame Rate
 By default Blender Frame Rate is 24, which is industry standard for movies. It's highly recommended to change Frame Rate to 30, which is standard for games and this setting is important for creating game-ready character animations. 
@@ -102,9 +100,11 @@ We will always bake all this maps, for future usage in Substance Painter:
 
 All this maps have their own settings, I recommend to set Ray Count on some of this maps to 1024 and keep the rest settings in default state. 
 
-*Settings Preview*
+
 
 [[/images/bake_settings.png]]
+
+*Settings Preview*
 
 If you're looking for more information about maps that we will bake, you can find it [here](https://marmoset.co/posts/toolbag-baking-tutorial/) and [here](https://docs.marmoset.co/docs/map-types/)
 # Adobe Substance 3D Painter
@@ -126,6 +126,6 @@ I don't recommend to create any projects without UV tile workflow. It's outdated
 
 Other settings should stay default
 
-*Recommended Settings*
-
 [[/images/spp_project_settings.png]]
+
+*Recommended Settings*
