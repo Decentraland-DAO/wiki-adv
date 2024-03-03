@@ -63,4 +63,26 @@ For animations it's useful to keep two timelines, default one, but closed. For f
 
 *UI Setup*
 
-[[custom_ui.mp4]]
+[[ui_setup.mp4]]
+
+# Marmoset Toolbag 4
+Marmoset Toolbad 4 is good to go with default settings and don't require any complex adjustments or manipulations with UI. The most important thing in Marmoset is Output and Maps settings.
+
+## Output and Maps Settings
+On first bakes and cage setup, it's recommended to use the lowest settings as possible to save bake time and speed up baking workflow. As soon as everything bakes well, you can increase settings to maximum and bake final maps.
+
+Here is settings recommendation:
+
+### Samples: Minimum 4x
+
+### Format: Always 16 Bits/Channel
+Don't bake 8 and 32 bit maps. The reason for that is very low gradient quality on 8 bit maps (which will cause artifacts on texture painting and final textures), what about 32 bit maps it's not really important and only required for very high quality meshes, for example - 3d scans.
+
+### Soften: Always 1
+
+### Padding: by default it's moderate, but I recommend to set it according to UV unwrap standards. You can learn more information about padding [here](http://wiki.polycount.com/wiki/Edge_padding) on baking stage it's better to keep exact padding for exact texture size, later, in Substance Painter, we will export final textures with moderate padding that will fill all empty areas.
+
+
+
+
+
