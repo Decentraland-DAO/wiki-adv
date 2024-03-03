@@ -97,6 +97,7 @@ We will always bake all this maps, for future usage in Substance Painter:
 - Bent Normals
 - Ambient Occlusion
 - Material ID
+
 All this maps have individual settings, you can keep them all in default state. If something will be required, it will be explained in one of pipeline articles.
 
 *Settings Preview*
