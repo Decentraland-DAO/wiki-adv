@@ -1,4 +1,4 @@
-Wiki structure for Decentraland Content Creators page
+Structure for Decentraland [Content Creators](https://docs.decentraland.org/creator/)
 
 # Advanced Documentation
 ### General Information
