@@ -1,4 +1,4 @@
-Structure for Decentraland [Content Creators](https://docs.decentraland.org/creator/)
+Structure for Decentraland [Content Creators](https://docs.decentraland.org/creator/) page.
 
 # Advanced Documentation
 ### General Information
