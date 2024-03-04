@@ -217,6 +217,12 @@ Current session will keep maps only until you will close Substance Painter. Proj
 - **Size:** 1024
 - **Padding:** Dilation Infinite. Other settings required for manual adjustments in Adobe Photoshop or for other individual situations.
 
+Make sure to set **Base color** bits to **RGB16** on channels in general properties tab, otherwise textures will be exported in 8 bits, even if setting in export textures window set to 16.
+
+*Base Color RGB16*
+
+[[/images/channels_bits.png]]
+
 You will need to export only **Base Color** maps which will be used in all pipelines. It's not recommended to use other maps in Decentraland, because they don't work as they should. You may try to experiment with Normal, Metallic and Roughness maps, but all this maps require a lot of manual adjustments for clear results.
 
 You can select only **Base Color** maps on each material in Global Settings window
@@ -241,3 +247,4 @@ After you will click export, you will see window with process of exporting. As s
 # Adobe Photoshop
 wip import export
 # Stable Diffusion
+wip models, vae, controlnet
