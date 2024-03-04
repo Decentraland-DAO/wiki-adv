@@ -68,6 +68,22 @@ For animations it's useful to keep two timelines, default one, but closed. For f
 [[ui_setup.mp4]]
 
 ### Import/Export Settings
+
+**Recommended import/export to FBX settings**
+
+**Export settings:** All settings should be default, in our pipelines you will use FBX export for RizomUV, Marmoset and Substance Painter. The only setting that you will need to change sometimes is **Selected Objects, ** **Apply Modifiers** and **Triangulate Faces**
+
+**Import Settings:** Default.
+
+**Recommended GLTF/GLB import settings**
+You need to know few issues regard GLTF and GLB import settings.
+
+- **Pack Images** by default is enabled, It's recommended to keep that setting enabled. 
+- On import you will need to enable option **"Merge Vertices"**.  When you export any object from Blender to GLB, mesh vertices will split as UV shells. That means that if you will import object back to Blender, your mesh will look exactly the same, but if you will start edit it and move vertices, you will notice that in some areas there are 2 vertices in located and the same place. 
+- **Shading:** Use Normal Data
+- **Bone Dir:** by default it's **Blender**, but sometimes you will need to change this setting to **Temperance**, for example, when you will import **Decentraland avatars** to Blender, with **Bone Dir: Blender**, you won't see bones. Temperance setting solve this issue. 
+
+
 **Recommended export to GLTF/GLB settings.**
 You can save export settings as presets and use it in future without needs for manual adjustments
 
