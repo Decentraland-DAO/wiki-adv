@@ -1,7 +1,7 @@
 List of recommended settings for tools, this settings will speed-up process of creating models, and will make UI of some tools more user-friendly.
 - [Blender](https://github.com/the-ankou/advanced-documentation/wiki/Software-Settings#blender)
 	- [Navigation Settings](https://github.com/the-ankou/advanced-documentation/wiki/Software-Settings#navigation-settings)
-	-[ Viewport Denoising and Color Management](https://github.com/the-ankou/advanced-documentation/wiki/Software-Settings#viewport-denoising-and-color-management)
+	- [Viewport Denoising and Color Management](https://github.com/the-ankou/advanced-documentation/wiki/Software-Settings#viewport-denoising-and-color-management)
 	- [Frame Rate](https://github.com/the-ankou/advanced-documentation/wiki/Software-Settings#frame-rate)
 	- [Face Orientation](https://github.com/the-ankou/advanced-documentation/wiki/Software-Settings#face-orientation)
 	- [Save Settings and UI Setup](https://github.com/the-ankou/advanced-documentation/wiki/Software-Settings#save-settings-and-ui-setup)
