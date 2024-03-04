@@ -1,8 +1,18 @@
 List of recommended settings for tools, this settings will speed-up process of creating models, and will make UI of some tools more user-friendly.
 - [Blender](https://github.com/the-ankou/advanced-documentation/wiki/Software-Settings#blender)
+	- [Navigation Settings](https://github.com/the-ankou/advanced-documentation/wiki/Software-Settings#navigation-settings)
+	-[ Viewport Denoising and Color Management](https://github.com/the-ankou/advanced-documentation/wiki/Software-Settings#viewport-denoising-and-color-management)
+	- [Frame Rate](https://github.com/the-ankou/advanced-documentation/wiki/Software-Settings#frame-rate)
+	- [Face Orientation](https://github.com/the-ankou/advanced-documentation/wiki/Software-Settings#face-orientation)
+	- [Save Settings and UI Setup](https://github.com/the-ankou/advanced-documentation/wiki/Software-Settings#save-settings-and-ui-setup)
 	- [Import/Export Settings](https://github.com/the-ankou/advanced-documentation/wiki/Software-Settings#importexport-settings)
 - [Marmoset Toolbag 4](https://github.com/the-ankou/advanced-documentation/wiki/Software-Settings#marmoset-toolbag-4)
+	- [Output Settings](https://github.com/the-ankou/advanced-documentation/wiki/Software-Settings#output-settings)
 - [Adobe Substance 3D Painter](https://github.com/the-ankou/advanced-documentation/wiki/Software-Settings#adobe-substance-3d-painter)
+	- [New Project Settings](https://github.com/the-ankou/advanced-documentation/wiki/Software-Settings#new-project-settings)
+	- [Import Textures Settings](https://github.com/the-ankou/advanced-documentation/wiki/Software-Settings#import-textures-settings)
+	- [Export Textures Settings](https://github.com/the-ankou/advanced-documentation/wiki/Software-Settings#export--textures-settings)
+	- [Custom Templates](https://github.com/the-ankou/advanced-documentation/wiki/Software-Settings#custom-templates)
 # Blender
 ### Navigation Settings 
 On first start after installation, you will see welcome window with hotkey and navigation settings, keep navigation and hotkey settings by default. It's not recommended to switch them to Maya or anything else. There will be issues with hotkeys on modes like "Weight Painting". 
