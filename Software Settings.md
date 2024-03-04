@@ -137,6 +137,8 @@ You can save export settings as presets and use it in future without needs for m
 
 [[/images/compression_setting.png]]
 
+# RizomUV
+wip texel density, padding, margin, scaling
 # Marmoset Toolbag 4
 ### Output Settings
 On first bakes and cage setup, it's recommended to use the lowest settings as possible to save bake time and speed up baking workflow. As soon as everything bakes well, you can increase settings to maximum and bake final maps.
@@ -232,3 +234,7 @@ After you will click export, you will see window with process of exporting. As s
 
 ### Custom Templates
 - wip
+
+# Adobe Photoshop
+wip import export
+# Stable Diffusion

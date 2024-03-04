@@ -28,6 +28,9 @@ Adobe Photoshop is core tool for creating thumbnails, texture optimizations, and
 [[/images/ai-banner.png]]
 
 Stable Diffusion (AUTOMATIC1111) is AI tool required for generating concept designs for characters, wearables, and environment assets.
+
+[Installation and Running](https://github.com/AUTOMATIC1111/stable-diffusion-webui#installation-and-running)
+
 # Handy Tools
 ### [PureRef](https://www.pureref.com/)
 [[/images/pure-banner.png]]
