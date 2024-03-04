@@ -123,7 +123,7 @@ On first bakes and cage setup, it's recommended to use the lowest settings as po
 **Padding: Custom**
 **Padding Size: 8px**
 
-By default padding size is moderate, but I recommend to change it to custom and set padding size to 8px, because we will bake only 1024x1024 textures.
+By default padding size is moderate, but It's recommended to change it to custom and set padding size to 8px, because we will bake only 1024x1024 textures.
 
 On baking stage it's better to keep exact padding for exact texture size, later, in Substance Painter, we will export final textures with moderate padding that will fill all empty areas. 
 
@@ -145,7 +145,7 @@ We will always bake all this maps, for future usage in Substance Painter:
 - Ambient Occlusion
 - Material ID
 
-All this maps have their own settings, I recommend to set Ray Count on some of this maps to 1024 and keep the rest settings in default state. 
+All this maps have their own settings, It's recommended to set Ray Count on some of this maps to 1024 and keep the rest settings in default state. 
 
 *Settings Preview*
 
