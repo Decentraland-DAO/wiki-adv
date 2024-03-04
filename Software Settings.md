@@ -142,9 +142,7 @@ You can save export settings as presets and use it in future without needs for m
 On first bakes and cage setup, it's recommended to use the lowest settings as possible to save bake time and speed up baking workflow. As soon as everything bakes well, you can increase settings to maximum and bake final maps.
 
 - **Samples:** Minimum 4
-
 - **Format: Always 16 Bits/Channel**, don't bake 8 and 32 bit maps. The reason for that is very low gradient quality on 8 bit maps (which will cause artifacts on texture painting and final textures), what about 32 bit maps it's not really important and only required for very high quality meshes, for example - 3d scans.
-
 - **Soften:** Always 1
 - **Padding:** Custom
 - **Padding Size:** 8px
@@ -182,17 +180,13 @@ If you're looking for more information about maps that we will bake, you can fin
 ### New Project Settings
 - **Template:** just leave as is "Select template...", 
 there are many templates, but we won't use them.
-
 - **Document Resolution:** 1024 (1024x1024 textures)
-
 - **Normal Map Format:** OpenGL (Blender, Marmoset, Decentraland (Unity) use OpenGL)
-
 - **UV Tile Settings (UDIM's):** It's highly recommended to use UV tile workflow and preserve UV tile layout per material. This setting is very important for UDIMs workflow and fast work with models in process of creating (painting) textures. 
 
 It's not recommended to create any projects without UV tile workflow. You will encounter issues, bugs, and freezes. It also requires creation of many materials for your models, which make process of preparations for texturing very complex. Just use UDIM's (UV tile workflow), it's faster and better. 
 
 - **Import Cameras:** OFF
-
 - **Auto-Unwrap:** OFF
 
 Other settings should stay default
