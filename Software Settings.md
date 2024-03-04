@@ -212,6 +212,8 @@ You will need to export only **Base Color** maps which will be used in all pipel
 
 You can select only **Base Color** maps on each material in Global Settings window
 
+After you will click export, you will see window with process of exporting. As soon as export is finished you can click **"Open output directory"** to see folder with your maps.
+
 *Export Settings*
 
 [[/images/export_templates.png]]
@@ -219,3 +221,7 @@ You can select only **Base Color** maps on each material in Global Settings wind
 *Required Maps*
 
 [[/images/global_settings.png]]
+
+*Finished Export*
+
+[[/images/exported_assets.png]]
