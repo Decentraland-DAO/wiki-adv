@@ -91,7 +91,7 @@ You can save export settings as presets and use it in future without needs for m
 
 **Environment:** if you're building whole environment from assets in Blender, and planning to export each asset as separated file, it's highly recommended to use .gltf with separated "textures" folder. That way objects that you used many times, won't have individual materials with duplicated textures and that way you're able to use one same texture on different objects. Settings here are same as for wearables, or as for assets, depends on situation. It's recommended to use "Texture or Textures" folder name, for .gltf with textures. 
 
-*Wearables*
+*Wearables and Assets*
 
 [[/images/wearables_export.png]]
 
@@ -100,6 +100,7 @@ You can save export settings as presets and use it in future without needs for m
 [[/images/nla_tracks.png]]
 
 *Scene Animation*
+
 [[/images/scene_animation.png]]
 
 *Export to JPG*
