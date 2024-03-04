@@ -67,6 +67,49 @@ For animations it's useful to keep two timelines, default one, but closed. For f
 
 [[ui_setup.mp4]]
 
+### Import/Export Settings
+**Recommended export to GLTF/GLB settings.**
+You can save export settings as presets and use it in future without needs for manual adjustments
+
+
+**Wearables:** for wearables it's recommended to use .glb, because textures will be packed inside .glb file, which is handy for easy upload to builder
+- Use **Selected** or **Visible** objects setting in include section
+- **Only UVs and Normals** should be enabled in mesh section, sometimes you will need to use **Apply Modifiers** additionally. Avoid all other options, like Vertex Colors. This option, for example, will split materials with alpha, which will cause increase of .glb total size and loss of source material if you will import .glb back to Blender. 
+- If you experience issues with .glb size, you can use **export to jpg** option inside material section. Usually it's better to manually export all textures to jpg, with proper compression, to achieve best quality and small size for each textures. But if you're looking for fast solution, just use automatic method that's implement in export settings. 
+- **Shape Keys** should be disabled
+- In armature section enable **use rest position** and **export deformation bones** only
+- If you experience issues with .glb size, you can try to use **compression setting**, by default level of compression set to 6, which cause small glb files be empty and crash in game. It's recommended  to try different compression levels starting from 1, and detect the one that works and decrease size. This option is very handy for animations and environment objects. It's not recommended to touch other compression settings, except compression level.
+- **Animation** section should be disabled
+
+**Assets:** export option here depends on situation. If you you're looking for fast export, use .glb. If you're looking for more optimized way and you're the one who will build whole scene through builder/visual studio code/blender, then it's better to use .gltf with separated "textures" folder. For assets you can use  same settings like for wearables. Here is additional settings that you will need to use for assets with animations:
+- **Animation** section be enabled
+- **Animation mode** depends on situation, usually you will use **NLA tracks** and **Scene** mode. If your model use many actions like (stand, walk, idle) convert them to NLA tracks. If your model use one infinite animation (for example: elevator), then use Scene mode. It's not recommended to use other modes. 
+- **Rest & Ranges** usually default
+- **Shape Keys Animation** should be disabled
+- **Sampling Animation** and **Sampling Rate** by default is 1. Sometimes it's useful to use higher levels for better animation optimization. But be careful with this setting, because it's functional is to delete keyframes. Animation will look very choppy if you will set very high level of sampling rate.
+- **Optimize Animations** by default is enabled, but sometimes disabling this setting will reduce total size of .glb, this depends on situation, it's better to always try to export animated objects with and without this option.
+
+**Environment:** if you're building whole environment from assets in Blender, and planning to export each asset as separated file, it's highly recommended to use .gltf with separated "textures" folder. That way objects that you used many times, won't have individual materials with duplicated textures and that way you're able to use one same texture on different objects. Settings here are same as for wearables, or as for assets, depends on situation. It's recommended to use "Texture or Textures" folder name, for .gltf with textures. 
+
+*Wearables*
+
+[[/images/wearables_export.png]]
+
+*NLA Tracks*
+
+[[/images/nla_tracks.png]]
+
+*Scene Animation*
+[[/images/scene_animation.png]]
+
+*Export to JPG*
+
+[[/images/export_to_jpg.png]]
+
+*Compression*
+
+[[/images/compression_setting.png]]
+
 # Marmoset Toolbag 4
 ### Output Settings
 On first bakes and cage setup, it's recommended to use the lowest settings as possible to save bake time and speed up baking workflow. As soon as everything bakes well, you can increase settings to maximum and bake final maps.
@@ -130,3 +173,5 @@ Other settings should stay default
 *Recommended Settings*
 
 [[/images/spp_project_settings.png]]
+
+### Export Settings
