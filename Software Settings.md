@@ -79,7 +79,7 @@ You can save export settings as presets and use it in future without needs for m
 **Import Settings:** Default.
 
 **Recommended GLTF/GLB import settings**
-- **Pack Images** by default is enabled, It's recommended to keep that setting enabled. 
+- **Pack Images:** by default is enabled, It's recommended to keep that setting enabled. 
 - On import you will need to enable option **"Merge Vertices"**.  When you export any object from Blender to GLB, mesh vertices will split as UV shells. That means that if you will import object back to Blender, your mesh will look exactly the same, but if you will start edit it and move vertices, you will notice that in some areas there are 2 vertices in located and the same place. 
 - **Shading:** Use Normal Data
 - **Bone Dir:** by default it's **Blender**, but sometimes you will need to change this setting to **Temperance**, for example, when you will import **Decentraland avatars** to Blender, with **Bone Dir: Blender**, you won't see bones. Temperance setting solve this issue. 
@@ -191,4 +191,31 @@ Other settings should stay default
 
 [[/images/spp_project_settings.png]]
 
-### Export Settings
+### Import Textures Settings
+Select all maps in explorer, drag and drop them to **Assets** window in **Substance Painter**. 
+
+**Import resources** window will appear. Click on area with list of imported maps, press **CTRL+A** and then change **undefined** to **texture**
+
+Change **import your resources to:**  from **current session** to **project "your project name here"**. 
+
+Current session will keep maps only until you will close Substance Painter. Project will keep maps in project that you saved. Library will keep your assets in Substance Painter forever, no matter what project you open. For maps it's recommended to use **Project**.
+
+[[/images/import_resources.png]]
+
+### Export  Textures Settings
+- **Output Template** by default it's **Document channels + Normal + AO (No Alpha)** but sometimes you will need to use the same template but **with alpha**. You can also create your own template, but it's recommended to use default ones. There is another one popular template - **2D View**, this template export 2D View of current texture and light state in Substance Painter scene, sometimes it's handy, but results are dirty. Advanced Documentation pipelines will cover better and more professional way that use filters for baked lights.
+- **File type:** by default it's PNG 8 bits, it's recommended to use **PNG 16 bits** and then optimize to JPG with clear and smooth results in **Adobe Photoshop**. PNG 8 bits decrease gradients quality, while PNG 16 bits keeps all gradients as clear as possible.
+- **Size:** 1024
+- **Padding:** Dilation Infinite. Other settings required for manual adjustments in Adobe Photoshop or for other individual situations.
+
+You will need to export only **Base Color** maps which will be used in all pipelines. It's not recommended to use other maps in Decentraland, because they don't work as they should. You may try to experiment with Normal, Metallic and Roughness maps, but all this maps require a lot of manual adjustments for clear results.
+
+You can select only **Base Color** maps on each material in Global Settings window
+
+*Export Settings*
+
+[[/images/export_templates.png]]
+
+*Required Maps*
+
+[[/images/global_settings.png]]
