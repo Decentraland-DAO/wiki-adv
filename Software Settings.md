@@ -314,7 +314,15 @@ After you will click export, you will see window with process of exporting. As s
 [[/images/exported_assets.png]]
 
 ### Custom Templates
-- wip
+In **Export textures** window, go to **output templates** tab. Here you can create your export textures template.
+
+To create **Base Color** only template, you will need to duplicate **PBR Metallic Roughness** template and delete all output maps except BaseColor. Since we will use UDIMs in process of creating models, in some cases, you will need to remove dot in (.$udim) name. If you will keep dot, Blender will determine all UDIMs as UDIMs and later that may cause some issues on export. It's not very important thing and usually works fine, but if needed, just remove dot.
+
+*Custom Templates Example*
+
+[[custom_templates.mp4]]
+
+Actually, better to use default **Document channels + Normal + AO (No Alpha)**, but if you want something special, you can always create custom template.
 
 # Adobe Photoshop
 wip import export
