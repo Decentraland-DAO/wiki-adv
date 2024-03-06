@@ -193,19 +193,23 @@ As we will create only 1024 textures, it's recommended to use padding 8.
 
 
 ### UV Packing Settings 
-It's strongly recommended to manually set Texel Density for each UV island and manually pack each island in UV square. But, if you wish to achieve fast result, you can use options for UV auto packing.
+It's strongly recommended to manually set Texel Density for each UV island and manually pack each island in UV square. But, if you wish to achieve fast result, you can use tools for UV auto packing.
 
 Here is settings that's required for manual packing:
 
-Texture Type to should be Checker. With checker you will be able to visually determine if UVs unwrapped well and texel density is good for all parts.
+Texture Type to should be **Checker**. With checker you will be able to visually determine if UVs unwrapped well and texel density is good for all parts.
 
 [[/images/rizom_checker.png]]
 
-It's recommended to turn off all scale optimization settings in properties packing properties tab, if you will do packing manually.
+It's recommended to turn off all **scale optimization** settings in **packing properties** tab, if you will do packing manually.
 
 [[/images/packing_properties.png]]
 
 For automatic packing, you can keep default settings, but keep in mind, that texel scaling optimization will change texel density numbers for all UV islands.
+
+When you will do manual packing, you will use distribute space setting lots of times. It's recommended to change space number according to number of padding. Change from available to pixel and set number to 8.
+
+[[/images/distribute_space.png]]
 
 # Marmoset Toolbag 4
 ### Output Settings
