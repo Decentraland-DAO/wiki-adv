@@ -14,6 +14,7 @@ List of recommended settings for tools, this settings will speed-up process of c
 	- [Output Settings](https://github.com/the-ankou/advanced-documentation/wiki/Software-Settings#output-settings)
 - [Adobe Substance 3D Painter](https://github.com/the-ankou/advanced-documentation/wiki/Software-Settings#adobe-substance-3d-painter)
 	- [New Project Settings](https://github.com/the-ankou/advanced-documentation/wiki/Software-Settings#new-project-settings)
+	- [UI Setup](https://github.com/the-ankou/advanced-documentation/wiki/Software-Settings#ui-setup)
 	- [Import Textures Settings](https://github.com/the-ankou/advanced-documentation/wiki/Software-Settings#import-textures-settings)
 	- [Export Textures Settings](https://github.com/the-ankou/advanced-documentation/wiki/Software-Settings#export--textures-settings)
 	- [Custom Templates](https://github.com/the-ankou/advanced-documentation/wiki/Software-Settings#custom-templates)
