@@ -150,12 +150,12 @@ Before doing UV unwrapping, it's very important to export from Blender object wi
 
 Here is basic texel density numbers for common textures. It's not recommended to use number less than listed below, but you can use higher numbers, if your UV square have enough of space for that. 
 
-- 10.24 for 2048
-- 5.12 for 1024
-- 2.56 for 512
-- 1.28 for 256
+- **10.24** for **2048**
+- **5.12** for **1024**
+- **2.56** for **512**
+- **1.28** for **256**
 
-As example, number 5.12 will be used for jacket UV islands, and higher numbers will be used for small objects like buttons, pockets, chains on that jacket. That way quality of small details will be drastically increased and as result whole model will look clean.
+As example, number 5.12 will be used for jacket UV islands, and higher numbers will be used for small objects islands like buttons, pockets, chains on that jacket. That way quality of small details will be increased and as result whole model will look clean.
 
 By default RizomUV Texel Density is 10.24 and texture size is 2048. This is a good start if you wish to create 2048x2048 textures for your model.
 
@@ -167,10 +167,10 @@ One more note about dimensions. If you made small object, with right texel densi
 **Margin** - UV islands distance from corners of UV square. 
 
 Here is a minimal margin numbers for each texture size.
-- 8 for 2048
-- 4 for 1024
-- 2 for 512
-- 1-2 for 256 (0 is not recommended)
+- **8** for **2048**
+- **4** for **1024**
+- **2** for **512**
+- **1-2** for **256** (0 not recommended)
 
 It's very important to use this setting, to avoid any UV overlapping issues in game engine. 
 
@@ -181,10 +181,10 @@ As we will create only 1024 textures, it's recommended to use margin 4.
 
 Here is a minimal padding numbers for each texture size.
 
-- 16 for 2048
-- 8 for 1024
-- 4 for 512
-- 2 for 256
+- **16** for **2048**
+- **8** for **1024**
+- **4** for **512**
+- **2** for **256**
 
 It's very important to use this setting, to avoid any UV overlapping issues in game engine. 
 
