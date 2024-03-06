@@ -340,7 +340,7 @@ Actually, it's better to use default **Document channels + Normal + AO (No Alpha
 # Adobe Photoshop
 ### New Document and UI Setup
 
-Usually you don't need to create new document. In most of times, you will need to drag and drop texture exported from Substance Painter into Photoshop. That way all image settings will be stay default and nothing (like bits or color mode) will be affected during import process. 
+Usually, you don't need to create new document. In most of times, you will need to drag and drop texture exported from Substance Painter into Photoshop. That way all image settings will stay default and nothing (like bits or color mode) will be affected during import process. 
 
 But, if you want to create new document, you can use settings on image below.
 
@@ -353,7 +353,7 @@ But, if you want to create new document, you can use settings on image below.
 [[photoshop_ui_setup.mp4]]
 
 ### Batch Export
-You can do batch export in **Photoshop**. Select all layers, right on them and select **Export as...** or **Quick Export as PNG**
+You can do batch export in **Photoshop**. Select all layers, right click on them and select **Export as...** or **Quick Export as PNG**
 
 [[/images/batch_export01.png]]
 
