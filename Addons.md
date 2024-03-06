@@ -6,7 +6,7 @@ List of addons that you will need for pipelines
 ### [Friendly Pivot](https://blendermarket.com/products/friendly-pivot) (Modelling)
 ### [LoopTools](https://docs.blender.org/manual/en/latest/addons/mesh/looptools.html) (Modelling)
 
-### Rigify (Rigging) 
+### [Rigify](https://docs.blender.org/manual/en/2.81/addons/rigging/rigify.html#activation) (Rigging) 
 ### [Easy Weights](https://studio.blender.org/pipeline/addons/easy_weights) (Weight Painting)
 ### [Lazy Weight Tool](https://blendermarket.com/products/lazy-weight-tool) (Weight Painting)
 ### [Voxel Heat Diffuse Skinning](https://blendermarket.com/products/voxel-heat-diffuse-skinning) (Weight Painting)
