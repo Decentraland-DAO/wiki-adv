@@ -19,6 +19,8 @@ List of recommended settings for tools, this settings will speed-up process of c
 	- [Export Textures Settings](https://github.com/the-ankou/advanced-documentation/wiki/Software-Settings#export--textures-settings)
 	- [Custom Templates](https://github.com/the-ankou/advanced-documentation/wiki/Software-Settings#custom-templates)
 - [Adobe Photoshop](https://github.com/the-ankou/advanced-documentation/wiki/Software-Settings#adobe-photoshop)
+	- [New Document and UI Setup](https://github.com/the-ankou/advanced-documentation/wiki/Software-Settings#new-document-and-ui-setup)
+	- [Batch Export](https://github.com/the-ankou/advanced-documentation/wiki/Software-Settings#batch-export)
 - [Stable Diffusion (AUTOMATIC1111)](https://github.com/the-ankou/advanced-documentation/wiki/Software-Settings#stable-diffusion-automatic1111)
 	 - [Required Models](https://github.com/the-ankou/advanced-documentation/wiki/Software-Settings#required-models)
 # Blender
