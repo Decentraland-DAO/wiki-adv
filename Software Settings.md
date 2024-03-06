@@ -338,7 +338,41 @@ To create **Base Color** only template, you will need to duplicate **PBR Metalli
 Actually, it's better to use default **Document channels + Normal + AO (No Alpha)**, but if you want something special, you can always create custom template.
 
 # Adobe Photoshop
-wip import export
+### New Document and UI Setup
+
+*New Document*
+
+[[/images/photoshop_settings.png]]
+
+*UI Setup*
+
+[[photoshop_ui_setup.mp4]]
+
+### Batch Export
+You can do batch export in **Photoshop**. Select all layers, right on them and select **Export as...** or **Quick Export as PNG**
+
+[[/images/batch_export01.png]]
+
+If you want to do fast export use **Quick Export as PNG**, but keep in mind, that this option crop images with transparent background, if this images don't touch corners of canvas.
+
+It's more recommended to use **Export as...**, because that way you can manually set settings for each exported layer or set export settings bulk way if you will select all layers in **Export As** window.
+
+It's recommended to keep all images in **PNG** format. Usually, when you export images from Substance Painter PNG 16 bits, each texture file have around 2mb size. If you import Substance Painter textures to Photoshop, and export them back to PNG without change of any settings, size will be decreased to ~500kb, which is a great in most of cases. According to tests, quality don't change at all, gradients stay great, there are no noise on images, but size for some reason decreases. That's a really useful trick for textures optimization.
+
+If you can't achieve size around 500kb, you can enable Smaller File (8-bit) option. But be careful, because most of times this option adds noise and break gradients. If you experience that issue, the last way that you can try, is to export textures in JPG. 
+
+*PNG*
+
+[[/images/export_settings_png.png]]
+
+**JPG** is format that's better not to use in most cases. JPG destroy texture gradients, and adds a lot of noise. But all of that depends on situations. Some times you can save PNG with size less than 500kb, but some times it's just impossible, and that way JPG is only one solution.
+
+With JPG Quality level 5-7 you can get very small texture size, ~300kb or less. Use **JPG** only in situations when you can't achieve **GLB** size less than 2mb. In all other situations stay on **PNG** for best quality results.
+
+*JPG*
+
+[[/images/export_settings_jpg.png]]
+
 # Stable Diffusion (AUTOMATIC1111)
 ### Required Models
 **Automatic1111** works well on latest GPU cards, however, if your pc don't match latest specs, you still can use this tool with very low settings and achieve good results. If that's impossible for you, then you can try alternatives from web. But they're not flexible as Stable Diffusion and might be expensive.
