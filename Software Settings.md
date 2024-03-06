@@ -20,6 +20,7 @@ List of recommended settings for tools, this settings will speed-up process of c
 	- [Custom Templates](https://github.com/the-ankou/advanced-documentation/wiki/Software-Settings#custom-templates)
 - [Adobe Photoshop](https://github.com/the-ankou/advanced-documentation/wiki/Software-Settings#adobe-photoshop)
 - [Stable Diffusion (AUTOMATIC1111)](https://github.com/the-ankou/advanced-documentation/wiki/Software-Settings#stable-diffusion-automatic1111)
+	 - [Required Models](https://github.com/the-ankou/advanced-documentation/wiki/Software-Settings#required-models)
 # Blender
 ### Navigation Settings 
 On first start after installation, you will see welcome window with hotkey and navigation settings, keep navigation and hotkey settings by default. It's not recommended to switch them to Maya or anything else. There will be issues with hotkeys on modes like "Weight Painting". 
