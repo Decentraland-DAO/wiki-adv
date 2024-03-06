@@ -340,6 +340,10 @@ Actually, it's better to use default **Document channels + Normal + AO (No Alpha
 # Adobe Photoshop
 ### New Document and UI Setup
 
+Usually you don't need to create new document. In most of times, you will need to drag and drop texture exported from Substance Painter into Photoshop. That way all image settings will be stay default and nothing (like bits or color mode) will be affected during import process. 
+
+But, if you want to create new document, you can use settings on image below.
+
 *New Document*
 
 [[/images/photoshop_settings.png]]
@@ -355,7 +359,7 @@ You can do batch export in **Photoshop**. Select all layers, right on them and s
 
 If you want to do fast export use **Quick Export as PNG**, but keep in mind, that this option crop images with transparent background, if this images don't touch corners of canvas.
 
-It's more recommended to use **Export as...**, because that way you can manually set settings for each exported layer or set export settings bulk way if you will select all layers in **Export As** window.
+In most cases you will need to use **Export as...**, because that way you can manually set settings for each exported layer or set export settings bulk way if you will select all layers in **Export As** window.
 
 It's recommended to keep all images in **PNG** format. Usually, when you export images from Substance Painter PNG 16 bits, each texture file have around 2mb size. If you import Substance Painter textures to Photoshop, and export them back to PNG without change of any settings, size will be decreased to ~500kb, which is a great in most of cases. According to tests, quality don't change at all, gradients stay great, there are no noise on images, but size for some reason decreases. That's a really useful trick for textures optimization.
 
