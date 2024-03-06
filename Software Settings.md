@@ -18,8 +18,8 @@ List of recommended settings for tools, this settings will speed-up process of c
 	- [Import Textures Settings](https://github.com/the-ankou/advanced-documentation/wiki/Software-Settings#import-textures-settings)
 	- [Export Textures Settings](https://github.com/the-ankou/advanced-documentation/wiki/Software-Settings#export--textures-settings)
 	- [Custom Templates](https://github.com/the-ankou/advanced-documentation/wiki/Software-Settings#custom-templates)
-- Adobe Photoshop
-- Stable Diffusion
+- [Adobe Photoshop](https://github.com/the-ankou/advanced-documentation/wiki/Software-Settings#adobe-photoshop)
+- [Stable Diffusion (AUTOMATIC1111)](https://github.com/the-ankou/advanced-documentation/wiki/Software-Settings#stable-diffusion-automatic1111)
 # Blender
 ### Navigation Settings 
 On first start after installation, you will see welcome window with hotkey and navigation settings, keep navigation and hotkey settings by default. It's not recommended to switch them to Maya or anything else. There will be issues with hotkeys on modes like "Weight Painting". 
@@ -339,6 +339,7 @@ Actually, it's better to use default **Document channels + Normal + AO (No Alpha
 # Adobe Photoshop
 wip import export
 # Stable Diffusion (AUTOMATIC1111)
+### Required Models
 **Automatic1111** works well on latest GPU cards, however, if your pc don't match latest specs, you still can use this tool with very low settings and achieve good results. If that's impossible for you, then you can try alternatives from web. But they're not flexible as Stable Diffusion and might be expensive.
 
 The most important tool that you will need is **ControlNet** (Canny, IP-Adapter), **LORA**, and any **model** (anime or realistic) that you want from [here](https://civitai.com/). In pipelines you will need to use [ManmaruMix v3.0](https://civitai.com/models/86277/manmaru-mix) model, but you can experiment with any model you want. We won't use SDXL models in pipelines. You will need to put files in "sd.webui\webui\models\stable-diffusion" folder.
