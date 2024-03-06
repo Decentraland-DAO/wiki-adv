@@ -141,7 +141,72 @@ You can save export settings as presets and use it in future without needs for m
 [[/images/compression_setting.png]]
 
 # RizomUV
-wip texel density, padding, margin, scaling
+### Texel Density
+**Texel Density** - is global scaling setting for each UV island. Final textures result strictly depends on right texel density. You can learn more about texel density and it's calculations [here](https://www.beyondextent.com/deep-dives/deepdive-texeldensity#)
+
+In-depth information about texel density usually sounds very complex and confusing, but on practice everything is simple.
+
+Before doing UV unwrapping, it's very important to export final object with right, final, dimensions. For example, if you will create desk with wrong dimensions, UV shells will be very big according to texel density, and as result, you will need to use two or more textures for one object, to achieve clear textures quality. Keep that in mind to avoid blurry results.
+
+Here is basic texel density numbers for common textures. It's not recommended to use number less than listed below, but you can use higher numbers, if your UV square have enough of space for that. 
+
+- 10.24 for 2048
+- 5.12 for 1024
+- 2.56 for 512
+- 1.28 for 256
+
+As example, number 5.12 will be used for jacket UV islands, and higher numbers will be used for small objects like buttons, pockets, chains on that jacket. That way quality of small details will be drastically increased and as result whole model will look clean.
+
+By default RizomUV Texel Density is 10.24 and texture size is 2048. This is a good start if you wish to create 2048x2048 textures for your model.
+
+For Decentraland, it's recommended to use only 1024 or 512 textures. Most of creators use 1024. There are no reasons to use higher textures, because Decentraland client downscale all textures higher than 1024. Also higher textures affect on client optimization, fps, and scene loading times.
+
+One more note about dimensions. If you made small object, with right texel density and right texture size. Keep in mind, that if you need, you can decrease object size when you build scene. But, you can't increase object size without loss in quality. If you made a small soda can, made all UVs and final textures, and then decide to make it very big in scene, model will look blurry because there are not enough texel density on UV. In that case, you will need to do new UV with right texel density and then redo textures.
+
+### Margin and Padding 
+**Margin** - UV islands distance from corners of UV square. 
+
+Here is a minimal margin numbers for each texture size.
+- 8 for 2048
+- 4 for 1024
+- 2 for 512
+- 1-2 for 256 (0 is not recommended)
+
+It's very important to use this setting, to avoid any UV overlapping issues in game engine. 
+
+As we will create only 1024 textures, it's recommended to use margin 4.
+
+
+**Padding** - distance between each UV island. This is very important thing that you should always keep in mind. Padding strongly connected with Mip Maps. Here you can learn more about [Padding](http://wiki.polycount.com/wiki/Edge_padding) and [Mip Mapping](http://wiki.polycount.com/wiki/Mip_mapping)
+
+Here is a minimal padding numbers for each texture size.
+
+- 16 for 2048
+- 8 for 1024
+- 4 for 512
+- 2 for 256
+
+It's very important to use this setting, to avoid any UV overlapping issues in game engine. 
+
+As we will create only 1024 textures, it's recommended to use padding 8.
+
+
+
+### UV Packing Settings 
+It's strongly recommended to manually set Texel Density for each UV island and manually pack each island in UV square. But, if you wish to achieve fast result, you can use options for UV auto packing.
+
+Here is settings that's required for manual packing:
+
+Texture Type to should be Checker. With checker you will be able to visually determine if UVs unwrapped well and texel density is good for all parts.
+
+[[/images/rizom_checker.png]]
+
+It's recommended to turn off all scale optimization settings in properties packing properties tab, if you will do packing manually.
+
+[[/images/packing_properties.png]]
+
+For automatic packing, you can keep default settings, but keep in mind, that texel scaling optimization will change texel density numbers for all UV islands.
+
 # Marmoset Toolbag 4
 ### Output Settings
 On first bakes and cage setup, it's recommended to use the lowest settings as possible to save bake time and speed up baking workflow. As soon as everything bakes well, you can increase settings to maximum and bake final maps.
