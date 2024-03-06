@@ -338,5 +338,34 @@ Actually, it's better to use default **Document channels + Normal + AO (No Alpha
 
 # Adobe Photoshop
 wip import export
-# Stable Diffusion
-wip models, vae, controlnet
+# Stable Diffusion (AUTOMATIC1111)
+**Automatic1111** works well on latest GPU cards, however, if your pc don't match latest specs, you still can use this tool with very low settings and achieve good results. If that's impossible for you, then you can try alternatives from web. But they're not flexible as Stable Diffusion and might be expensive.
+
+The most important tool that you will need is **ControlNet** (Canny, IP-Adapter), **LORA**, and any **model** (anime or realistic) that you want from [here](https://civitai.com/). In pipelines you will need to use [ManmaruMix v3.0](https://civitai.com/models/86277/manmaru-mix) model, but you can experiment with any model you want. We won't use SDXL models in pipelines. You will need to put files in "sd.webui\webui\models\stable-diffusion" folder.
+
+**LORA** - small model file that was created from 5-15 reference images. It's used as part of positive prompt. With it you can generate any characters from anime, or any persona in any style that you want, for example - realistic. You can also do enhancement to your images, like adding details. It's also very simple to train your own lora and requires small amount of time.
+
+One of additional **LORA** models that you will need is [Detail Tweaker LoRA](https://civitai.com/models/58390/detail-tweaker-lora-lora), this one seems to be best at adding details for generated images. You will need to put files in "sd.webui\webui\models\lora"
+
+To install **ControlNet** you will need to download it from [here](https://github.com/Mikubill/sd-webui-controlnet) and follow installation [guide](https://github.com/Mikubill/sd-webui-controlnet#installation).
+
+Download ControlNet **Canny** optimized model from [here](https://huggingface.co/webui/ControlNet-modules-safetensors/tree/main) (control_canny-fp16.safetensors) and put it in ControlNet models folder. If you want to get original models, you can get them from [here](https://huggingface.co/lllyasviel/ControlNet-v1-1/tree/main), you will need to download only .pth files and put them in ControlNet models folder. You can learn more about it [here](https://github.com/Mikubill/sd-webui-controlnet#download-models)
+
+Download ControlNet **IP-Adapter** model from [here](https://huggingface.co/h94/IP-Adapter/tree/main/models) (ip-adapter-plus_sd15.safetensors) and put it in ControlNet models folder. You will use IP-Adapter to mimic style of any picture from internet, and generate new images in that style. This model saves a lot of time on writing prompts, and can generate results with unique and unusual things (like clothes) just in one click, according to reference image and mixing it.
+
+To achieve better results at image generations, you will need to download few textual inversions and put them in "sd.webui\webui\embeddings". This inversions will save you time on writing negative prompts, and will solve issues with low image quality results.
+- [badhandv4](https://civitai.com/models/16993/badhandv4-animeillustdiffusion)
+- [EasyNegative](https://civitai.com/models/7808?modelVersionId=9208)
+- [veryBadImageNegative_v1.3](https://civitai.com/models/11772?modelVersionId=25820)
+
+Additionally, you will need to download VAE model, to achieve images with clean color. For different models, different VAEs. For ManmaruMix model, [this](https://huggingface.co/stabilityai/sd-vae-ft-mse-original/tree/main) VAE fits very well. Download and put it in "sd.webui\webui\models\VAE"
+
+Once everything is installed and downloaded, you can generate your first image. Here is a basic settings and prompts setup to achieve even result.
+
+*Prompt and Settings*
+
+[[/images/stable_diffusion.png]]
+
+If you want to achieve exact same image, you will need to copy all settings and press generate. If result is different, you can write this number 2803890072 in seed option and that way you will generate exact same image. 
+
+If your pc have low specs, it's recommended to generate images only with 768x768, 512x512 or less resolution, higher resolutions like 1024x1024 will crash with out of memory error. 
