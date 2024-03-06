@@ -6,7 +6,10 @@ List of recommended settings for tools, this settings will speed-up process of c
 	- [Face Orientation](https://github.com/the-ankou/advanced-documentation/wiki/Software-Settings#face-orientation)
 	- [Save Settings and UI Setup](https://github.com/the-ankou/advanced-documentation/wiki/Software-Settings#save-settings-and-ui-setup)
 	- [Import/Export Settings](https://github.com/the-ankou/advanced-documentation/wiki/Software-Settings#importexport-settings)
-- RizomUV
+- [RizomUV](https://github.com/the-ankou/advanced-documentation/wiki/Software-Settings#rizomuv)
+	- [Texel Density](https://github.com/the-ankou/advanced-documentation/wiki/Software-Settings#texel-density)
+	- [Margin and Padding](https://github.com/the-ankou/advanced-documentation/wiki/Software-Settings#margin-and-padding)
+	- [UV Packing Settings](https://github.com/the-ankou/advanced-documentation/wiki/Software-Settings#uv-packing-settings)
 - [Marmoset Toolbag 4](https://github.com/the-ankou/advanced-documentation/wiki/Software-Settings#marmoset-toolbag-4)
 	- [Output Settings](https://github.com/the-ankou/advanced-documentation/wiki/Software-Settings#output-settings)
 - [Adobe Substance 3D Painter](https://github.com/the-ankou/advanced-documentation/wiki/Software-Settings#adobe-substance-3d-painter)
