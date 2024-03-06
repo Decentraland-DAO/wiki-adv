@@ -71,7 +71,7 @@ With right settings in Blender preferences, you can hide display of "right" norm
 
 
 ### Save Settings and UI Setup
-It's recommended to move Blender outliner from right side to left side of window, that way UI will be more friendly and will look like basic windows "explorer", and will be familiar to navigation in other tools like Maya, Marmoset, and rest. This setup saves huge amount of time on work and reduce amount of mouse clicks between tabs and windows.
+It's recommended to move Blender outliner from right side to left side of window, that way UI will be more friendly and will look like basic windows explorer, and will be familiar to navigation in other tools like Maya, Marmoset, and rest. This setup saves huge amount of time on work and reduce amount of mouse clicks between tabs and windows.
 
 Additionally, we will add small UV editor window on left side, which we will use for fast access to UV. 
 
