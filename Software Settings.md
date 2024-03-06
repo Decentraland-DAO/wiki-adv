@@ -159,7 +159,7 @@ As example, number 5.12 will be used for jacket UV islands, and higher numbers w
 
 By default RizomUV Texel Density is 10.24 and texture size is 2048. This is a good start if you wish to create 2048x2048 textures for your model.
 
-For Decentraland, it's recommended to use only 1024 or 512 textures. Most of creators use 1024. There are no reasons to use higher textures, because Decentraland client downscale all textures higher than 1024. Also higher textures affect on client optimization, fps, and scene loading times.
+For Decentraland, it's recommended to use only 1024 or 512 textures. Most of creators use 1024. There are no reasons to use higher textures, because Decentraland client downscale all textures higher than 1024, sometimes even 1024 is downscaled to 512. Also higher textures affect on client optimization, fps, and scene loading times.
 
 One more note about dimensions. If you made small object, with right texel density and right texture size. Keep in mind, that if you need, you can decrease object size when you build scene. But, you can't increase object size without loss in quality. If you made a small soda can, made all UVs and final textures, and then decide to make it very big in scene, model will look blurry because there are not enough texel density on UV. In that case, you will need to do new UV with right texel density and then redo textures.
 
