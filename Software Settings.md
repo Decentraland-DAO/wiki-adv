@@ -364,15 +364,15 @@ Additionally, you will need to download VAE model, to achieve images with clean 
 
 Once everything is installed and downloaded, you can generate your first image. Here is a basic settings and prompts setup to achieve even result.
 
+*Prompt and Settings*
+
+[[/images/stable_diffusion.png]]
+
 To add LORA and Textual Inversion in your prompts, you can navigate and click on them in special tabs.
 
 *LORA and Textual Inversion*
 
 [[/images/lora.png]]
-
-*Prompt and Settings*
-
-[[/images/stable_diffusion.png]]
 
 If you want to achieve exact same image, you will need to copy all settings and press generate. If result is different, you can write this number 2803890072 in seed option and that way you will generate exact same image. 
 
