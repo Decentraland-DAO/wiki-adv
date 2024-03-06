@@ -146,7 +146,7 @@ You can save export settings as presets and use it in future without needs for m
 
 In-depth information about texel density usually sounds very complex and confusing, but on practice everything is simple.
 
-Before doing UV unwrapping, it's very important to export final object with right, final, dimensions. For example, if you will create desk with wrong dimensions, UV shells will be very big according to texel density, and as result, you will need to use two or more textures for one object, to achieve clear textures quality. Keep that in mind to avoid blurry results.
+Before doing UV unwrapping, it's very important to export final object with right, final, dimensions. For example, if you will create desk with wrong dimensions, UV shells will be very big according to texel density, and as result, you will need to use two or more textures for one object, to achieve clear textures quality. You don't need 2 or more textures for desk, unless desk was supposed to be very big.
 
 Here is basic texel density numbers for common textures. It's not recommended to use number less than listed below, but you can use higher numbers, if your UV square have enough of space for that. 
 
