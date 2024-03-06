@@ -272,6 +272,17 @@ Other settings should stay default
 
 [[/images/spp_project_settings.png]]
 
+### UI Setup
+You can keep default UI if needed. But for advanced documentation pipelines it's better to use UI from video, it's more flexible, less complex, requires less clicks between tabs, and covers less space on screen.
+
+*UI Setup*
+
+[[spp_ui_setup.mp4]]
+
+If you messed up with UI, you can always reset it in **Window** tab.
+
+[[/images/spp_reset_ui.png]]
+
 ### Import Textures Settings
 Select all maps in explorer, drag and drop them to **Assets** window in **Substance Painter**. 
 
@@ -322,7 +333,7 @@ To create **Base Color** only template, you will need to duplicate **PBR Metalli
 
 [[custom_templates.mp4]]
 
-Actually, better to use default **Document channels + Normal + AO (No Alpha)**, but if you want something special, you can always create custom template.
+Actually, it's better to use default **Document channels + Normal + AO (No Alpha)**, but if you want something special, you can always create custom template.
 
 # Adobe Photoshop
 wip import export
