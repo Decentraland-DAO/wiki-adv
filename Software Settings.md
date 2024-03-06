@@ -368,12 +368,12 @@ Once everything is installed and downloaded, you can generate your first image. 
 
 [[/images/stable_diffusion.png]]
 
-To add LORA and Textual Inversion in your prompts, you can navigate and click on them in special tabs.
+To add **LORA** and **Textual Inversion** in your prompts, you can navigate and click on them in special tabs.
 
 *LORA and Textual Inversion*
 
 [[/images/lora.png]]
 
-If you want to achieve exact same image, you will need to copy all settings and press generate. If result is different, you can write this number 2803890072 in seed option and that way you will generate exact same image. 
+If you want to achieve exact same image, you will need to copy all settings and press generate. If result is different, you can write this number **2803890072** in seed option and that way you will generate exact same image. 
 
-If your pc have low specs, it's recommended to generate images only with 768x768, 512x512 or less resolution, higher resolutions like 1024x1024 will crash with out of memory error. 
+If your pc have low specs, it's recommended to generate images only with **768x768, 512x512** or less resolution, higher resolutions like **1024x1024** will crash with out of memory error. 
