@@ -82,7 +82,7 @@ For animations it's useful to keep two timelines, default one, but closed. For f
 
 *UI Setup*
 
-[[ui_setup.mp4]]
+[[blender_ui_setup.mp4]]
 
 ### Import/Export Settings
 
