@@ -106,7 +106,9 @@ With this settings you can press **Generate** button to get final **1024x1024** 
 
 
 *Result without Hires. Fix*
+
 [[/images/prompt_example04.png]]
 
 *Result with Hires. Fix*
+
 [[/images/prompt_hires03.png]]
