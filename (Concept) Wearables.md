@@ -21,20 +21,8 @@ In most cases you will need to use this words to generate image of character in 
 - white background (removes any background details and draws only character in most cases)
 - look at camera (optional, character will look at us in most cases)
 
-To achieve better result in details, use detail tweaker lora mentioned in [[Software Settings]]
+To achieve better result in details, use **detail tweaker lora** mentioned in [[Software Settings]]
 - <lora:add_detail:1> or <lora:add_detail:0.75> or less
-
-prompt example with concept sheet word: 1girl, fullbody, stand pose, cap, hoodie, joggers, concept sheet, white background, look at camera, <lora:add_detail:0.8>
-
-*Result, Seed: 3912979637*
-
-[[/images/prompt_example01.png]]
-
-prompt example without concept sheet word: 1girl, fullbody, stand pose, cap, hoodie, joggers, white background, look at camera, <lora:add_detail:0.8>
-
-*Result, Seed: 1304235324*
-
-[[/images/prompt_example02.png]]
 
 **Negative Prompt Structure**
 
@@ -52,6 +40,31 @@ Here is few basic words that you can use, if you don't want to use textual inver
 - ugly face
 
 If you're looking for more negative or positive prompts you can copy them from images on [civitai](https://civitai.com/images)
+
+**prompt example with concept sheet word:** 
+**positive:** 1girl, fullbody, stand pose, cap, hoodie, joggers, concept sheet, white background, look at camera, <lora:add_detail:0.8>
+
+**negative:** badhandv4 easynegative verybadimagenegative_v1.3
+
+*Result, Seed: 3912979637*
+
+[[/images/prompt_example01.png]]
+
+**prompt example without concept sheet word:** 
+**positive:** 1girl, fullbody, stand pose, cap, hoodie, joggers, white background, look at camera, <<lora:add_detail:0.8>>
+
+**negative:** badhandv4 easynegative verybadimagenegative_v1.3
+
+*Result, Seed: 1304235324*
+
+[[/images/prompt_example02.png]]
+
+**prompt example copied from civitai**
+**positive:** a 1980s pop art style portrait of Marylin Monroe, punk, pop art, stylized, bold colors, photo and illustration hybrid
+
+**negative:**  badhandv4 easynegative verybadimagenegative_v1.3
+
+[[/images/prompt_example03.png]]
 
 ### Option 2. Generating images with IPAdapter
 Generate images in combination of **IPAdapter** and reference images from **Pinterest**, this option generates images in style that you want, copy and adapt details from image, and doesn't require writing thousands of words in prompt.
