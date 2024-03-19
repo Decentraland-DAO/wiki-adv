@@ -96,11 +96,11 @@ As soon as you generated image that you like, **set image seed** with **green ar
 
 [[/images/prompt_hires01.png]]
 
-Now **enable Hires. Fix** option, set upscaler to **R-ESRGAN 4x+ Anime6B** (best upscaler for anime stable diffusion models) and **Denoising Strength** to **0.45** or less. If you want to achieve more random results, you can play with denoising strength numbers. Higher numbers might change source image completely.
+Now **enable Hires. Fix** option, set upscaler to **R-ESRGAN 4x+ Anime6B** (best upscaler for anime stable diffusion models) and **Denoising Strength** to **0,45** or less. If you want to achieve more random results, you can play with denoising strength numbers. Higher numbers might change source image completely.
 
-Keep **upscale by** setting on *2*, higher numbers may give out of memory error. 
+Keep **upscale by** setting on **2**, higher numbers may give out of memory error, depends on your pc. 
 
-With this settings you can press **Generate** button to get final **1024x1024** image. 
+Now you can press **Generate** button to get final **1024x1024** image. 
 
 [[/images/prompt_hires02.png]]
 
@@ -112,3 +112,5 @@ With this settings you can press **Generate** button to get final **1024x1024** 
 *Result with Hires. Fix*
 
 [[/images/prompt_hires03.png]]
+
+This is recommended image generation way for users with **low-end pc**. If you use **high-end pc** , you can generate images with always enabled **Hires. Fix**.
