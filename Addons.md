@@ -1,4 +1,14 @@
 Addons that you will need for advanced documentation pipelines.
+- [Blender](https://github.com/the-ankou/advanced-documentation/wiki/Addons#blender)
+	- [TheAnkou's Scripts and Pie Menu Editor (Scripts)](https://github.com/the-ankou/advanced-documentation/wiki/Addons#theankous-scripts-and-pie-menu-editor-scripts)
+	 - [TheAnkou's Hair Nodes or Stylized Hair PRO v3 (Modeling)](https://github.com/the-ankou/advanced-documentation/wiki/Addons#theankous-hair-nodes-or-stylized-hair-pro-v3-modeling)
+	 - [Friendly Pivot (Modeling)](https://github.com/the-ankou/advanced-documentation/wiki/Addons#friendly-pivot-modeling)
+	 - [LoopTools (Modeling)](https://github.com/the-ankou/advanced-documentation/wiki/Addons#looptools-modeling)
+	 - [Rigify (Rigging)](https://github.com/the-ankou/advanced-documentation/wiki/Addons#rigify-rigging)
+	 - [Easy Weights (Weight Painting)](https://github.com/the-ankou/advanced-documentation/wiki/Addons#easy-weights-weight-painting)
+	 - [Lazy Weight Tool (Weight Painting)](https://github.com/the-ankou/advanced-documentation/wiki/Addons#lazy-weight-tool-weight-painting)
+	 - [Voxel Heat Diffuse Skinning (Weight Painting)](https://github.com/the-ankou/advanced-documentation/wiki/Addons#voxel-heat-diffuse-skinning-weight-painting)
+	 - [SJ Phaser (Animation)](https://github.com/the-ankou/advanced-documentation/wiki/Addons#sj-phaser-animation)
 # Blender
 ### TheAnkou's Scripts and [Pie Menu Editor](https://blendermarket.com/products/pie-menu-editor) (Scripts)
 **TheAnkou's Scripts** handy scripts created with ChatGPT. With **Pie Menu Editor** addon, you will be able to use this scripts as panel with buttons in **N** menu tab   in Blender.

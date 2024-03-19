@@ -1,4 +1,16 @@
 List of tools required for creating models, textures, animations according to pipelines that's written in Advanced Documentation articles. 
+
+- [Core Tools](https://github.com/the-ankou/advanced-documentation/wiki/Software-Requirements#core-tools)
+	- [Blender](https://github.com/the-ankou/advanced-documentation/wiki/Software-Requirements#blender-40-or-higher)
+	- [RizomUV](https://github.com/the-ankou/advanced-documentation/wiki/Software-Requirements#rizomuv-vs-2023-or-higher)
+	- [Marmoset Toolbag 4](https://github.com/the-ankou/advanced-documentation/wiki/Software-Requirements#marmoset-toolbag-4)
+	- [Adobe Substance 3D Painter](https://github.com/the-ankou/advanced-documentation/wiki/Software-Requirements#adobe-substance-3d-painter-911-or-higher)
+	- [Adobe Substance 3D Designer](https://github.com/the-ankou/advanced-documentation/wiki/Software-Requirements#adobe-substance-3d-designer-1302-or-higher)
+	- [Adobe Photoshop](https://github.com/the-ankou/advanced-documentation/wiki/Software-Requirements#adobe-photoshop)
+	- [Stable Diffusion](https://github.com/the-ankou/advanced-documentation/wiki/Software-Requirements#stable-diffusion-automatic1111)
+- [Handy Tools](https://github.com/the-ankou/advanced-documentation/wiki/Software-Requirements#handy-tools)
+	- [PureRef](https://github.com/the-ankou/advanced-documentation/wiki/Software-Requirements#pureref)
+	- [FastFileRenamer](https://github.com/the-ankou/advanced-documentation/wiki/Software-Requirements#fastfilerenamer-or-alternatives)
 # Core Tools
 ### [Blender](https://www.blender.org/) (4.0 or higher)
 [[/images/blender-banner.png]]
