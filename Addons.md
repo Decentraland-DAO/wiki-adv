@@ -54,7 +54,7 @@ Click on **Button 1** and **Edit Slot**, now you will need to press on three hor
 [[/images/pie_menu_editor08.png]]
 
 That method will work for all python scripts except **Import Texture**.
-To create **Import Texture** button instead of call external script you will need to select **Call Operator** and add **Run Python File**
+To create **Import Texture** button instead of **Call External Script** you will need to select **Call Operator** and add **Run Python File**
 
 [[/images/pie_menu_editor09.png]]
 
