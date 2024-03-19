@@ -72,6 +72,7 @@ If you're looking for more negative or positive prompts you can copy them from i
 **negative:**  badhandv4 easynegative verybadimagenegative_v1.3
 
 *Result, Seed: 466431685*
+
 [[/images/prompt_example03.png]]
 
 **prompt mix example:**
@@ -91,7 +92,7 @@ Generate images in combination of **IPAdapter** and reference images from **Pint
 ### Enhancing Achieved Results with Hires. Fix
 As you may see results in Option 1 and Option 2 methods, both of them lacks of quality and looks very blurry. To fix that, you will need to use **Hires. Fix** option. 
 
-As soon as you generated image that you like and want, **set image seed** with **green arrows button**
+As soon as you generated image that you like, **set image seed** with **green arrows button**
 
 [[/images/prompt_hires01.png]]
 
