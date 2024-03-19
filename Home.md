@@ -7,5 +7,6 @@ Structure for Decentraland [Content Creators](https://docs.decentraland.org/crea
 - [Addons](https://github.com/the-ankou/advanced-documentation/wiki/Addons)
 
 ### Wearables Pipeline
+- [[(Concept) Wearables]]
 ### NPC and Animations Pipeline
 ### Environment Pipeline
