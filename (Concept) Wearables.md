@@ -1,6 +1,8 @@
-In this article you will learn pipeline for searching and generating reference images for wearables with **Stable Diffusion**.
+In this article you will learn pipeline for generating reference wearables images  with **Stable Diffusion**.
 
-To follow this article, make sure to setup Stable Diffusion and download all needed models from guidelines listed in [[Software Settings]].
+To follow this article, make sure to install Stable Diffusion. download all needed models, and use base generation settings from here [[Software Settings]].
+
+[[/images/stable_diffusion.png]]
 
 Use [Pinterest](https://pinterest.com/) for ideas and references.
 
@@ -21,18 +23,18 @@ In most cases you will need to use this words to generate image of character in 
 - white background (removes any background details and draws only character in most cases)
 - look at camera (optional, character will look at us in most cases)
 
-To achieve better result in details, use **detail tweaker lora** mentioned in [[Software Settings]]
-- <lora:add_detail:1> or <lora:add_detail:0.75> or less
+To achieve better result in details, use **detail tweaker lora** mentioned in [[Software Settings]].
+- <<lora:add_detail:1>> or <<lora:add_detail:0.75>> or less/higher
 
 **Negative Prompt Structure**
 
-Usually you will need to use only textual inversions mentioned in [[Software Settings]]. By using them you will save a lot of time and will almost never write negative prompts except unusual situations.
+Usually you will need to use only **textual inversions** mentioned in [[Software Settings]]. By using them, you will save a lot of time and will never write negative prompts except unusual situations.
 
 - badhandv4 
 - easynegative 
 - verybadimagenegative_v1.3
 
-Here is few basic words that you can use, if you don't want to use textual inversions
+Here is few basic words that you can use, if you don't want to use textual inversions.
 - bad quality
 - low quality
 - worst quality
@@ -42,7 +44,8 @@ Here is few basic words that you can use, if you don't want to use textual inver
 If you're looking for more negative or positive prompts you can copy them from images on [civitai](https://civitai.com/images)
 
 **prompt example with concept sheet word:** 
-**positive:** 1girl, fullbody, stand pose, cap, hoodie, joggers, concept sheet, white background, look at camera, <lora:add_detail:0.8>
+
+**positive:** 1girl, fullbody, stand pose, cap, hoodie, joggers, concept sheet, white background, look at camera, <<lora:add_detail:0.8>>
 
 **negative:** badhandv4 easynegative verybadimagenegative_v1.3
 
@@ -51,6 +54,7 @@ If you're looking for more negative or positive prompts you can copy them from i
 [[/images/prompt_example01.png]]
 
 **prompt example without concept sheet word:** 
+
 **positive:** 1girl, fullbody, stand pose, cap, hoodie, joggers, white background, look at camera, <<lora:add_detail:0.8>>
 
 **negative:** badhandv4 easynegative verybadimagenegative_v1.3
@@ -59,12 +63,30 @@ If you're looking for more negative or positive prompts you can copy them from i
 
 [[/images/prompt_example02.png]]
 
-**prompt example copied from civitai**
+**prompt example copied from civitai:**
+
 **positive:** a 1980s pop art style portrait of Marylin Monroe, punk, pop art, stylized, bold colors, photo and illustration hybrid
 
 **negative:**  badhandv4 easynegative verybadimagenegative_v1.3
 
+*Result, Seed: 466431685*
 [[/images/prompt_example03.png]]
+
+**prompt mix example:**
+
+**positive:** 1girl, fullbody, stand pose, look at camera, concept sheet, a 1980s pop art style portrait of Marylin Monroe, punk, pop art, stylized, bold colors, photo and illustration hybrid,  white background, <lora:add_detail:0.8>
+
+**negative:**  badhandv4 easynegative verybadimagenegative_v1.3
+
+*Result, Seed: 4233230048*
+
+[[/images/prompt_example04.png]]
+
 
 ### Option 2. Generating images with IPAdapter
 Generate images in combination of **IPAdapter** and reference images from **Pinterest**, this option generates images in style that you want, copy and adapt details from image, and doesn't require writing thousands of words in prompt.
+
+### Enhancing Achieved Results with Hires. Fix
+As you may see results in Option 1 and Option 2 methods, both of them lacks of quality and looks very blurry. To fix that, you will need to use **Hires. Fix** option. 
+
+According to Generation settings 
