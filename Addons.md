@@ -13,7 +13,7 @@ Addons that you will need for advanced documentation pipelines.
 ### TheAnkou's Scripts and [Pie Menu Editor](https://blendermarket.com/products/pie-menu-editor) (Scripts)
 **TheAnkou's Scripts** handy scripts created with ChatGPT. With **Pie Menu Editor** addon, you will be able to use this scripts as panel with buttons in **N** menu tab   in Blender.
 
-You can't CTRL+Z most of this scripts, so be careful and save your project before use.
+You can't CTRL+Z most of these scripts, so be careful and save your project before using them.
 - **Import Texture** instead of manually creating material and doing things in nodes as well as manually selecting textures. This script will assign roughness 1 material and selected texture just in one click. 
 
 - **Bones Default and Symmetry Name** scripts switch Decentraland avatar bone names to ones that will work with weight paint symmetry and back to default ones.
