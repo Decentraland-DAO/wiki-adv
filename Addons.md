@@ -2,12 +2,13 @@ Addons that you will need for advanced documentation pipelines.
 # Blender
 ### TheAnkou's Scripts and [Pie Menu Editor](https://blendermarket.com/products/pie-menu-editor) (Scripts)
 **TheAnkou's Scripts** handy scripts created with ChatGPT. With **Pie Menu Editor** addon, you will be able to use this scripts as  **N** menu tab with buttons in Blender.
-- **Import Texture** instead of manually creating material and doing things in nodes as well as manually selecting textures. This script will assign roughness 1 material and selected texture just in one click. (be careful, if you will CTRL+Z, Blender may crash)
+
+You can't CTRL+Z most of this scripts, so be careful and save your project before use.
+- **Import Texture** instead of manually creating material and doing things in nodes as well as manually selecting textures. This script will assign roughness 1 material and selected texture just in one click. 
 
 - **Bones Default and Symmetry Name** scripts switch Decentraland avatar bone names to ones that will work with weight paint symmetry and back to default ones.
 
-- **Remove Modifiers, Remove Materials, Remove Vertex Groups** scripts remove all modifiers, materials or vertex groups from selected meshes.
-
+- **Remove Modifiers, Remove Materials, Remove Vertex Groups** scripts remove all modifiers, materials or vertex groups from selected meshes. 
 - **UVName -> UVMap** usually, when you work with imported meshes from different software, sometimes their uv maps have different names, this cause issues when you want to merge two meshes into one. This script change name of all uv maps on selected objects to default UVMap name, without needs for manual renaming. With this script you can merge meshes without worries that uv maps will dissapear. 
 
 - **Roughness Material** script applies roughness to 1 and metallic, specular and some other settings to 0 (except alpha and emission) on all materials of selected meshes. 
@@ -18,15 +19,44 @@ Addons that you will need for advanced documentation pipelines.
 **Pie Menu Editor Setup** 
 Go to Blender **Preferences -> Add-ons** and search for **Pie Menu Editor**, open Pie Menu Editor tab and under **Preferences** window you can setup **N** menu tab with buttons.
 
-
+[[/images/pie_menu_editor01.png]]
 
 Press **Add an item** and select **Panel Group** and **Popup Dialog**
 
+[[/images/pie_menu_editor02.png]]
+
+[[/images/pie_menu_editor03.png]]
+
 In left area you will need to select **Panel Group** that appeared, then press **add panel** button and select **Popup Dialog**. Also, here you can search for **My Category** word and change it to anything you want. That will be the name of tab in **N** panel.
+
+[[/images/pie_menu_editor04.png]]
 
  Now select **Popup Dialog** that appeared and in right area you can now add buttons and select scripts that buttons will run.
 
+[[/images/pie_menu_editor05.png]]
+
 Click on **Button 1** and **Edit Slot**, now you will need to press on three horizontal stripes button and select **Call External Script**, select python script that you want and press **open script**, after that change button **name** and press **OK**.
+
+[[/images/pie_menu_editor06.png]]
+
+[[/images/pie_menu_editor07.png]]
+
+[[/images/pie_menu_editor08.png]]
+
+That method will work for all python scripts except **Import Texture**.
+To create **Import Texture** button instead of call external script you will need to select call operator and add **Run Python File**
+
+[[/images/pie_menu_editor09.png]]
+
+[[/images/pie_menu_editor10.png]]
+
+Click on folder icon and select **Import Texture** python script. 
+
+[[/images/pie_menu_editor11.png]]
+
+Press **Apply**, change button name and then press **OK**
+
+[[/images/pie_menu_editor12.png]]
 
 ### TheAnkou's Hair Nodes or [Stylized Hair PRO v3](https://deanzarkov.gumroad.com/l/stylized_hair_pro) (Modeling)
 **TheAnkou's Hair Nodes** or **Stylized Hair PRO v3** tools made from Blender geometry nodes, for creating any type of hairs, with curves and flexible settings just in few steps. 
