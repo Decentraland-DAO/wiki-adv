@@ -90,7 +90,7 @@ If you're looking for more negative or positive prompts you can copy them from i
 Generate images in combination of **IPAdapter** and reference images from **Pinterest**, this option generates images in style that you want, copy and adapt details from image, and doesn't require writing thousands of words in prompt.
 
 ### Enhancing Achieved Results with Hires. Fix
-As you may see results in Option 1 and Option 2 methods, both of them lacks of quality and looks very blurry. To fix that, you will need to use **Hires. Fix** option. 
+As you may see results in **Option 1**  and **Option 2** methods, both of them lacks of quality and looks very blurry. To fix that, you will need to use **Hires. Fix** option. 
 
 As soon as you generated image that you like, **set image seed** with **green arrows button**
 
