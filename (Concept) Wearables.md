@@ -2,6 +2,8 @@ In this article you will learn pipeline for generating reference wearables image
 
 To follow this article, make sure to install Stable Diffusion. download all needed models, and use base generation settings from here [[Software Settings]].
 
+*Generation Settings*
+
 [[/images/stable_diffusion.png]]
 
 Use [Pinterest](https://pinterest.com/) for ideas and references.
@@ -23,7 +25,7 @@ In most cases you will need to use this words to generate image of character in 
 - white background (removes any background details and draws only character in most cases)
 - look at camera (optional, character will look at us in most cases)
 
-To achieve better result in details, use **detail tweaker lora** mentioned in [[Software Settings]].
+To achieve better result in details, use lora **detail tweaker** mentioned in [[Software Settings]].
 - <<lora:add_detail:1>> or <<lora:add_detail:0.75>> or less/higher
 
 **Negative Prompt Structure**
@@ -74,7 +76,7 @@ If you're looking for more negative or positive prompts you can copy them from i
 
 **prompt mix example:**
 
-**positive:** 1girl, fullbody, stand pose, look at camera, concept sheet, a 1980s pop art style portrait of Marylin Monroe, punk, pop art, stylized, bold colors, photo and illustration hybrid,  white background, <lora:add_detail:0.8>
+**positive:** 1girl, fullbody, stand pose, look at camera, concept sheet, a 1980s pop art style portrait of Marylin Monroe, punk, pop art, stylized, bold colors, photo and illustration hybrid,  white background, <<lora:add_detail:0.8>>
 
 **negative:**  badhandv4 easynegative verybadimagenegative_v1.3
 
@@ -89,4 +91,21 @@ Generate images in combination of **IPAdapter** and reference images from **Pint
 ### Enhancing Achieved Results with Hires. Fix
 As you may see results in Option 1 and Option 2 methods, both of them lacks of quality and looks very blurry. To fix that, you will need to use **Hires. Fix** option. 
 
-According to Generation settings 
+As soon as you generated image that you like and want, **set image seed** with **green arrows button**
+
+[[/images/prompt_hires01.png]]
+
+Now **enable Hires. Fix** option, set upscaler to **R-ESRGAN 4x+ Anime6B** (best upscaler for anime stable diffusion models) and **Denoising Strength** to **0.45** or less. If you want to achieve more random results, you can play with denoising strength numbers. Higher numbers might change source image completely.
+
+Keep **upscale by** setting on *2*, higher numbers may give out of memory error. 
+
+With this settings you can press **Generate** button to get final **1024x1024** image. 
+
+[[/images/prompt_hires02.png]]
+
+
+*Result without Hires. Fix*
+[[/images/prompt_example04.png]]
+
+*Result with Hires. Fix*
+[[/images/prompt_hires03.png]]

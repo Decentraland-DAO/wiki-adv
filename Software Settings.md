@@ -365,7 +365,7 @@ In most cases you will need to use **Export as...**, because that way you can ma
 
 It's recommended to keep all images in **PNG** format. Usually, when you export images from Substance Painter PNG 16 bits, each texture file have around 2mb size. If you import Substance Painter textures to Photoshop, and export them back to PNG without change of any settings, size will be decreased to ~500kb, which is a great in most of cases. According to tests, quality don't change at all, gradients stay great, there are no noise on images, but size for some reason decreases. That's a really useful trick for textures optimization.
 
-If you can't achieve size around 500kb, you can enable Smaller File (8-bit) option. But be careful, because most of times this option adds noise and break gradients. If you experience that issue, the last way that you can try, is to export textures in JPG. 
+If you can't achieve size around 500kb, you can enable **Smaller File (8-bit)** option. But be careful, because most of times this option adds noise and break gradients. If you experience that issue, the last way that you can try, is to export textures in JPG. 
 
 *PNG*
 
