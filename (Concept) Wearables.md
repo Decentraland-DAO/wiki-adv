@@ -8,8 +8,8 @@ To follow this article, make sure to install Stable Diffusion. download all need
 
 Use [Pinterest](https://pinterest.com/) for ideas and references.
 
-You can learn prompt writing basics [here](https://education.civitai.com/civitais-prompt-crafting-guide-part-1-basics/)
-### Option 1. Generating images with prompt
+You can learn prompts writing workflow [here](https://education.civitai.com/civitais-prompt-crafting-guide-part-1-basics/)
+### Option 1. Generating images with prompts
 Generate images with prompts, textual inversion and LORA.
 
 In most cases you will need to use this words to generate image of character in any type of clothes. Make sure to write this words in exact same order. Influence of words in prompt lowers according to order.
@@ -44,6 +44,8 @@ Here is few basic words that you can use, if you don't want to use textual inver
 - ugly face
 
 If you're looking for more negative or positive prompts you can copy them from images on [civitai](https://civitai.com/images)
+
+You can also **change any word influence** in prompt by adding word inside () and setting number of influence, **example: (white background:1.5)**
 
 **prompt example with concept sheet word:** 
 
@@ -86,9 +88,34 @@ If you're looking for more negative or positive prompts you can copy them from i
 [[/images/prompt_example04.png]]
 
 
-### Option 2. Generating images with IPAdapter
-Generate images in combination of **IPAdapter** and reference images from **Pinterest**, this option generates images in style that you want, copy and adapt details from image, and doesn't require writing thousands of words in prompt.
+### Option 2. Generating images with IP-Adapter
+Generate images with **IP-Adapter** and reference images from **Pinterest**. **IP-Adapter** option generates images in style that you want. With additional prompts you will be to achieve interesting and inspiration results. 
 
+This method works in-pair with prompts and other settings from **Option 1**. 
+
+Enable **ControlNet** and select **IP-Adapter**. 
+
+Make sure that **preprocessor** set to **ip-adapter-clip_sd15** and **model** to **ip-adapter-plus_sd15**.
+
+After that, select any image that you want to use as reference. 
+
+[[/images/ip-adapter01.png]]
+
+It's recommended to use square type images. But if your image is different, you can play with **resize mode** setting to achieve different results. 
+
+It's very important to play with **Control Weight** and **Ending Control Step** settings. If you want to achieve very close result to reference image, **set Control Weight to 0.6 - 0.8**. If you notice that influence of image is too high, you can play with lower numbers **0.3 - 0.4**. This is recommended numbers, but, usually, numbers depends from image that used as reference. **Ending Control Step** is rarely used, but might be helpful too, you can play with this numbers of this setting too.
+
+**image generation with IP-Adapter example:**
+
+**positive:** 1girl, fullbody, stand pose, cap, hoodie, joggers, (white background:1.5), look at camera, <<lora:add_detail:0.8>>
+
+**negative:** badhandv4 easynegative verybadimagenegative_v1.3
+
+*Reference image*
+[[/images/ip-adapter02.png]]
+
+*Result*
+[[/images/ip-adapter03png]]
 ### Enhancing with Hires. Fix
 As you may see results in **Option 1**  and **Option 2** methods, both of them lacks of quality and looks very blurry. To fix that, you will need to use **Hires. Fix** option. 
 
@@ -113,4 +140,4 @@ Now you can press **Generate** button to get final **1024x1024** image.
 
 [[/images/prompt_hires03.png]]
 
-This is recommended image generation way for users with **low-end pc**. If you use **high-end pc** , you can generate images with always enabled **Hires. Fix**.
+This is recommended image generation way for users with **low-end pc**. If you use **high-end pc**, you can generate images with always enabled **Hires. Fix**.
