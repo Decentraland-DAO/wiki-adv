@@ -163,6 +163,10 @@ This is recommended image generation way for users with **low-end pc**. If you u
 
 ### Image generated for next modeling steps
 
+*Generation process*
+
+[[concept_wearables.mp4]]
+
 *Reference image*
 
 [[/images/ip-adapter07.png]]
@@ -171,6 +175,3 @@ This is recommended image generation way for users with **low-end pc**. If you u
 
 [[/images/ip-adapter06.png]]
 
-*Video with generation process*
-
-[[concept_wearables.mp4]]
