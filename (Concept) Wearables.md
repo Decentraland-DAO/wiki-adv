@@ -105,7 +105,7 @@ It's recommended to use square type images. But if your image is different, you 
 
 It's very important to play with **Control Weight** and **Ending Control Step** settings. If you want to achieve very close result to reference image, **set Control Weight to 0.6 - 0.8**. If you notice that influence of image is too high, you can play with lower numbers **0.3 - 0.4**. This is recommended numbers, but, usually, numbers depends from image that used as reference. **Ending Control Step** is rarely used, but might be helpful too, you can play with this numbers of this setting too.
 
-**image generation with IP-Adapter example:**
+**image generation with IP-Adapter and prompt example:**
 
 **positive:** 1girl, fullbody, stand pose, cap, hoodie, joggers, (white background:1.5), look at camera, <<lora:add_detail:0.8>>
 
@@ -115,9 +115,26 @@ It's very important to play with **Control Weight** and **Ending Control Step** 
 
 [[/images/ip-adapter02.png]]
 
-*Result*
+*Result* (Control Weight 0.6)
 
 [[/images/ip-adapter03.png]]
+
+*Result* (Control Weight 0.4)
+
+[[/images/ip-adapter04.png]]
+
+**image generation with IP-Adapter and empty (almost) prompt example:**
+
+**positive:** <<lora:add_detail:0.8>>
+
+**negative:** badhandv4 easynegative verybadimagenegative_v1.3
+
+*Result* (Control Weight 0.6)
+
+[[/images/ip-adapter05.png]]
+
+As you may see, generated images have almost same style and details. Even without prompts. This is very useful for generating concepts from inspiration references and achieve **random** (without prompts and small control weight) or  **restricted** (with prompts and medium-high control weight) results.
+
 ### Enhancing with Hires. Fix
 As you may see results in **Option 1**  and **Option 2** methods, both of them lacks of quality and looks very blurry. To fix that, you will need to use **Hires. Fix** option. 
 
@@ -143,3 +160,17 @@ Now you can press **Generate** button to get final **1024x1024** image.
 [[/images/prompt_hires03.png]]
 
 This is recommended image generation way for users with **low-end pc**. If you use **high-end pc**, you can generate images with always enabled **Hires. Fix**.
+
+### Image generated for next modeling steps
+
+*Reference image*
+
+[[/images/ip-adapter07.png]]
+
+*Result*
+
+[[/images/ip-adapter06.png]]
+
+*Video with generation process*
+
+[[concept_wearables.mp4]]
