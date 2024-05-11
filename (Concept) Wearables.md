@@ -112,9 +112,11 @@ It's very important to play with **Control Weight** and **Ending Control Step** 
 **negative:** badhandv4 easynegative verybadimagenegative_v1.3
 
 *Reference image*
+
 [[/images/ip-adapter02.png]]
 
 *Result*
+
 [[/images/ip-adapter03png]]
 ### Enhancing with Hires. Fix
 As you may see results in **Option 1**  and **Option 2** methods, both of them lacks of quality and looks very blurry. To fix that, you will need to use **Hires. Fix** option. 
