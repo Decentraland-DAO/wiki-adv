@@ -148,15 +148,17 @@ Add **Decimate** modifier to your Base Mesh, move to **Un-Subdivide** tab inside
 
 [[/images/step01_topology02.png]]
 
-As last part of polishing, **select all faces** in **Edit Mode** and apply **Shrink/Fatten tool (ALT+S)** with **0.02 offset.****
-**
+As last part of polishing, **select all faces** in **Edit Mode** and apply **Shrink/Fatten tool (ALT+S)** with **0.02 offset.**
+
 *Result*
 
 [[/images/step01_topology03.png]]
 
-Now your Body Base Mesh is ready! Any time you will start working on wearables, make sure to start your workflow from this base mesh. It's ready for high-poly modeling and sculpting.
+Now your **Body Base Mesh** is **ready!** 
 
-Before moving to next step, make sure to check this timelapse of base mesh creation process.
+Any time you will start working on wearables, make sure to start your workflow from this base mesh. It's ready for high-poly modeling and sculpting.
+
+Before moving to next step, make sure to check timelapse of base mesh creation.
 
 [[base_mesh.mp4]]
 ### Step 2. Drafting Clothes
