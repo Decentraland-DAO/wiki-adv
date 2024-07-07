@@ -1,24 +1,6 @@
-In this article you will learn **Drafting** pipeline required for 3D Modeling.
+In this article you will learn how to create **Avatar Base Mesh** required for future usage in wearables modeling.
 
-To follow this article, make sure to install **Blender** and **PureRef**. Additionally, it's important to read [[(Concept) Wearables]] article.
-
-In this and next articles we will use **image reference** generated **with Stable Diffusion.**
-
-*Reference*
-
-[[/images/ip-adapter06.png]]
-
-### PureRef
-First of all, you will need to **import** reference image to PureRef. Right click on reference image above and select **copy**. Open PureRef press right click and select **paste**.
-
-Now you will need to set PureRef mode to be always on top. 
-**Right click -> Mode -> Always On Top**.
-
-Then, save your PureRef project to be able to open it at any time without needs for repeatable steps with copy and paste of reference image. 
-**Right click -> Save -> Save.**
-
-If needed, you can export images from PureRef as images to any folder you want. 
-**Right click -> Save -> Export -> All Images.**
+To follow this article, make sure to install **Blender**. 
 
 ### Blender
 Before you will start doing things in Blender, you should import **Decentraland Avatar Base Mesh** and do some preparations for modeling. 
@@ -32,17 +14,16 @@ Importing of Base Mesh required for several things:
 - Parenting and weight painting final model to Base Mesh skeleton and export to Decentraland.
 - Silhouette guideline and proper connections between Avatar parts.
 
-
 It's not recommended to use default Avatar Base Mesh for modeling as topology of this model have reduced triangle count and triangulated for Decentraland. It's possible to use it for modeling, but you will encounter issues with topology and other steps required for creating high poly model.
 
-### Step 1. Creating Base Mesh for High Poly Modeling
+### Avatar Base Mesh
 There are three ways from what to begin. 
 
-First way is to adapt current Avatar Base Mesh model to be usable for high poly modeling. This way requires some topology cleaning, which may end up with loss of time and unexpected results for non-experienced user.
+**First way** is to adapt or simply use default Avatar Base Mesh model for modeling. This way requires some topology cleaning, which may end up with loss of time and unexpected results for non-experienced user.
 
-Second way is to create Base Mesh model from primitives and then polish it to have perfect topology ready for high poly modeling.
+**Second way** is to create Base Mesh model from primitives and then polish it to have perfect topology ready for high poly modeling.
 
-Third way is to download prepared Avatar Base Mesh from [here]() and move to **Step 2.**
+**Third way** is to download prepared Avatar Base Mesh from [here]() and move to [[(Drafting) Modeling Wearables]].
 
 **Modeling Base Mesh**
 It's very important to create a base mesh with perfect topology, to be able to do any manipulations with it. With prepared base mesh, you will be able to use it for any cloth pieces and easily apply core modifiers (bevel, subdivision, multiresolution) without wrong distortion and future issues on baking.
@@ -154,11 +135,10 @@ As last part of polishing, **select all faces** in **Edit Mode** and apply **Shr
 
 [[/images/step01_topology03.png]]
 
-Now your **Body Base Mesh** is **ready!** 
+Now your **Avatar Base Mesh** is **ready!** 
 
 Any time you will start working on wearables, make sure to start your workflow from this base mesh. It's ready for high-poly modeling and sculpting.
 
 Before moving to next step, make sure to check timelapse of base mesh creation.
 
 [[base_mesh.mp4]]
-### Step 2. Drafting Clothes
