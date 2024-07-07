@@ -8,5 +8,7 @@ Structure for Decentraland [Content Creators](https://docs.decentraland.org/crea
 
 ### Wearables Pipeline
 - [[(Concept) Wearables]]
+- [[(Drafting) Modeling Base Mesh]]
+- [[(Drafting) Modeling Wearables]]
 ### NPC and Animations Pipeline
 ### Environment Pipeline
