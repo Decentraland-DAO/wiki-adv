@@ -2,7 +2,7 @@ In this article you will learn how to create **Avatar Base Mesh** required for f
 
 To follow this article, make sure to install **Blender**. 
 
-### Blender
+# Blender
 Before you will start doing things in Blender, you should import **Decentraland Avatar Base Mesh** and do some preparations for modeling. 
 
 You can find **Decentraland Base Meshes** [here](https://drive.google.com/drive/u/1/folders/12hOVgZsLriBuutoqGkIYEByJF8bA-rAU) 
@@ -16,7 +16,49 @@ Importing of Base Mesh required for several things:
 
 It's not recommended to use default Avatar Base Mesh for modeling as topology of this model have reduced triangle count and triangulated for Decentraland. It's possible to use it for modeling, but you will encounter issues with topology and other steps required for creating high poly model.
 
-### Avatar Base Mesh
+# Tools and Modifiers
+
+You should know this tools and modifiers for modeling:
+
+## Mesh
+- Plane 
+- Cube
+- UV Sphere
+- Cylinder
+
+## Tools
+- Move, Rotate, Scale (if you have selection of one or more elements, you can move, rotate or scale them)
+- Vertex Slide/Edge Slide (Transform a vertex or edges along one of its adjacent edges/faces)
+- Delete/Dissolve (Delete will delete faces/vertices/edges, while dissolve will remove them without loss of geometry but with creating n-gons)
+- Extrude (you will use this one a lot, extrudes polygons from other polygons, same for edges and vertices)
+- Inset (takes the currently selected faces and creates an inset of them, with adjustable thickness and depth)
+- Loop Cut (this tool splits a loop of faces by inserting new edge loops intersecting the chosen edge)
+- Knife (useful to manually cut edge loops, useful when working with topology issues)
+- Merge (merge selected vertices)
+- Split (split selected faces from other face)
+- Separate (separate selected faces to another mesh)
+
+**Modifiers**
+- Mirror (save lots of time in creating mirrored cloth pieces)
+- Solidify (adds thickness to your model)
+- Bevel (makes model angles look smooth and beautiful, which is required for baking beautiful maps, segments amount should always stay on 3 or less, since more segments count is not actually useful/visible)
+- Subdivision (smooth entire mesh and divide each polygon to 4)
+- Array (creates an array of copies of the base object)
+- Curve (simple but efficient method of deforming a mesh along a curve object)
+- Simple Deform (do some deformations like Twist, Bend, Taper, Stretch)
+- Weighted Normals (useful to correct some issues with normals shading without topology edits)
+
+**Shade Smooth**
+Additional important setting that you should always use is Shade Smooth by Angle (or similar modifier)
+
+Most common angle numbers: **30, 45, 60, 80, 180**
+- Numbers higher than 45 should be used for soft cloth pieces that don't have any sharp corners. (Shirt)
+- Numbers equal to 45 or lower should be used for cloth pieces that have sharp corners (Belts, Chains)
+- In situations when cloth piece contains soft and sharp edges, you will need to manually set Sharp Edges in required areas.
+
+For Drafting Step you can simply set angle 180, but for baking and final model you should always follow this rules, because it's required not only for visual look, but also for proper baking and engine rendering. 
+
+# Base Mesh
 There are three ways from what to begin. 
 
 **First way** is to adapt or simply use default Avatar Base Mesh model for modeling. This way requires some topology cleaning, which may end up with loss of time and unexpected results for non-experienced user.
@@ -25,7 +67,6 @@ There are three ways from what to begin.
 
 **Third way** is to download prepared Avatar Base Mesh from [here]() and move to [[(Drafting) Modeling Wearables]].
 
-**Modeling Base Mesh**
 It's very important to create a base mesh with perfect topology, to be able to do any manipulations with it. With prepared base mesh, you will be able to use it for any cloth pieces and easily apply core modifiers (bevel, subdivision, multiresolution) without wrong distortion and future issues on baking.
 
 There are few rules topology rules that you need to keep in mind, first of all, amount of sides (edges) for each part of body.
@@ -37,7 +78,9 @@ There are few rules topology rules that you need to keep in mind, first of all, 
 
 This numbers is base used in many many old and mobile games, which are restricted to low triangles count. Also, this amount of edges works very well for subdivision workflow, which then transforms to multiresolution for sculpting.
 
-Pay attention to **topology, edges, loops, faces count** on images and examples provided below, make to follow and keep exact same topology for your **Base Mesh.** 
+Pay attention to **topology, edges, loops, faces count** on images and examples provided below, follow and keep exact same topology for your **Base Mesh.** 
+
+## Modeling Body
 
 Create basic **Cylinder** with **8 sides** and **elbow/knee area**.
 
@@ -135,10 +178,18 @@ As last part of polishing, **select all faces** in **Edit Mode** and apply **Shr
 
 [[/images/step01_topology03.png]]
 
-Now your **Avatar Base Mesh** is **ready!** 
+That's all the steps for avatar body base model. Any time you will start working on wearables, make sure to start your workflow from this base mesh. It's ready for high-poly modeling and sculpting.
 
-Any time you will start working on wearables, make sure to start your workflow from this base mesh. It's ready for high-poly modeling and sculpting.
+If you encounter issues, please follow this video timelapse with steps explanation.
 
-Before moving to next step, make sure to check timelapse of base mesh creation.
+[[modeling_avatar.mp4]]
 
-[[base_mesh.mp4]]
+## Modeling Feet
+
+to-do
+## Modeling Hands 
+
+to-do
+## Modeling Head
+
+to-do
