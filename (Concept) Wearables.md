@@ -161,7 +161,10 @@ Now you can press **Generate** button to get final **1024x1024** image.
 
 This is recommended image generation way for users with **low-end pc**. If you use **high-end pc**, you can generate images with always enabled **Hires. Fix**.
 
-# Result for next steps
+# Final Result
+
+Follow this video with generation process for better understanding of workflow. 
+Image reference result from this video will be used in next modeling steps.
 
 *Generation process*
 
