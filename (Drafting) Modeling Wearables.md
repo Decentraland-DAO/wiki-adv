@@ -473,6 +473,23 @@ Adjust bevel amount value for better results
 
 image
 
+Select white part of sneaker sole and move bottom edges a bit to top, use fill and then split faces 
+
+image
+
+
+Duplicate and separate bottom faces, apply mirror modifier and then connect vertices by using Connect Vertex Path tool
+
+image
+
+Now split any faces that you want and change solidify offset to 0.25 or 1. You can also scale them in edit mode with Individual Origins option in Transform Pivot Point window. You can edit faces as you want to achieve interesting results.
+
+You can also add any additional interesting objects like cylinders, later all this details will be baked on simple flat plane and results will look great.
+
+image
+
+
+
 ### Sneakers Laces
 
 Before doing sneaker laces, you will need to prepare area with laces holes and as it looks on reference image. 
