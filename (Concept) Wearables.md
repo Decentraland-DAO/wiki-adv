@@ -105,7 +105,7 @@ It's recommended to use square type images. But if your image is different, you 
 
 It's very important to play with **Control Weight** and **Ending Control Step** settings. If you want to achieve very close result to reference image, **set Control Weight to 0.6 - 0.8**. If you notice that influence of image is too high, you can play with lower numbers **0.3 - 0.4**. This is recommended numbers, but, usually, numbers depends from image that used as reference. **Ending Control Step** is rarely used, but might be helpful too, you can play with this numbers of this setting too.
 
-## image generation with IP-Adapter and prompt example
+## Example with IP-Adapter and prompt 
 
 **positive:** 1girl, fullbody, stand pose, cap, hoodie, joggers, (white background:1.5), look at camera, <<lora:add_detail:0.8>>
 
@@ -123,7 +123,7 @@ It's very important to play with **Control Weight** and **Ending Control Step** 
 
 [[/images/ip-adapter04.png]]
 
-## image generation with IP-Adapter and empty (almost) prompt example
+## Example with IP-Adapter and empty (almost) prompt 
 
 **positive:** <<lora:add_detail:0.8>>
 
@@ -161,7 +161,7 @@ Now you can press **Generate** button to get final **1024x1024** image.
 
 This is recommended image generation way for users with **low-end pc**. If you use **high-end pc**, you can generate images with always enabled **Hires. Fix**.
 
-# Image generated for next modeling steps
+# Result for next steps
 
 *Generation process*
 
