@@ -38,7 +38,7 @@ You should know this tools and modifiers for modeling
 - Split (split selected faces from other face)
 - Separate (separate selected faces to another mesh)
 
-**Modifiers**
+### Modifiers
 - Mirror (save lots of time in creating mirrored cloth pieces)
 - Solidify (adds thickness to your model)
 - Bevel (makes model angles look smooth and beautiful, which is required for baking beautiful maps, segments amount should always stay on 3 or less, since more segments count is not actually useful/visible)
@@ -48,7 +48,7 @@ You should know this tools and modifiers for modeling
 - Simple Deform (do some deformations like Twist, Bend, Taper, Stretch)
 - Weighted Normals (useful to correct some issues with normals shading without topology edits)
 
-**Shade Smooth**
+### Shade Smooth (Setting/Modifier)
 Additional important setting that you should always use is Shade Smooth by Angle (or similar modifier)
 
 Most common angle numbers: **30, 45, 60, 80, 180**
@@ -58,7 +58,7 @@ Most common angle numbers: **30, 45, 60, 80, 180**
 
 For Drafting Step you can simply set angle 180, but for baking and final model you should always follow this rules, because it's required not only for visual look, but also for proper baking and engine rendering. 
 
-# Base Mesh
+# Modeling Base Mesh
 There are three ways from what to begin. 
 
 **First way** is to adapt or simply use default Avatar Base Mesh model for modeling. This way requires some topology cleaning, which may end up with loss of time and unexpected results for non-experienced user.
