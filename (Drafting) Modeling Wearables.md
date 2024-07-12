@@ -475,6 +475,8 @@ image
 
 ### Sneakers Laces
 
+Before doing sneaker laces, you will need to prepare area with laces holes and as it looks on reference image. 
+
 Select faces in collar/laces area, split them and adjust shapes/silhouette to achieve result as on reference image
 
 image
@@ -483,8 +485,53 @@ Inset edge loop on heel part, and split faces
 
 image
 
+You can create laces with different ways, for more realistic look you will need to create holes in collars and use curves and customs shapes with manual placement. 
 
+For more stylized look (as on reference image) you can use dirty way by extruding edges from collars and splitting them, or use more clean and smooth way by creating plane with simple deform (bend) modifier, curve and array modifier. 
 
+Add plane, change it's shape to rectangle and then apply all transforms
+
+image
+
+Add additional edge loops
+
+image
+
+Add Solidify and Bevel modifier
+
+image
+
+Add Simple Deform modifier with Bend option, if Bend works wrong, rotate plane on 90 degrees in edit mode, and then back to 90 degrees in object mode.
+
+image
+
+Select sneakers tongue, in edit mode select middle edge loop, duplicate and separate it. 
+
+Remove all modifiers from separated edge loop and convert it to curve
+
+image
+
+Select lace and add array, curve modifiers, in curve modifier select curve that you separated from sneakers tongue. 
+
+Now downscale your lace, move it and change bend value to achieve result as on image
+
+image
+
+Set Array count to 4 and change relative offset from Factor X to Z -1 or -1.5 (choose good value)
+
+image
+
+If you experience issues, you can adjust curve points and radius of each point in edit mode of curve.
+
+If you want to avoid array and curve modifiers, you can manually duplicate and place lace on top of tongue. But result with array and curve looks more clean.
+
+image
+
+Add new empty **sneakers_base_root**, select all sneakers pieces and parent them to new empty. Select empty and now move, rotate and scale it to properly locate them on avatar feet. This is right way to move several objects pieces all together without any issues with modifiers. 
+
+Add new empty **mirror**, select any sneaker part, add mirror modifier and select mirror empty as mirror object. Now select this part and all  sneakers parts, click on arrow in mirror modifier and select **Copy to Selected** this option will copy mirror modifier to all pieces. 
+
+image
 
 That's all the steps for sneakers model. If you feel that something wrong, you can play with shapes/silhouette and modifiers values.
 
