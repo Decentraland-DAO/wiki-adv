@@ -10,7 +10,7 @@ For next steps, you should use **Avatar Base Mesh** **.blend** file, you can fin
 
 To follow this article, make sure to install **PureRef**. 
 
-### PureRef
+# PureRef
 First of all, you will need to **import** reference image to **PureRef**. Right click on reference image above and select **copy**. Open **PureRef** press right click and select **paste**.
 
 Now you will need to set **PureRef** mode to be always on top. 
@@ -22,8 +22,8 @@ Then, save your PureRef project to be able to open it at any time without needs 
 If needed, you can export images from **PureRef** to any folder that you want. 
 **Right click -> Save -> Export -> All Images.**
 
-### Drafting Pipeline
-Drafting is first step in modeling, artist create models and define their basic shapes and silhouette. 
+# Drafting
+Drafting is first step in 3d modeling, artist create models and define their basic shapes and silhouette. 
 
 - **Keep it Simple.** Start with simple shapes and gradually add details. Avoid adding unnecessary complexity at the beginning. This will help you maintain a clean and organized model that is easier to work with.
 - **Maintain Good Topology**. Topology refers to the arrangement of vertices, edges, and faces in a 3D model. It is important to have clean and efficient topology to ensure smooth deformations and proper shading when rendering. Avoid triangles and ngons (faces with more than 4 sides) as much as possible, this is very important for Sculpting and Subdivision modeling.
@@ -31,35 +31,9 @@ Drafting is first step in modeling, artist create models and define their basic 
 - **Organize Your Scene.** Keep your scene well-organized by using layers, groups, or naming conventions to easily identify and select different parts of your model. This will make it easier to work on specific elements and maintain a clear overview of your project.
 
 It's very important to start with Avatar Base Mesh. It's already prepared and have good topology ready for Sculpting and Subdivision modeling. Most of times, when you will do cloth pieces, you will separate them from base mesh. This workflow reduce amount of time for topology adjustments, instead of doing all cloth pieces manually from scratch.
-### Tools and Modifiers
 
-List of most common modifiers and tools that you should know for preparing wearables base models:
-
-**Modifiers**
-- Mirror (save lots of time in creating mirrored cloth pieces)
-- Solidify (adds thickness to your model)
-- Bevel (makes model angles look smooth and beautiful, which is required for baking beautiful maps, segments amount should always stay on 3 or less, since more segments count is not actually useful/visible)
-
-**Tools**
-- Extrude (you will use this one a lot, extrudes polygons from other polygons, same for edges and vertices)
-- Inset (takes the currently selected faces and creates an inset of them, with adjustable thickness and depth)
-- Loop Cut (this tool splits a loop of faces by inserting new edge loops intersecting the chosen edge)
-- Merge (merge selected vertices)
-- Split (split selected faces from other face)
-
-**Shade Smooth**
-Additional important setting that you should always use is Shade Smooth by Angle (or similar modifier)
-
-Most common angle numbers: **30, 45, 60, 80, 180**
-- Numbers higher than 45 should be used for soft cloth pieces that don't have any sharp corners. (Shirt)
-- Numbers equal to 45 or lower should be used for cloth pieces that have sharp corners (Belts, Chains)
-- In situations when cloth piece contains soft and sharp edges, you will need to manually set Sharp Edges in required areas.
-
-For Drafting Step you can simply set angle 180, but for baking and final model you should always follow this rules, because it's required not only for visual look, but also for proper baking and engine rendering. 
-
-
-### Modeling Shirt
-For shirt model work with ubody model from Avatar Base Mesh .blend file.
+## Modeling Shirt
+For Shirt model you should duplicate **ubody_base** model, then create **shirt_base** collection in outliner, move **ubody_base** duplicate here and make sure that all your shirt pieces will be created inside this collection. 
 
 image
 
@@ -79,11 +53,11 @@ Delete unnecessary polygons in arms area
 
 image 
 
-Make visible Female Base Mesh in Female Avatar Base Mesh collection, starting from here, you will use it as main shape and silhouette for wearables. In proccess you can make it visible or invisible as you want.
+(visible invisible explanation)
 
 image
 
-Now Shrink/Fatten your Shirt model to make it cover on top Female Base Mesh, there should be gap between female base mesh and shirt.
+Now Shrink/Fatten shirt model. It should cover female base, and should have  gap between female base mesh and shirt.
 
 image
 
@@ -99,7 +73,7 @@ Add additional Edge Loops for zip-up, later we will select and split them to ach
 
 image 
 
-Before next steps, make sure that your model follows shapes and silhouette of Avatar Base Mesh and reference image.
+Before next steps make sure to correct shapes/silhouette according to reference image.
 
 Select Arm, Sleeve, Neck, Zip-Up polygons and split them in areas as on reference image
 
@@ -127,19 +101,19 @@ Turn on Merge setting in Neck and Shirt mirror modifier and adjust value a bit u
 
 image
 
-That's all the steps required to create shirt model. If you feel that shapes, solidify or bevels is weird, you can play with values in modifier settings. Your result should look almost same as result in article.
+That's all the steps for shirt model. If you feel that something wrong, you can play with shapes/silhouette and modifiers values.
 
 If you encounter issues, please follow this video timelapse with steps explanation.
 
-drafting_shirt.mp4
+**modeling_shirt.mp4**
 
-### Modeling Jumpsuit
-For jumpsuit model work with lbody model from Avatar Base Mesh .blend file.
+## Modeling Overalls
+For overalls model you should duplicate **lbody_base** model, then create **overalls_base** collection in outliner, move **lbody_base** duplicate here and make sure that all your overalls pieces will be created inside this collection. 
 
 image 
 
-Most of steps for jumpsuit are same as for shirt.
-- Start with lbody base mesh
+Most of steps for overalls are same as for shirt.
+- Start with lbody_base mesh
 - Delete half part of base mesh 
 - Add mirror modifier without merge setting
 - Add Shrink/Fatten to cover female base mesh
@@ -147,7 +121,7 @@ Most of steps for jumpsuit are same as for shirt.
 - Use Solidify and Bevel Modifiers
 - Split parts (belt area, front and back of pants)
 
-**Jumpsuit Fly** 
+### Overalls Fly
 Select faces in fly area, duplicate them, separate to unique mesh and then apply symmetry modifier and delete left side of fly.
 
 image
@@ -166,7 +140,7 @@ Add subdivision modifier (level 1), to smooth right bottom corner of fly
 
 image
 
-**Jumpsuit Straps**
+### Overalls Straps
 Select some amount of belt edges and extrude them.
 
 image
@@ -175,9 +149,9 @@ Repeat extrude several times to achieve straps result just like on image, to con
 
 image
 
-After that, define main shape and silhouette of straps according to reference image. 
+After that, correct shapes/silhouette of straps according to reference image. 
 
-**Jumpsuit Clips**
+### Overalls Clips
 
 Add plane object to scene, scale it a bit to achieve silhouette of clip from reference image. It's very important to **Apply Scale** after adjustments to follow next steps.
 
@@ -194,7 +168,7 @@ Insert one vertical and two horizontal loop cuts
 
 image
 
-Split new horizontal areas, use inset tool and then delete faces. This will be handles for jumpsuit straps.
+Split new horizontal areas, use inset tool and then delete faces. This will be handles for overalls straps.
 
 image
 
@@ -206,7 +180,7 @@ Separate clips connection and one of handles. After that reduce solidify thickne
 
 image
 
-Add more loop cuts to clips handles and adjust silhouette to achieve more interesting handles shape. 
+Add more loop cuts to clips handles and correct them to achieve more interesting result. 
 
 image
 
@@ -218,15 +192,15 @@ If bevels looks weird somewhere, simply adjust bevel amount in modifier properti
 
 image
 
-Select clips and locate it to strap as on reference image.
+Select clips and move it to strap as on reference image.
 
 image
 
-Add Empty object to scene and then add mirror modifier to all clips pieces. Select empty in mirror object setting. 
+Add Empty object **clips_mirror** to scene and then add mirror modifier to all clips pieces. Select empty in mirror object setting. 
 
 image
 
-**Jumpsuit Belt Loops**
+### Overalls Belt Loops
 
 Add plane object to scene, scale it a bit to achieve silhouette of belt loop from reference image.
 
@@ -242,7 +216,7 @@ Use inset tool to inset some faces, and then delete them to achieve hole.
 
 image
 
-Separate belt from jumpsuit, turn on merge in mirror modifier, and then add horizontal loop cut in middle of belt.
+Separate belt from overalls, turn on merge in mirror modifier, and then add horizontal loop cut in middle of belt.
 
 image
 
@@ -260,9 +234,9 @@ Usually Array and Curve is a bit buggy, this happens because of many different r
 
 image
 
-**Jumpsuit Pockets** 
+### Overalls Pockets
 
-Select your jumpsuit mesh and define pocket topology according to reference image.
+Select your overalls mesh and adjust topology in pocket area according to reference image.
 
 image
 
@@ -274,83 +248,249 @@ If your pocket seems too flat, you can inset additional loop cuts and then adjus
 
 image
 
-### Modeling Cap
-First of all, you will need to create sphere model. 
-
-There are several ways to create sphere, first one is to add uv sphere model from add menu.  Second way is to add cube and apply subdivision modifier (level 1-3). In most cases you should use subdivided cube, instead of uv sphere, because it have clean quad topology. 
-
-But in situation with cap, uv sphere works much better and easier to be prepared for sculpting. 
-
-Add uv sphere, make sure that sphere cap with triangles located at top and not at left or right side.
-
-image
-
-Delete bottom part of sphere, you don't need that for cap model.
-
-image
-
-As usual, define shape and silhouette. Apply Mirror, Solidify and Bevel Modifiers.
-
-image
-
-Extrude front part of cap, split it and define shape and silhouette. 
-
-image
-
-On reference image, you can see additional bow part on top of cap. Duplicate your cap sphere, delete everything except 2 middle loops, and then adjust Solidify modifier settings (Offset and Thickness). 
-
-image
-
-On back side of cap, delete and split some faces in bottom area, that way you will create hole for ponytail.
-
-image
-
-Extrude two straps from edges in ponytail hole and separate them. 
-
-image
-
-If straps topology is too low, add additional edge loops.
-
-image
-
-Add Subdivision Modifier (Level 1) on top of all other modifiers. Now define straps shape and silhouette.
-
-image
-
-Select all faces of front strap and use inset modifier.
-
-image
-
-Add additional horizontal edge loop at middle of strap.
-
-image
-
-Use bevel tool to split this edge loop and move it to front and bottom of strap, make sure to keep middle faces look like quads.
-
-image
-
-Select middle faces and use inset tool with individual option, after that split faces
-
-image
-
-Apply Subdivision Modifier and now in edit mode fix left and right part of strap, for better shape.
-
-image
-
-Follow all the same steps for back strap, except inset and split of rivets, you don't need this ones on back strap, because you already have imitation of connection on front strap. 
-
-image
+That's all the steps for overalls model. If you feel that something wrong, you can play with shapes/silhouette and modifiers values.
 
 If you encounter issues, please follow this video timelapse with steps explanation.
 
-drafting_cap.mp4
+**modeling_overalls.mp4**
 
-### Modeling Sneakers
-Modeling sneakers requires all the same steps explained in previous cloth pieces. Explanation of sneakers pipeline may contain lot's of repeatable text, which is unnecessary. 
+## Modeling Cap
+Create **cap_base** collection in outliner and make sure that all your cap pieces will be created inside this collection. 
 
-Instead, follow this video timelapse with steps explanation.
+image
 
-drafting_sneakers.mp4
+First of all, you will need to create sphere model. 
 
-### Summary
-Drafting steps are over. Now you should have better understanding of patterns that used for creating base models and move forward to high-poly modeling and sculpting. 
+There are several ways to create sphere. Most common is to add UV Sphere from Add menu. UV Sphere is perfect for modeling cap, because it works very well with subdivision modifier, easy for sculpting and easy to work with topology.
+
+Add **UV Sphere** with **12 segments** and **8 rings**. 
+
+image
+
+Extrude edges from sphere top and downscale them (this step is important for Subdivision Modifier).
+
+image
+
+Delete top middle vertex, right and bottom half of sphere.
+
+image
+
+As usual, add Mirror, Solidify, Bevel modifiers.
+
+image
+
+Define sphere shape and silhouette to look more like cap from reference image.
+
+image
+
+Select front edges and extrude front part of cap, after that correct shapes/silhouette of front part. Then select front part pieces and separate them.
+
+image
+
+Hide front part corners to achieve better connection look.
+
+image
+
+Select middle faces of cap, duplicate and separate them. Set Solidify offset to 1.
+
+image
+
+Correct topology and then modifiers settings to achieve bow shape as on reference image.
+
+image
+
+Adjust cap shapes, to achieve dent effect in middle
+
+image
+
+### Cap Straps
+There are a lot of ways how to make straps. Some are dirty, some a bit complex, but result is better.
+
+For learning purposes, it's better to continue with complex one.
+
+Delete few faces on back side of cap to create hole for straps. Correct shapes/silhouette of hole area.
+
+image 
+
+Add Plane model then use inset tool with thickness value 0.15 two times. Split middle face. As usual, add Solidify and Bevel modifiers.
+
+image
+
+Add Subdivision modifier (level 1) on top of all other modifiers.
+
+image
+
+Add Array modifier on top of all other modifiers, set count to 5 and enable merge option. 
+
+image
+
+Add Weighted Normal modifier (this modifier is very useful in situations when you want to fix model shading without topology edits and works very well on flat surfaces)
+
+image
+
+Apply Array and Subdivison modifier.
+
+image 
+
+Select first rivet area, merge vertices, remove edge loops and straighten side.
+
+image
+
+image
+
+Duplicate strap, merge vertices, remove all rivets edge loops except one on left corner.
+
+image
+
+Rotate strap without rivets to 180 degrees and move it below strap with rivets
+
+image (top view)
+
+image (side view)
+
+Select both straps and join them. Set origin to center of mass, clear straps location and then apply rotation.
+
+image
+
+Add Simple Deform modifier, select Bend option, set angle to 90 degrees and set Z axis. Add new Empty **cap_base_bend** to scene select it in Simple Deform modifier Origin.
+
+image
+
+Rotate Empty to 90 or -90 degrees to achieve expected bend result
+
+Select straps together with empty and move them properly to cap hole. When you will rotate and move straps, make sure that you selected both straps and empty. Adjust bend number if needed to achieve right connection with cap.
+
+image
+
+Add new empty **cap_base_root**, select all cap pieces and parent them to new empty. Select empty and now move, rotate and scale it on top of avatar head. This is right way to move several objects pieces all together without any issues with modifiers. 
+
+image
+
+That's all the steps for cap model. If you feel that something wrong, you can play with shapes/silhouette and modifier values.
+
+If you encounter issues, please follow this video timelapse with steps explanation.
+
+**modeling_cap.mp4**
+
+## Modeling Sneakers
+Create **sneakers_base** collection in outliner and make sure that all your sneakers pieces will be created inside this collection. 
+
+There are two ways how to start modeling sneakers, most common is to create sole first. But, doing sneakers this way, you will end up with dealing topology issues. Instead, you will learn way with creating sneakers from uv sphere.
+
+### Sneakers Base
+Add **UV Sphere** with **12 segments** and **8 rings**
+
+image
+
+Delete bottom and left half of sphere
+
+image
+
+Move sphere a bit forward
+
+image
+
+Duplicate sphere and rotate it on 180 degrees, move it back, this will be back side of sneakers.
+
+image
+
+Join spheres together and use bridge edge loops tool to connect them
+
+image
+
+Add Mirror, Solidify, Bevel modifiers as usual
+
+image
+
+Inset additional edge loops in bridge area, and then define better sneakers shape/silhouette
+
+image
+
+Extrude bottom edge loops and split created faces to achieve sole
+
+image
+
+Extrude and fill top edge loops of front sneakers piece
+
+image
+
+Select front piece faces and split them
+
+image
+
+### Sneakers Tongue
+Extrude top edge loops again for several times to create tongue
+
+image
+
+Separate tongue part and set solidify offset to -1
+
+Extrude top back edge loops to create heel part
+
+image
+
+Separate heel part and set solidify offset to -1
+
+image
+
+Adjust shapes/silhouette and modifiers values to achieve sneakers result as on reference image
+
+image
+
+As you may see, reference image generated some bad areas on tongue area, you can ignore this issues and add something from your mind. It's seem good idea to add velcro part in tongue area, to hide bad area.
+
+Duplicate tongue and heel, join them and change solidify offset to-0.1
+
+image
+
+Select two edges and fill holes
+
+image
+
+Delete unnecessary faces and adjust shapes/silhouette.
+
+image
+
+Duplicate clips created for Overalls and locate it on velcro part
+
+image
+
+### Sneakers Sole
+
+Duplicate sole and correct shapes to achieve orange part as on reference image
+
+image
+
+Use knife tool to cut some additional edge loops according to shape of brown part on sneakers sole 
+
+image
+
+Separate brown part faces
+
+image
+
+Adjust bevel amount value for better results
+
+image
+
+### Sneakers Laces
+
+Select faces in collar/laces area, split them and adjust shapes/silhouette to achieve result as on reference image
+
+image
+
+Inset edge loop on heel part, and split faces
+
+image
+
+
+
+
+That's all the steps for sneakers model. If you feel that something wrong, you can play with shapes/silhouette and modifiers values.
+
+If you encounter issues, please follow this video timelapse with steps explanation.
+
+**modeling_sneakers.mp4**
+
+# Summary
+Drafting steps are over. Now you should have better understanding of repeatable patterns used for creating base models and move forward to high-poly modeling and sculpting. 
