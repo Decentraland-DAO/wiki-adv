@@ -16,17 +16,17 @@ Importing of Base Mesh required for several things:
 
 It's not recommended to use default Avatar Base Mesh for modeling as topology of this model have reduced triangle count and triangulated for Decentraland. It's possible to use it for modeling, but you will encounter issues with topology and other steps required for creating high poly model.
 
-# Tools and Modifiers
+## Tools and Modifiers
 
-You should know this tools and modifiers for modeling:
+You should know this tools and modifiers for modeling
 
-## Mesh
+### Mesh
 - Plane 
 - Cube
 - UV Sphere
 - Cylinder
 
-## Tools
+### Tools
 - Move, Rotate, Scale (if you have selection of one or more elements, you can move, rotate or scale them)
 - Vertex Slide/Edge Slide (Transform a vertex or edges along one of its adjacent edges/faces)
 - Delete/Dissolve (Delete will delete faces/vertices/edges, while dissolve will remove them without loss of geometry but with creating n-gons)
