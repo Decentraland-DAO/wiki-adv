@@ -26,6 +26,7 @@ You should know this tools and modifiers for modeling
 - UV Sphere
 - Cylinder
 
+Additional meshes/curves will be explained in next steps and articles.
 ### Tools
 - Move, Rotate, Scale (if you have selection of one or more elements, you can move, rotate or scale them)
 - Vertex Slide/Edge Slide (Transform a vertex or edges along one of its adjacent edges/faces)
@@ -38,6 +39,7 @@ You should know this tools and modifiers for modeling
 - Split (split selected faces from other face)
 - Separate (separate selected faces to another mesh)
 
+Additional tools will be explained in next steps and articles.
 ### Modifiers
 - Mirror (save lots of time in creating mirrored cloth pieces)
 - Solidify (adds thickness to your model)
@@ -48,6 +50,7 @@ You should know this tools and modifiers for modeling
 - Simple Deform (do some deformations like Twist, Bend, Taper, Stretch)
 - Weighted Normals (useful to correct some issues with normals shading without topology edits)
 
+Additional modifiers will be explained in next steps and articles.
 ### Shade Smooth (Setting/Modifier)
 Additional important setting that you should always use is Shade Smooth by Angle (or similar modifier)
 
@@ -158,13 +161,13 @@ Create **Torso**, connect it with **Hips** and **Arms** and then merge vertices 
 
 [[/images/step01_total04.png]]
 
-Now your **Body Base Mesh** is almost ready! Let's make topology smooth and clean. **Set Subdivision Level to 1** and **apply modifier**.
+Make topology smooth and clean. **Set Subdivision Level to 1** and **apply modifier**.
 
 *Result*
 
 [[/images/step01_topology01.png]]
 
-As you may see, **topology looks very smooth** now, but **polygon count is huge**, and **mesh a bit thinner**, let's fix that. 
+Topology looks very smooth now, but polygon count is huge, and mesh a bit thinner, let's fix that. 
 
 Add **Decimate** modifier to your Base Mesh, move to **Un-Subdivide** tab inside Decimate modifier, set **Iterations to 2** and **apply modifier**.
 
@@ -172,7 +175,7 @@ Add **Decimate** modifier to your Base Mesh, move to **Un-Subdivide** tab inside
 
 [[/images/step01_topology02.png]]
 
-As last part of polishing, **select all faces** in **Edit Mode** and apply **Shrink/Fatten tool (ALT+S)** with **0.02 offset.**
+**Select all faces** in **Edit Mode** and apply **Shrink/Fatten tool (ALT+S)** with **0.02 offset.**
 
 *Result*
 
@@ -187,7 +190,72 @@ If you encounter issues, please follow this video timelapse with steps explanati
 to-do
 ## Modeling Hands 
 
-to-do
+Create basic **Cube** and **Add Subdivision Modifier**
+
+image
+
+Remove bottom face of cube and apply subdivision modifier, this is front part of finger.
+
+image
+
+Move, Rotate, Scale cube to cover index finger of avatar base mesh
+
+image
+
+Extrude 2 edge loops
+
+image
+
+Shrink/Fatten middle edge loop
+
+image
+
+Repeat same steps to achieve full length of index finger, use **Decentraland Avatar Base Mesh** for shapes and silhouette reference. Make sure to **check your shapes** with **Subdivision modifier**.
+
+image
+
+Duplicate finger and adjust it to fit other finger, repeat this step for all fingers 
+
+image
+
+Fingers should start from same line
+
+image
+
+Join all fingers and merge vertices as on image
+
+image
+
+Extrude more edge loops 
+
+image
+
+Delete 4 faces, select hole edge loops and thumb finger edge loops, bridge them. 
+
+image
+
+Adjust topology to match **Decentraland Avatar Base Mesh** hand shapes and silhouette. 
+
+image
+
+Make topology smooth and clean. **Set Subdivision Level to 1** and **apply modifier**.
+
+image
+
+Add **Decimate** modifier to your Base Mesh, move to **Un-Subdivide** tab inside Decimate modifier, set **Iterations to 2** and **apply modifier**.
+
+image
+
+As last part of polishing, **select all faces** in **Edit Mode** and apply **Shrink/Fatten tool (ALT+S)** with **0.02 offset** and add mirror modifier
+
+image
+
+As you may see, hand topology is a bit heavy, this is good topology for modeling handwear wearables, high-poly polishing and sculpting. 
+
+If you encounter issues, please follow this video timelapse with steps explanation.
+
+**modeling_hands.mp4**
+
 ## Modeling Head
 
 to-do

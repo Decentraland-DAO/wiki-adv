@@ -254,6 +254,14 @@ If you encounter issues, please follow this video timelapse with steps explanati
 
 **modeling_overalls.mp4**
 
+## Modeling Bag
+
+to-do
+
+## Modeling Gloves
+
+to-do
+
 ## Modeling Cap
 Create **cap_base** collection in outliner and make sure that all your cap pieces will be created inside this collection. 
 

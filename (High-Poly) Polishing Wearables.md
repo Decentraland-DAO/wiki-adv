@@ -2,7 +2,7 @@ In this article you will learn how to polish base wearable models.
 
 It's important to follow [[(Drafting) Modeling Wearables]] article, because this article requires knowledge and usage of models from previous article. 
 
-On previous article you should end with this result
+Previous article end up with this result
 
 image
 
@@ -156,6 +156,11 @@ If you encounter any issues, take a look at video timelapse with explanations,
 **polishing_overalls.mp4**
 
 
+## Polishing Bag
+to-do
+
+## Polishing Gloves
+to-do 
 ## Polishing Cap
 You can keep cap model as it is, it's more than enough for baking and painting stylized textures.
 
@@ -187,6 +192,106 @@ image
 If you encounter any issues, take a look at video timelapse with explanations,
 
 **polishing_sneakers.mp4**
+
+
+## Details
+Adding details and baking them is much better than doing imitation of details in Substance Painter. For example, you can create stitches from uv islands with generator, but they will look pixelated compared to baked stitches. 
+
+In some situations you should do details in Substance Painter instead of baking them.
+
+Make sure to add small details before sculpting. Sometimes you will need to add this details after sculpting, but that's rare case.
+### Plane and Curve
+Most of small details (Stitches, Buttons, etc) starts with plane and curve. You already encountered with this method while doing cap straps, sneakers laces and belt loops,. 
+
+**Stitches and Buttons** 
+Duplicate sneakers tongue and apply mirror modifier. Inset new edges.
+
+image
+
+Select edge loops created with inset, duplicate them and separate. 
+
+Delete duplicated tongue mesh and remove all modifiers on edge loops duplicate. Convert edge loops duplicate to curve. 
+
+image
+
+Add new plane with Solidify and Bevel modifier. Add array and curve modifier, in curve modifier select curve that you made from tongue duplicate.
+
+Change array count and relative offset factor (X, Y or Z). Move, Rotate, Scale plane to achieve stitch look. 
+
+image
+
+If something looks wrong (for example rotation of plane), you can also edit curve points position, their tilt and scale. 
+
+image
+
+You can use same method with any model edge loop, and aside of doing stitches, you can locate buttons same way. 
+
+**Belt Rubber**
+
+To create belt rubber you should follow all the same steps. Just duplicate middle edge loop of belt, separate it, remove all modifiers and convert to curve. Use is curve for your plane with array and curve modifier. You can also use same curve, that you created for belt loops. 
+
+image 
+
+### Plane and Curve Deformation Issue
+If you want to avoid deformation of your model while using array and curve modifier, you should follow this steps.
+
+Add two planes, one plane will be used for creating buttons or stitches, second plane will be used as helper for array and curve modifier. 
+
+Parent plane that you will change to stitches to plane helper. Select plane helper and in object properties open instancing tab and select faces. 
+
+image
+
+Add Array and Curve modifier and do all similar steps (Move, Rotate, Scale)
+
+image
+
+Adjust other plane as you want, you can change it stitch or button or anything else.
+
+image 
+
+In the end you will achieve clean result without any deformations. 
+
+If you encounter issues, follow this video with explanations
+
+**modeling_curves.mp4**
+
+### Additional Lines
+If you want to add more lines to your model, you can them with inset or split tools. This works only if your model have solidify and bevel modifiers.
+
+For example, if you want to add lines on all corners of mesh, simply use inset on all faces and then split. 
+
+image
+
+If you want to add some special lines, in exact areas, you can use inset and split only on one face. Or only split, without inset. 
+
+image
+
+But if you want to add some complex lines, you can add do that with Bevel and Shrink/Fatten tools directly on edge loops. To do that, your model should have subdivision modifier and sometimes all modifiers needs to be applied. 
+
+Select edge loop and use bevel on it, make sure to add segment in between two edge loops. All three loops should be near each other. 
+
+image
+
+Now use shrink fatten on middle edge loop and shrink it inside model. 
+
+image
+
+### Holes
+You can add holes by simple remove of any quad face. In most situations result will look good enough for baking. This method was used on cap straps with Subdivision Modifier and it's useful on creating base models with holes step.
+
+Select face, inset it a then delete new faces, select hole edge loops and apply circle from LoopTools addon.
+
+image
+
+If you can't achieve good result that way, instead of one face, inset 4 faces and use circle from LoopTools again.
+
+image
+
+If your model too low-poly and don't have enough faces, you can simply subdivide 1 face, and then do inset, delete, looptools. (this method works on models with Bevel and Subdivision modifier)
+
+image
+
+
 
 # Summary
 That's all steps for creating high-poly wearable models. For creating stylized models, high-poly modeling steps requires only few adjustments and is not that complex as for creating very high quality models.
