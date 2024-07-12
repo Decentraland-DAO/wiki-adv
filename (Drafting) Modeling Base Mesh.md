@@ -178,8 +178,6 @@ As last part of polishing, **select all faces** in **Edit Mode** and apply **Shr
 
 [[/images/step01_topology03.png]]
 
-That's all the steps for avatar body base model. Any time you will start working on wearables, make sure to start your workflow from this base mesh. It's ready for high-poly modeling and sculpting.
-
 If you encounter issues, please follow this video timelapse with steps explanation.
 
 [[modeling_avatar.mp4]]
@@ -193,3 +191,6 @@ to-do
 ## Modeling Head
 
 to-do
+
+# Summary
+That's all the steps for creating base model. Any time you will start working on wearables, make sure to start your workflow from prepared base models. It's ready for high-poly modeling and sculpting.

@@ -123,7 +123,7 @@ It's very important to play with **Control Weight** and **Ending Control Step** 
 
 [[/images/ip-adapter04.png]]
 
-## Example with IP-Adapter and empty (almost) prompt 
+## Example with IP-Adapter and empty prompt 
 
 **positive:** <<lora:add_detail:0.8>>
 

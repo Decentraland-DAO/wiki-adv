@@ -557,4 +557,4 @@ If you encounter issues, please follow this video timelapse with steps explanati
 **modeling_sneakers.mp4**
 
 # Summary
-Drafting steps are over. Now you should have better understanding of repeatable patterns used for creating base models and move forward to high-poly modeling and sculpting. 
+That's all steps for creating base wearable models. Now you should have better understanding of repeatable patterns (tools and modifiers) used for creating base models. You can move forward to high-poly modeling and sculpting. 
