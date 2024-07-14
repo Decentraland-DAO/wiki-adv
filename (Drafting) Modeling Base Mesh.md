@@ -85,7 +85,14 @@ There are few topology rules that you need to keep in mind, first of all, amount
 
 This numbers is base used in many old and new mobile games, which are restricted to low triangles count. Also, this amount of edges works very well for Subdivision workflow, which then transforms to Multiresolution for sculpting.
 
+Most common mistake of beginners is to add model, move it away from (0, 0, 0) coordinates and start doing some things like extrude, adding modifiers, etc. As result, beginners end up messing with viewport navigation issues.
+
+Always create new models, in 0,0,0 position and work on them here. As soon as model is ready, you can navigate it to right place on avatar. 
+
+If you do adjustments or add additional pieces for clothes (by using separate tool), and feel uncomfortable with navigation or modeling, or anything else. Just use powerful isolate mode to isolate mesh and hide all the rest. 
+
 Pay attention to **topology, edges, loops, faces count** on images and examples provided below, follow and keep exact same topology for your **Base Mesh.** 
+
 
 
 ## Modeling Body
