@@ -224,7 +224,7 @@ Move, Rotate, Scale cube to cover index finger of avatar base mesh
 
 image
 
-Extrude 2 edge loops
+Extrude faces 2 times from edge loops
 
 image
 
@@ -256,7 +256,7 @@ Delete 4 faces, select hole edge loops and thumb finger edge loops, bridge them.
 
 image
 
-Adjust topology to match **Decentraland Avatar Base Mesh** hand shapes and silhouette. 
+Adjust topology to match default avatar hand shapes and silhouette. 
 
 image
 
@@ -390,7 +390,175 @@ If you encounter issues, please follow this video timelapse with steps explanati
 
 ## Modeling Feet
 
-Modeling feets is very similar process o
+Default avatar feets don't have all fingers, and same as hands, there are lack of nails. As usual, topology is triangulated and ready to go engine, rather than modeling.
+
+### Feet and Fingers
+
+Create basic **Cube** and **Add Subdivision Modifier**
+
+image
+
+Remove bottom face of cube and apply subdivision modifier, this is front part of finger.
+
+image
+
+Move, Rotate, Scale cube to cover thumb finger of avatar feets
+
+image
+
+Extrude additional faces from edge loop
+
+image
+
+In edit mode, duplicate 4 additional fingers, change their scale and extrude additional faces from their edge loops
+
+image
+
+Fingers should start from same line
+
+image
+
+Join all fingers and merge vertices as on image
+
+image
+
+Extrude additional faces from edge loop
+
+image
+
+Select bottom edge loops and hide them
+
+image
+
+image
+
+Select all bottom faces and flatten them with scale
+
+image
+
+Unhide edge loops
+
+image
+
+If you will continue working with this topology, you will end up with mess and huge polygon count. Same as with hands, it's possible to continue with that high dense, but it's not really necessary for feet model and better to do transition. 
+
+Delete faces between thumb and index finger
+
+image
+
+Bridge edge from thumb to index finger
+
+image
+
+Delete faces between index and middle finger
+
+image
+
+Bridge edge from middle to index finger
+
+image
+
+Delete faces between pinky and ring finger
+
+image
+
+Bridge edge from pinky to ring finger
+
+image
+
+Delete faces between ring and middle finger
+
+image
+
+Bridge edge from middle to ring finger
+
+image
+
+Merge vertices 
+
+image
+
+Repeat all steps to bottom side of foot
+
+image
+
+Extrude faces from edge loop
+
+image
+
+Add cylinder with 8 sides and scale/position it to connection of default avatar feet and legs. Join cylinder to foot model. Delete top and bottom faces of cylinder.
+
+image
+
+Extrude back side edge loops of cylinder to create heel
+
+image
+
+Bridge heel and foot faces
+
+image
+
+Adjust topology to match default avatar default foot shapes and silhouette. 
+
+image
+
+Merge 3 vertices and delete triangles edge loop on bottom of foot
+
+image
+
+image
+
+Bridge bottom heel and foot edge loops
+
+image
+
+Loop Cut additional edge loop
+
+image
+
+Merge vertices
+
+image
+
+### Nails
+
+Select 4 faces of each finger, use inset and move new faces a bit inside of fingers
+
+image
+
+Duplicate faces and separate them
+
+image
+
+Add solidify modifier and set offset to 1
+
+image
+
+Preview result with Subdivision Modifier
+
+image
+
+For future modeling and baking you can add bevel modifier with 3 segments, low amount value (0.005), and 80 degrees angle before Subdivision modifier
+
+image
+
+Move vertices a bit to achieve smooth corners
+
+image
+
+Add Subdivision modifier (Level 1) to body. Move vertices to bottom a bit, to achieve smooth transition between fingers and nails. 
+
+image
+
+### Result
+
+image
+
+If you encounter issues, please follow this video timelapse with steps explanation.
+
+**modeling_feet.mp4**
+
+
 ## Modeling Head
 
 to-do
