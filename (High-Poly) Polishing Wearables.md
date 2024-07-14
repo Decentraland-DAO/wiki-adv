@@ -2,10 +2,6 @@ In this article you will learn how to polish base wearable models.
 
 It's important to follow [[(Drafting) Modeling Wearables]] article, because this article requires knowledge and usage of models from previous article. 
 
-Previous article end up with this result
-
-image
-
 # High-Poly 
 On this step you will work with Subdivision Modifier and adjust models topology to prepare them for future sculpting and baking.
 
