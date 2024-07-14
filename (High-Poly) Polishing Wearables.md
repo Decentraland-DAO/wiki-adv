@@ -98,6 +98,10 @@ image
 
 Now your shirt model is ready for sculpting. 
 
+### Result
+
+image
+
 If you encounter any issues, take a look at this video timelapse with explanations
 
 **polishing_shirt.mp4**
@@ -151,16 +155,38 @@ image
 
 Now your overalls model is ready for sculpting.
 
+### Result
+
+image
+
 If you encounter any issues, take a look at video timelapse with explanations,
 
 **polishing_overalls.mp4**
 
 
 ## Polishing Bag
+
 to-do
+
+### Result
+
+image 
+
+If you encounter any issues, take a look at video timelapse with explanations,
+
+**polishing_bag.mp4**
 
 ## Polishing Gloves
 to-do 
+
+### Result
+
+image 
+
+If you encounter any issues, take a look at video timelapse with explanations,
+
+**polishing_gloves.mp4**
+
 ## Polishing Cap
 You can keep cap model as it is, it's more than enough for baking and painting stylized textures.
 
@@ -173,6 +199,10 @@ image
 If you will notice some small issues, you can manually fix them by changing modifiers settings or by moving vertices.
 
 Don't add any additional modifiers to straps and bow, they will be baked as it is to achieve good results. If you will add subdivision modifier to them, then high-poly will bake to low poly with additional shadows and curves, this will cause bad baking results due to lack of details on low poly models.
+
+### Result
+
+image
 
 If you encounter any issues, take a look at video timelapse with explanations,
 
@@ -188,6 +218,11 @@ You can keep all parts except base, tongue and heels as it is.
 Add subdivision modifier (level 3), change bevel type to absolute and limit angle to 60 to sneakers base, tongue and heels.
 
 image
+
+### Result
+
+image
+
 
 If you encounter any issues, take a look at video timelapse with explanations,
 
@@ -251,6 +286,10 @@ image
 
 In the end you will achieve clean result without any deformations. 
 
+### Result
+
+image
+
 If you encounter issues, follow this video with explanations
 
 **modeling_curves.mp4**
@@ -276,6 +315,14 @@ Now use shrink fatten on middle edge loop and shrink it inside model.
 
 image
 
+### Result
+
+image
+
+If you encounter issues, follow this video with explanations
+
+**modeling_lines.mp4**
+
 ### Holes
 You can add holes by simple remove of any quad face. In most situations result will look good enough for baking. This method was used on cap straps with Subdivision Modifier and it's useful on creating base models with holes step.
 
@@ -291,6 +338,13 @@ If your model too low-poly and don't have enough faces, you can simply subdivide
 
 image
 
+### Result
+
+image
+
+If you encounter issues, follow this video with explanations
+
+**modeling_holes.mp4**
 
 
 # Summary

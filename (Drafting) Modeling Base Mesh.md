@@ -9,12 +9,12 @@ You can find **Decentraland Base Meshes** [here](https://drive.google.com/drive/
 
 As we will work according to **reference image**, import **AvatarShape_A** base mesh.
 
-Importing of Base Mesh required for several things:
+Base Mesh required for several things:
 - Usage of default body parts for your model, for example, hands.
 - Parenting and weight painting final model to Base Mesh skeleton and export to Decentraland.
 - Silhouette guideline and proper connections between Avatar parts.
 
-It's not recommended to use default Avatar Base Mesh for modeling as topology of this model have reduced triangle count and triangulated for Decentraland. It's possible to use it for modeling, but you will encounter issues with topology and other steps required for creating high poly model.
+It's not recommended to use default Avatar Base Mesh for modeling because topology of this model have reduced triangle count and model is ready to-go to engine, rather than for modeling.
 
 ## Tools and Modifiers
 
@@ -51,7 +51,7 @@ Additional tools will be explained in next steps and articles.
 - Weighted Normals (useful to correct some issues with normals shading without topology edits)
 
 Additional modifiers will be explained in next steps and articles.
-### Shade Smooth (Setting/Modifier)
+### Shade Smooth
 Additional important setting that you should always use is Shade Smooth by Angle (or similar modifier)
 
 Most common angle numbers: **30, 45, 60, 80, 180**
@@ -61,6 +61,10 @@ Most common angle numbers: **30, 45, 60, 80, 180**
 
 For Drafting Step you can simply set angle 180, but for baking and final model you should always follow this rules, because it's required not only for visual look, but also for proper baking and engine rendering. 
 
+### Topology Cheat Sheet
+
+image
+
 # Modeling Base Mesh
 There are three ways from what to begin. 
 
@@ -68,22 +72,27 @@ There are three ways from what to begin.
 
 **Second way** is to create Base Mesh model from primitives and then polish it to have perfect topology ready for high poly modeling.
 
-**Third way** is to download prepared Avatar Base Mesh from [here]() and move to [[(Drafting) Modeling Wearables]].
+**Third way** is to download ready .blend from [here]() and move to [[(Drafting) Modeling Wearables]].
 
 It's very important to create a base mesh with perfect topology, to be able to do any manipulations with it. With prepared base mesh, you will be able to use it for any cloth pieces and easily apply core modifiers (bevel, subdivision, multiresolution) without wrong distortion and future issues on baking.
 
-There are few rules topology rules that you need to keep in mind, first of all, amount of sides (edges) for each part of body.
+There are few topology rules that you need to keep in mind, first of all, amount of sides (edges) for each part of body.
 
 - 6-8 sides (edges) for Arms and connection
 - 12 sides (edges) for Neck and connection
 - 14 sides (edges) for Hips and connection
 - 8 sides (edges) for Legs and connection
 
-This numbers is base used in many many old and mobile games, which are restricted to low triangles count. Also, this amount of edges works very well for subdivision workflow, which then transforms to multiresolution for sculpting.
+This numbers is base used in many old and new mobile games, which are restricted to low triangles count. Also, this amount of edges works very well for Subdivision workflow, which then transforms to Multiresolution for sculpting.
 
 Pay attention to **topology, edges, loops, faces count** on images and examples provided below, follow and keep exact same topology for your **Base Mesh.** 
 
+
 ## Modeling Body
+
+As it was mentioned before, there are lots of troubles with default Decentraland body model. It's triangulated and ready to-go to engine. But for modeling wearables it's very bad. You won't be able to use core modifiers like Bevel, Subdivision, Multiresolution with it. That means, that you won't be able to create good wearables ready for sculpting and future baking with it.
+
+### Arms and Legs
 
 Create basic **Cylinder** with **8 sides** and **elbow/knee area**.
 
@@ -121,6 +130,7 @@ Position created **Cylinders** to **Decentraland Avatar Base Mesh** Arms and **L
 
 [[/images/step01_legs03.png]]
 
+### Hips
 Create **Hip** **Area**, connect it with **Legs**, merge vertices between seams. 
 
 *Hips Result*
@@ -143,6 +153,8 @@ Create **Hip** **Area**, connect it with **Legs**, merge vertices between seams.
 
 [[/images/step01_total02.png]]
 
+### Torso
+
 Create **Torso**, connect it with **Hips** and **Arms** and then merge vertices between seams.
 
 *Torso Result*
@@ -161,7 +173,8 @@ Create **Torso**, connect it with **Hips** and **Arms** and then merge vertices 
 
 [[/images/step01_total04.png]]
 
-Make topology smooth and clean. **Set Subdivision Level to 1** and **apply modifier**.
+### Clean Topology
+To make topology smooth and clean. **Set Subdivision Level to 1** and **apply modifier**.
 
 *Result*
 
@@ -185,11 +198,13 @@ If you encounter issues, please follow this video timelapse with steps explanati
 
 [[modeling_avatar.mp4]]
 
-## Modeling Feet
+### Result
 
-to-do
 ## Modeling Hands 
 
+It's very challenging to do good handwear models with default Decentraland hands model. Bad triangulated topology, wrong edge loops for fingers bending (required for good weight painting and animations). Lack of nails. 
+
+### Hand and Fingers
 Create basic **Cube** and **Add Subdivision Modifier**
 
 image
@@ -210,7 +225,7 @@ Shrink/Fatten middle edge loop
 
 image
 
-Repeat same steps to achieve full length of index finger, use **Decentraland Avatar Base Mesh** for shapes and silhouette reference. Make sure to **check your shapes** with **Subdivision modifier**.
+Repeat same steps to achieve full length of index finger, orient on **Decentraland Avatar Base Mesh** shapes and silhouette. Make sure to **check your shapes** with **Subdivision modifier**.
 
 image
 
@@ -238,6 +253,76 @@ Adjust topology to match **Decentraland Avatar Base Mesh** hand shapes and silho
 
 image
 
+For now you have a lot of edge loops in connection between hand and arms, this is not good and needs to be adjusted. If you want, you can ignore this topology for now, because it's good to go for sculpting and modeling handwear wearables (connections will be fixed on final low-poly model). 
+
+image
+
+But if you want to create skin wearable, you will need to achieve right connection (8 edge loops) to connect hands with body. To do that, you will need to adjust topology transitions from high dense to low.
+
+Merge 3 vertices of pinky and middle finger to get 4 triangles.
+
+image
+
+Delete edge loops between triangles and move vertices a bit.
+
+image
+
+Delete two unnecessary edge loops and then edge loops of appeared triangles.
+
+image
+
+image
+
+Repeat steps for bottom side of hand.
+
+image
+
+Delete faces near connection between hand and arm on top and bottom side.
+
+image
+
+Merge three vertices of hole on top and bottom.
+
+image
+
+Delete edge loop and edge loops of triangles that appear.
+
+image
+
+image
+
+Merge vertices of arm and hand connection on top and bottom side.
+
+image
+
+Delete faces near connection between hand thumb finger.
+
+image
+
+Merge three vertices of hole on top and bottom.
+
+image
+
+image
+
+Delete edge loop and edge loops of triangles that appear.
+
+image
+
+image
+
+Merge vertices of arm and hand connection on top and bottom side.
+
+image
+
+image
+
+If you made everything right, now hand connection should have 8 edge loops and can be easily connected to arms.
+
+image
+
+### Clean Toplogy
+
 Make topology smooth and clean. **Set Subdivision Level to 1** and **apply modifier**.
 
 image
@@ -250,12 +335,55 @@ As last part of polishing, **select all faces** in **Edit Mode** and apply **Shr
 
 image
 
-As you may see, hand topology is a bit heavy, this is good topology for modeling handwear wearables, high-poly polishing and sculpting. 
+Apply all transforms and add mirror modifier
+
+image
+
+Connect hands and body, and merge vertices.
+
+image
+
+### Nails
+
+Select 4 faces of each finger, use inset and move new faces a bit inside of fingers
+
+image
+
+Duplicate faces and separate them
+
+image
+
+Add solidify modifier and set offset to 1
+
+image
+
+Preview result with Subdivision Modifier
+
+image
+
+For future modeling and baking you can add bevel modifier with 3 segments, low amount value (0.005), and 80 degrees angle before Subdivision modifier
+
+image
+
+Move vertices a bit to achieve smooth corners
+
+image
+
+Add Subdivision modifier (Level 1) to body. Move vertices to bottom a bit, to achieve smooth transition between fingers and nails. 
+
+image
+
+### Result
+
+image
 
 If you encounter issues, please follow this video timelapse with steps explanation.
 
 **modeling_hands.mp4**
 
+## Modeling Feet
+
+Modeling feets is very similar process o
 ## Modeling Head
 
 to-do

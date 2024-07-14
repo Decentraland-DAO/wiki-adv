@@ -103,6 +103,10 @@ image
 
 That's all the steps for shirt model. If you feel that something wrong, you can play with shapes/silhouette and modifiers values.
 
+### Result
+
+image
+
 If you encounter issues, please follow this video timelapse with steps explanation.
 
 **modeling_shirt.mp4**
@@ -250,6 +254,10 @@ image
 
 That's all the steps for overalls model. If you feel that something wrong, you can play with shapes/silhouette and modifiers values.
 
+### Result
+
+image
+
 If you encounter issues, please follow this video timelapse with steps explanation.
 
 **modeling_overalls.mp4**
@@ -258,9 +266,23 @@ If you encounter issues, please follow this video timelapse with steps explanati
 
 to-do
 
+### Result
+
+If you encounter issues, please follow this video timelapse with steps explanation.
+
+**modeling_overalls_bag.mp4**
+
 ## Modeling Gloves
 
 to-do
+
+### Result
+
+image
+
+If you encounter issues, please follow this video timelapse with steps explanation.
+
+**modeling_gloves.mp4**
 
 ## Modeling Cap
 Create **cap_base** collection in outliner and make sure that all your cap pieces will be created inside this collection. 
@@ -375,6 +397,10 @@ Add new empty **cap_base_root**, select all cap pieces and parent them to new em
 image
 
 That's all the steps for cap model. If you feel that something wrong, you can play with shapes/silhouette and modifier values.
+
+### Result
+
+image
 
 If you encounter issues, please follow this video timelapse with steps explanation.
 
@@ -560,9 +586,13 @@ image
 
 That's all the steps for sneakers model. If you feel that something wrong, you can play with shapes/silhouette and modifiers values.
 
+### Result
+
+image
+
 If you encounter issues, please follow this video timelapse with steps explanation.
 
 **modeling_sneakers.mp4**
 
 # Summary
-That's all steps for creating base wearable models. Now you should have better understanding of repeatable patterns (tools and modifiers) used for creating base models. You can move forward to high-poly modeling and sculpting. 
+That's all steps required for creating base models. Now you should have better understanding of repeatable patterns (tools and modifiers) used for creating base models. You can move forward to high-poly modeling and sculpting. 

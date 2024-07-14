@@ -24,18 +24,20 @@ List of recommended settings for tools, this settings will speed-up process of c
 - [Stable Diffusion (AUTOMATIC1111)](https://github.com/the-ankou/advanced-documentation/wiki/Software-Settings#stable-diffusion-automatic1111)
 	 - [Required Models](https://github.com/the-ankou/advanced-documentation/wiki/Software-Settings#required-models)
 # Blender
-### Navigation Settings 
+## Navigation Settings 
 On first start after installation, you will see welcome window with hotkey and navigation settings, keep navigation and hotkey settings by default. It's not recommended to switch them to Maya or anything else. There will be issues with hotkeys on modes like "Weight Painting". 
 
-### Viewport Denoising and Color Management
-**Viewport Denoising** - setting reduce noise and smooth character animation preview in viewport. It's sounds as good feature, but on practice it adds more noise, than denoise. It's highly recommended to **turn off** this setting, to achieve clear and smooth animation results, that will look exactly like in game engine. 
+## Viewport Denoising and Color Management
+### Viewport Denoising
+Reduce noise and smooth character animation preview in viewport. It's sounds as good feature, but on practice it adds more noise, than denoise. It's highly recommended to **turn off** this setting, to achieve clear and smooth animation results, that will look exactly like in game engine. 
 
 *Visual Comparison*
 
 
 [[viewport_denoising.mp4]]
 
-**Color Management** -  is another Blender setting that manages colors inside Blender viewport. By default View Transform setting, located in Color Management tab is set to Filmic or anything else, but not Standard. As result, this setting cause any textures, look a bit different, than they look in Substance Painter or in game engine. It's highly recommended to change View Transform setting from Filmic to **Standard**. Standard setting will display textures right way.
+### Color Management 
+Blender setting that manages colors inside Blender viewport. By default View Transform setting, located in Color Management tab is set to Filmic or anything else, but not Standard. As result, this setting cause any textures, look a bit different, than they look in Substance Painter or in game engine. It's highly recommended to change View Transform setting from Filmic to **Standard**. Standard setting will display textures right way.
 
 *Visual Comparison*
 
@@ -45,15 +47,15 @@ On first start after installation, you will see welcome window with hotkey and n
 
 [[/images/render_properties.png]]
 
-### Frame Rate
+## Frame Rate
 By default Blender **Frame Rate** is 24, which is good for movies. It's highly recommended to change Frame Rate to **30**, which is standard for games and this setting is important for creating game-ready character animations. 
 
 *Settings Location*
 
 [[/images/frame_rate.png]]
 
-### Face Orientation
-**Face Orientation** - display orientation of face normals. This setting allow creators to detect all inverted normals on a model. it's highly recommended to keep this setting always on. 
+## Face Orientation
+Display orientation of face normals. This setting allow creators to detect all inverted normals on a model. it's highly recommended to keep this setting always on. 
 
 By default, when you turn on Face Orientation setting, "right" normals on model shown as blue color, and "wrong" inverted normals as red color, which cause creators to turn this setting on and off time from time to check if everything is good. 
 
@@ -73,7 +75,7 @@ With right settings in Blender preferences, you can hide display of "right" norm
 
 
 
-### Save Settings and UI Setup
+## Save Settings and UI Setup
 It's recommended to move Blender outliner from right side to left side of window, that way UI will be more friendly and will look like basic windows explorer, and will be familiar to navigation in other tools like Maya, Marmoset, and rest. This setup saves huge amount of time on work and reduce amount of mouse clicks between tabs and windows.
 
 Additionally, we will add small UV editor window on left side, which we will use for fast access to UV. 
@@ -88,24 +90,24 @@ For animations it's useful to keep two timelines, default one, but closed. For f
 
 [[blender_ui_setup.mp4]]
 
-### Import/Export Settings
+## Import/Export Settings
 
 You can save export settings as presets and use it in future without needs for manual adjustments.
 
-**Recommended import/export to FBX settings**
+### Recommended import/export to FBX settings
 
 **Export settings:** All settings should be default, in our pipelines you will use FBX export for RizomUV, Marmoset and Substance Painter. The only setting that you will need to change sometimes is **Selected Objects, ** **Apply Modifiers** and **Triangulate Faces**
 
 **Import Settings:** Default.
 
-**Recommended GLTF/GLB import settings**
+### Recommended GLTF/GLB import settings
 - **Pack Images:** by default is enabled, It's recommended to keep that setting enabled. 
 - On import you will need to enable option **"Merge Vertices"**.  When you export any object from Blender to GLB, mesh vertices will split as UV shells. That means that if you will import object back to Blender, your mesh will look exactly the same, but if you will start edit it and move vertices, you will notice that in some areas there are 2 vertices in located and the same place. 
 - **Shading:** Use Normal Data
 - **Bone Dir:** by default it's **Blender**, but sometimes you will need to change this setting to **Temperance**, for example, when you will import **Decentraland avatars** to Blender, with **Bone Dir: Blender**, you won't see bones. Temperance setting solve this issue. 
 
 
-**Recommended export to GLTF/GLB settings.**
+### Recommended export to GLTF/GLB settings
 
 **Wearables** - for wearables it's recommended to use .glb, because textures will be packed inside .glb file, which is handy for easy upload to builder
 - Use **Selected** or **Visible** objects setting in include section.
@@ -148,8 +150,8 @@ You can save export settings as presets and use it in future without needs for m
 [[/images/compression_setting.png]]
 
 # RizomUV
-### Texel Density
-**Texel Density** - is global scaling setting for each UV island. Final textures result strictly depends on right texel density. You can learn more about texel density and it's calculations [here](https://www.beyondextent.com/deep-dives/deepdive-texeldensity#)
+## Texel Density
+Global scaling setting for each UV island. Final textures result strictly depends on right texel density. You can learn more about texel density and it's calculations [here](https://www.beyondextent.com/deep-dives/deepdive-texeldensity#)
 
 In-depth information about texel density usually sounds very complex and confusing, but on practice everything is simple.
 
@@ -170,8 +172,9 @@ For Decentraland, it's recommended to use only 1024 or 512 textures. Most of cre
 
 One more note about dimensions. If you made small object, with right texel density and right texture size. Keep in mind, that if you need, you can decrease object size when you build scene. But, you can't increase object size without loss in quality. If you made a small soda can, made all UVs and final textures, and then decide to make it very big in scene, model will look blurry because there are not enough texel density on UV. In that case, you will need to do new UV with right texel density and then redo textures.
 
-### Margin and Padding 
-**Margin** - UV islands distance from corners of UV square. 
+## Margin and Padding 
+### Margin
+UV islands distance from corners of UV square. 
 
 Here is a minimal margin numbers for each texture size.
 - **8** for **2048**
@@ -184,7 +187,8 @@ It's very important to use this setting, to avoid any UV overlapping issues in g
 As we will create only 1024 textures, it's recommended to use margin 4.
 
 
-**Padding** - distance between each UV island. This is very important thing that you should always keep in mind. Padding strongly connected with Mip Maps. Here you can learn more about [Padding](http://wiki.polycount.com/wiki/Edge_padding) and [Mip Mapping](http://wiki.polycount.com/wiki/Mip_mapping)
+### Padding 
+Distance between each UV island. This is very important thing that you should always keep in mind. Padding strongly connected with Mip Maps. Here you can learn more about [Padding](http://wiki.polycount.com/wiki/Edge_padding) and [Mip Mapping](http://wiki.polycount.com/wiki/Mip_mapping)
 
 Here is a minimal padding numbers for each texture size.
 
@@ -199,7 +203,7 @@ As we will create only 1024 textures, it's recommended to use padding 8.
 
 
 
-### UV Packing Settings 
+## UV Packing Settings 
 It's strongly recommended to manually set Texel Density for each UV island and manually pack each island in UV square. But, if you wish to achieve fast result, you can use tools for UV auto packing.
 
 Here is settings that's required for manual packing:
@@ -219,7 +223,7 @@ When you will do manual packing, you will use distribute space setting lots of t
 [[/images/distribute_space.png]]
 
 # Marmoset Toolbag 4
-### Output Settings
+## Output Settings
 On first bakes and cage setup, it's recommended to use the lowest settings as possible to save bake time and speed up baking workflow. As soon as everything bakes well, you can increase settings to maximum and bake final maps.
 
 - **Samples:** Minimum 4
@@ -258,7 +262,7 @@ All this maps have their own settings, It's recommended to set **Ray Count** on 
 
 If you're looking for more information about maps that we will bake, you can find it [here](https://marmoset.co/posts/toolbag-baking-tutorial/) and [here](https://docs.marmoset.co/docs/map-types/)
 # Adobe Substance 3D Painter
-### New Project Settings
+## New Project Settings
 - **Template:** just leave as is "Select template...", 
 there are many templates, but we won't use them.
 - **Document Resolution:** 1024 (1024x1024 textures)
@@ -276,7 +280,7 @@ Other settings should stay default
 
 [[/images/spp_project_settings.png]]
 
-### UI Setup
+## UI Setup
 You can keep default UI if needed. But for advanced documentation pipelines it's better to use UI from video, it's more flexible, less complex, requires less clicks between tabs, and covers less space on screen.
 
 *UI Setup*
@@ -287,7 +291,7 @@ If you messed up with UI, you can always reset it in **Window** tab.
 
 [[/images/spp_reset_ui.png]]
 
-### Import Textures Settings
+## Import Textures Settings
 Select all maps in explorer, drag and drop them to **Assets** window in **Substance Painter**. 
 
 **Import resources** window will appear. Click on area with list of imported maps, press **CTRL+A** and then change **undefined** to **texture**
@@ -298,7 +302,7 @@ Current session will keep maps only until you will close Substance Painter. Proj
 
 [[/images/import_resources.png]]
 
-### Export  Textures Settings
+## Export  Textures Settings
 - **Output Template** by default it's **Document channels + Normal + AO (No Alpha)** but sometimes you will need to use the same template but **with alpha**. You can also create your own template, but it's recommended to use default ones. There is another one popular template - **2D View**, this template export 2D View of current texture and light state in Substance Painter scene, sometimes it's handy, but results are dirty. Advanced Documentation pipelines will cover better and more professional way that use filters for baked lights.
 - **File type:** by default it's PNG 8 bits, it's recommended to use **PNG 16 bits** and then optimize to JPG with clear and smooth results in **Adobe Photoshop**. PNG 8 bits decrease gradients quality, while PNG 16 bits keeps all gradients as clear as possible.
 - **Size:** 1024
@@ -328,7 +332,7 @@ After you will click export, you will see window with process of exporting. As s
 
 [[/images/exported_assets.png]]
 
-### Custom Templates
+## Custom Templates
 In **Export textures** window, go to **output templates** tab. Here you can create your export textures template.
 
 To create **Base Color** only template, you will need to duplicate **PBR Metallic Roughness** template and delete all output maps except BaseColor. Since we will use UDIMs in process of creating models, in some cases, you will need to remove dot in (.$udim) name. If you will keep dot, Blender will determine all UDIMs as UDIMs and later that may cause some issues on export. It's not very important thing and usually works fine, but if needed, just remove dot.
@@ -340,7 +344,7 @@ To create **Base Color** only template, you will need to duplicate **PBR Metalli
 Actually, it's better to use default **Document channels + Normal + AO (No Alpha)**, but if you want something special, you can always create custom template.
 
 # Adobe Photoshop
-### New Document and UI Setup
+## New Document and UI Setup
 
 Usually, you don't need to create new document. In most of times, you will need to drag and drop texture exported from Substance Painter into Photoshop. That way all image settings will stay default and nothing (like bits or color mode) will be affected during import process. 
 
@@ -354,7 +358,7 @@ But, if you want to create new document, you can use settings on image below.
 
 [[photoshop_ui_setup.mp4]]
 
-### Batch Export
+## Batch Export
 You can do batch export in **Photoshop**. Select all layers, right click on them and select **Export as...** or **Quick Export as PNG**
 
 [[/images/batch_export01.png]]
@@ -380,8 +384,9 @@ With JPG Quality level 5-7 you can get very small texture size, ~300kb or less. 
 [[/images/export_settings_jpg.png]]
 
 # Stable Diffusion (AUTOMATIC1111)
-### Required Models
-**Automatic1111** works well on latest GPU cards, however, if your pc don't match latest specs, you still can use this tool with very low settings and achieve good results. If that's impossible for you, then you can try alternatives from web. But they're not flexible as Stable Diffusion and might be expensive.
+Works well on latest GPU cards, however, if your pc don't match latest specs, you still can use this tool with very low settings and achieve good results. If that's impossible for you, then you can try alternatives from web. But they're not flexible as Stable Diffusion and might be expensive.
+
+## Required Models
 
 The most important tool that you will need is **ControlNet** (Canny, IP-Adapter), **LORA**, and any **model** (anime or realistic) that you want from [here](https://civitai.com/). In pipelines you will need to use [ManmaruMix v3.0](https://civitai.com/models/86277/manmaru-mix) model, but you can experiment with any model you want. We won't use SDXL models in pipelines. You will need to put files in "sd.webui\webui\models\stable-diffusion" folder.
 

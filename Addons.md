@@ -10,7 +10,7 @@ Addons that you will need for advanced documentation pipelines.
 	 - [Voxel Heat Diffuse Skinning (Weight Painting)](https://github.com/the-ankou/advanced-documentation/wiki/Addons#voxel-heat-diffuse-skinning-weight-painting)
 	 - [SJ Phaser (Animation)](https://github.com/the-ankou/advanced-documentation/wiki/Addons#sj-phaser-animation)
 # Blender
-### TheAnkou's Scripts and [Pie Menu Editor](https://blendermarket.com/products/pie-menu-editor) (Scripts)
+## TheAnkou's Scripts and [Pie Menu Editor](https://blendermarket.com/products/pie-menu-editor) (Scripts)
 **TheAnkou's Scripts** handy scripts created with ChatGPT. With **Pie Menu Editor** addon, you will be able to use this scripts as panel with buttons in **N** menu tab   in Blender.
 
 You can't CTRL+Z most of these scripts, so be careful and save your project before using them.
@@ -26,7 +26,7 @@ You can't CTRL+Z most of these scripts, so be careful and save your project befo
 - **Reload Textures** script reloads all textures used in project.
 - **Purge ALL** removes all unused things from project. 
 
-**Pie Menu Editor Setup** 
+## Pie Menu Editor Setup
 Go to Blender **Preferences -> Add-ons** and search for **Pie Menu Editor**, open Pie Menu Editor tab and under **Preferences** window you can setup **N** menu tab with buttons.
 
 [[/images/pie_menu_editor01.png]]
@@ -68,21 +68,21 @@ Press **Apply**, change button name and then press **OK**
 
 [[/images/pie_menu_editor12.png]]
 
-### TheAnkou's Hair Nodes or [Stylized Hair PRO v3](https://deanzarkov.gumroad.com/l/stylized_hair_pro) (Modeling)
+## TheAnkou's Hair Nodes or [Stylized Hair PRO v3](https://deanzarkov.gumroad.com/l/stylized_hair_pro) (Modeling)
 **TheAnkou's Hair Nodes** or **Stylized Hair PRO v3** tools made from Blender geometry nodes, for creating any type of hairs, with curves and flexible settings just in few steps. 
 
 
-### [Friendly Pivot](https://blendermarket.com/products/friendly-pivot) (Modeling)
+## [Friendly Pivot](https://blendermarket.com/products/friendly-pivot) (Modeling)
 **Friendly Pivot** small addon for fast manipulations with pivot point in Blender.
-### [LoopTools](https://docs.blender.org/manual/en/latest/addons/mesh/looptools.html) (Modeling)
+## [LoopTools](https://docs.blender.org/manual/en/latest/addons/mesh/looptools.html) (Modeling)
 **LoopTools** allows to adjust mesh vertices to different shapes. Usually it's used for squared holes that needs to be changed to rounded.
-### [Rigify](https://docs.blender.org/manual/en/2.81/addons/rigging/rigify.html#activation) (Rigging) 
+## [Rigify](https://docs.blender.org/manual/en/2.81/addons/rigging/rigify.html#activation) (Rigging) 
 **Rigify** complex but very useful addon for creating skeleton with constraints for animations. Skeleton created with this addon will require a lot of properties adjustments, to make it ready to use in Decentraland, but it's worth of it.
-### [Easy Weights](https://studio.blender.org/pipeline/addons/easy_weights) (Weight Painting)
+## [Easy Weights](https://studio.blender.org/pipeline/addons/easy_weights) (Weight Painting)
 **Easy Weights** handy addon with couple of useful tools required for weight painting. You will need to use it with **Lazy Weight Tool.**
-### [Lazy Weight Tool](https://blendermarket.com/products/lazy-weight-tool) (Weight Painting)
+## [Lazy Weight Tool](https://blendermarket.com/products/lazy-weight-tool) (Weight Painting)
 **Lazy Weight Tool** core addon for weight painting. It copies a lot of things from 3ds Max and Maya, and makes weight painting process more simple.
-### [Voxel Heat Diffuse Skinning](https://blendermarket.com/products/voxel-heat-diffuse-skinning) (Weight Painting)
+## [Voxel Heat Diffuse Skinning](https://blendermarket.com/products/voxel-heat-diffuse-skinning) (Weight Painting)
 **Voxel Heat Diffuse Skinning** calculates weights with voxel method, just like in 3ds Max or Maya. It's must have to use this addon, because it makes simple auto weight painting for mesh with a lot of individual parts and allows to bake smooth corrective modifier.
-### [SJ Phaser](https://captainhansode.gumroad.com/l/EVhEq) (Animation)
+## [SJ Phaser](https://captainhansode.gumroad.com/l/EVhEq) (Animation)
 **SJ Phaser**  addon creates and bakes spring animation for bones. Very useful for creating simple wings, cloak, ears, tail animations. Just in one click and game ready.
