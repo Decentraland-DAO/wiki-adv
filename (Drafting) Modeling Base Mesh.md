@@ -389,4 +389,4 @@ Modeling feets is very similar process o
 to-do
 
 # Summary
-That's all the steps for creating base model. Any time you will start working on wearables, make sure to start your workflow from prepared base models. It's ready for high-poly modeling and sculpting.
+That's all the steps for creating avatar base model. Any time you will start working on wearables, make sure to start your workflow from this prepared base models. It's ready to go for high-poly modeling and sculpting.

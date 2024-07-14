@@ -344,6 +344,6 @@ If you encounter issues, follow this video with explanations
 
 
 # Summary
-That's all steps for creating high-poly wearable models. For creating stylized models, high-poly modeling steps requires only few adjustments and is not that complex as for creating very high quality models.
+That's all steps for adapting base wearable models to high-poly wearable models. For creating stylized models, high-poly modeling steps requires only few adjustments and is not that complex as for creating very high quality models.
 
 Now you should have better understanding of repeatable patterns (tools and modifiers) used for creating high-poly models. You can move forward to sculpting. 
