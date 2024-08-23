@@ -12,13 +12,11 @@ Most of job, such as adding patterns, noise, dirt, small details, will be done o
 This article focus more on explaining modifiers and common solutions for topology issues. Models preparations here required only for doing some sculpting to enhance overall quality of models.
 
 ## Bevel Modifier
-
 Bevel modifier adds smoothing on sharp edges and edges that have different angles. 
 
 Nowadays, artists that work on stylized models, prefer to use only Bevel modifier or use Bevel shader to bake bevels on models edges. This saves lots of time, while overall quality of baked maps is near quality of models created with subdivision modifier.
 
 Workflow with Bevel works very well for creating stylized textures for simple objects. If you want to achieve great results at creating PBR textures, especially on very complex models, it's better to learn modeling with Subdivision Modifier.
-
 
 ## Subdivision and Multiresolution Modifier 
 Subdivision Surface uniformly subdivides the mesh for a smoother appearance, whereas the Multiresolution modifier provides a more flexible workflow for sculpting and detailing on different levels of resolution without affecting the base mesh. Each modifier has its strengths and is used based on the specific requirements of the modeling or sculpting process.
@@ -341,7 +339,6 @@ image
 If you encounter issues, follow this video with explanations
 
 **modeling_holes.mp4**
-
 
 # Summary
 That's all steps for adapting base wearable models to high-poly wearable models. For creating stylized models, high-poly modeling steps requires only few adjustments and is not that complex as for creating very high quality models.
