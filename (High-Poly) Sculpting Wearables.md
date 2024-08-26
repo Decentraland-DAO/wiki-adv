@@ -117,11 +117,11 @@ image
 
 
 ## Core Sculpting Tools
-Mostly, you will just sculpt couple of folds and other details with default and custom brushes on top of base mesh prepared with methods from previous articles.
+Mostly, you will just sculpt couple of folds and other details with default and custom brushes on top of base mesh prepared with methods explained in previous articles.
 
-Base mesh with couple of folds on top don't require manual retopology and will end up with almost ready to go low poly model adapted from base mesh. 
+During sculpting, you should avoid huge changes of shapes and silhouette on your models, because later, you will encounter with baking issues, your high-poly model won't match low-poly model. 
 
-But, if you want to sculpt additional complex shapes, or sculpt model from scratch, then you will need to work a lot with default brushes.
+If you want to do huge changes on your shapes and silhouette, or you're looking for sculpting models from scratch, then you will need to use tools like Remesh and Dyntopo, and then create low-poly model from scratch by doing manual retopology.
 
 ### Remesh and Dyntopo
 If you're looking for sculpting models from scratch, you will need to use this tools to keep density for new shapes and details, this tools don't work with subdivision/multiresolution modifier workflow and requires work with manual retopology for creating ready to bake low-poly. 
