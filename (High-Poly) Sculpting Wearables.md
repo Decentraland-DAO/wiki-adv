@@ -3,7 +3,7 @@ In this article you will learn how to improve wearable models with sculpting.
 It's important to follow [[(High-Poly) Polishing Wearables]] article, because this article requires knowledge and usage of models from previous article. 
 
 # Sculpting
-On this step you will work in Sculpt Mode with Multiresolution Modifier and default or custom tools for sculpting.
+On this step you will work sculpt folds and other details by using default and custom brushes in Sculpt Mode with Multiresolution Modifier.
 
 Before you will start sculpting folds and others details, duplicate collection with models prepared for subdivision modifier and then remove subdivision modifier on them. Apply all other modifiers and then add multiresolution modifier.
 
@@ -29,8 +29,6 @@ image
 The same thing with big objects, for them it's not enough to have couple of thousands faces, usually good density starts around 5 hundred or 1 million of faces.
 
 image
-
-
 
 ### Switching Levels
 Sometimes, it's good to switch subdivision levels from higher to lower and back to higher. 
@@ -74,6 +72,7 @@ You should know all this brushes for sculpting things, this brushes are must hav
 - Elastic Deform (tool for moving huge areas of model)
 - Snake Hook (tool for moving areas of model with some kind of extrusion)
 - Mask (tool for sculpting only on masked areas)
+- Multires Displacement Brush
 
 ### Custom Brushes
 To important custom brushes, you will need to find and download them somewhere. [Here](https://stylizedstation.gumroad.com/l/zMJlJ) you can find very famous and free to use **Orb Brush Pack** created by **Michael Vicente - Orb**, converted for Blender. 
@@ -158,8 +157,10 @@ image
 
 By default strength is 0.5, that's a lot. Keep strength of your brushes around 0.15 - 0.25. Feeling of strength also depends on density of your mesh, so if you feel that strength is very low, or very high, change numbers until you will feel good. 
 
-#### Smooth Brush
-Core brush used for smoothing results and fixing mistakes, the thing about strength applies on this brush too.
+#### Smooth and Multires Displacement Eraser Brush
+To smooth results that you sculpted with any of brushes, you will always need to use Smooth brush with different strength settings. 
+
+But, if you want to completely remove/revert all adjustments and deformations that you made during sculpting, you will need to use Multires Displacement Eraser. By using this brush you can also do different tricks, for example, you can draw cracks with orb brushes and then revert their parts with eraser brush, that way your cracks will look more interesting, unique and natural.
 
 #### Mask and Face Sets
 With mask brush you can mark areas that you want to sculpt without affecting the rest of areas.
@@ -221,7 +222,12 @@ image
 
 
 ## Sculpting Wearables
-As you're following approach with base mesh and Multiresolution modifier, instead of sculpting models from scratch, you can simply draw couple of stylized folds with crease brush on all cloth parts and then move to next article.
+As you're following approach with base mesh and Multiresolution modifier, instead of sculpting models from scratch, you will simply draw couple of stylized folds with crease brush on all prepared wearables models.
+
+### Keep Shapes
+When you will start sculpting folds and other details, you should keep in mind, that you want to avoid any huge deformations of models shapes and silhouette, otherwise you will need to do retopology or adjust shapes of low-poly models after sculpting. If you will ignore that thing, you will encounter with baking issues in future, because perfect bakes works only when low-poly and high-poly shapes almost same. 
+
+### Final Result
 
 Here is result that you should achieve by sculpting couple of stylized folds.
 

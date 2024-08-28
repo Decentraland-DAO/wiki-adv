@@ -1,6 +1,6 @@
 In this article you will learn how to use **Avatar Base Mesh** and create wearables base meshes with it.
 
-Additionally, it's important to read [[(Concept) Wearables]] article, because in this and next articles we will use **reference image** generated **with Stable Diffusion.** 
+Additionally, it's important to read [[(Concept) Generating Reference]] article, because in this and next articles we will use **reference image** generated **with Stable Diffusion.** 
 
 For next steps, you should use **Avatar Base Mesh** **.blend** file, you can find download link in [[(Drafting) Modeling Base Mesh]] article.
 
@@ -32,8 +32,11 @@ Drafting is first step in 3d modeling, artist create models and define their bas
 
 It's very important to start with Avatar Base Mesh. It's already prepared and have good topology ready for Sculpting and Subdivision modeling. Most of times, when you will do cloth pieces, you will separate them from base mesh. This workflow reduce amount of time for topology adjustments, instead of doing all cloth pieces manually from scratch.
 
+## Collections
+
+to-do 
 ## Modeling Shirt
-For Shirt model you should duplicate **ubody_base** model, then create **shirt_base** collection in outliner, move **ubody_base** duplicate here and make sure that all your shirt pieces will be created inside this collection. 
+For shirt model you should duplicate **ubody_base** model, then create **shirt_base** collection in outliner, move **ubody_base** duplicate here and make sure that all your shirt pieces will be created inside this collection. 
 
 image
 
@@ -112,7 +115,7 @@ If you encounter issues, please follow this video timelapse with steps explanati
 **modeling_shirt.mp4**
 
 ## Modeling Overalls
-For overalls model you should duplicate **lbody_base** model, then create **overalls_base** collection in outliner, move **lbody_base** duplicate here and make sure that all your overalls pieces will be created inside this collection. 
+For overalls model you should duplicate **lbody_base** model, then create **overalls_base** collection in outliner, move **lbody_base** copy here and make sure that all your overalls pieces will be created inside this collection. 
 
 image 
 
@@ -124,6 +127,8 @@ Most of steps for overalls are same as for shirt.
 - Define silhouette and shapes
 - Use Solidify and Bevel Modifiers
 - Split parts (belt area, front and back of pants)
+
+image
 
 ### Overalls Fly
 Select faces in fly area, duplicate them, separate to unique mesh and then apply symmetry modifier and delete left side of fly.
@@ -521,8 +526,6 @@ Now split any faces that you want and change solidify offset to 0.25 or 1. You c
 You can also add any additional interesting objects like cylinders, later all this details will be baked on simple flat plane and results will look great.
 
 image
-
-
 
 ### Sneakers Laces
 

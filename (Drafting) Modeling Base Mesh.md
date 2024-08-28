@@ -65,9 +65,6 @@ For Drafting Step you can simply set angle 180, but for baking and final model y
 
 image
 
-## Collections
-
-to-do 
 # Modeling Base Mesh
 There are three ways from what to begin. 
 

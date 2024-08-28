@@ -7,10 +7,11 @@ Structure for Decentraland [Content Creators](https://docs.decentraland.org/crea
 - [Addons](https://github.com/the-ankou/advanced-documentation/wiki/Addons)
 
 ## Wearables Pipeline
-- [[(Concept) Wearables]]
+- [[(Concept) Generating Reference]]
 - [[(Drafting) Modeling Base Mesh]]
 - [[(Drafting) Modeling Wearables]]
 - [[(High-Poly) Polishing Wearables]]
 - [[(High-Poly) Sculpting Wearables]]
+- [[(Low-Poly) Preparing Wearables]]
 ## NPC and Animations Pipeline
 ## Environment Pipeline
