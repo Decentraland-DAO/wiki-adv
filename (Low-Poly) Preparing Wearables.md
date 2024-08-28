@@ -9,7 +9,7 @@ By doing that, you will avoid manual retopology of your high-poly models. Keep i
 
 Make sure to work with models that you made before sculpting, sculpted models will be used only for baking. 
 
-Overall preparations requires removal of most modifiers and merging back pieces, to achieve one mesh.
+Overall preparations requires removal of most modifiers, merging back separated pieces, and removal of unnecessary geometry.
 ## Preparing Shirt
 Remove Subdivision and Bevel modifier on all shirt parts.  
 
@@ -434,4 +434,10 @@ If you encounter issues, please follow this video timelapse with steps explanati
 
 **preparing_sneakers.mp4**
 
+
+# Retopology
+to-do 
 ## Summary
+Now you should know how to adapt and clean models that you used for sculpting, to be ready to go for doing UVs and baking. As well as how to use retopology in situations when you made decision to do sculpt models from scratch.  
+
+As final result, your low-poly models should have proper triangles count (as low as possible), but keep overall shapes for clean baking, without modifiers and unnecessary geometry. 
