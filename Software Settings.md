@@ -427,8 +427,8 @@ For generating characters it's also good to use resolutions like **256x512**, th
 
 *512x512*
 
-[[stable_diffusion_result01.png]]
+[[/images/stable_diffusion_result01.png]]
 
 *256x512*
 
-[[stable_diffusion_result02.png]]
+[[/images/stable_diffusion_result02.png]]
