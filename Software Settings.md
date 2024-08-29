@@ -425,6 +425,10 @@ If your pc have low specs, it's recommended to generate images only with **768x7
 
 For generating characters it's also good to use resolutions like **256x512**, that way you will avoid generating of unnecessary things and anomalies around character. 
 
-*Result*
+*512x512*
 
-[[/images/stable_diffusion02.png]]
+[[stable_diffusion_result01.png]]
+
+*256x512*
+
+[[stable_diffusion_result02.png]]
