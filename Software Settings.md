@@ -94,20 +94,20 @@ For animations it's useful to keep two timelines, default one, but closed. For f
 
 You can save export settings as presets and use it in future without needs for manual adjustments.
 
-### Recommended import/export to FBX settings
+### Import/Export to FBX
 
 **Export settings:** All settings should be default, in our pipelines you will use FBX export for RizomUV, Marmoset and Substance Painter. The only setting that you will need to change sometimes is **Selected Objects, ** **Apply Modifiers** and **Triangulate Faces**
 
 **Import Settings:** Default.
 
-### Recommended GLTF/GLB import settings
+###  Import GLTF/GLB
 - **Pack Images:** by default is enabled, It's recommended to keep that setting enabled. 
 - On import you will need to enable option **"Merge Vertices"**.  When you export any object from Blender to GLB, mesh vertices will split as UV shells. That means that if you will import object back to Blender, your mesh will look exactly the same, but if you will start edit it and move vertices, you will notice that in some areas there are 2 vertices in located and the same place. 
 - **Shading:** Use Normal Data
 - **Bone Dir:** by default it's **Blender**, but sometimes you will need to change this setting to **Temperance**, for example, when you will import **Decentraland avatars** to Blender, with **Bone Dir: Blender**, you won't see bones. Temperance setting solve this issue. 
 
 
-### Recommended export to GLTF/GLB settings
+### Export to GLTF/GLB
 
 **Wearables** - for wearables it's recommended to use .glb, because textures will be packed inside .glb file, which is handy for easy upload to builder
 - Use **Selected** or **Visible** objects setting in include section.
@@ -422,3 +422,9 @@ To add **LORA** and **Textual Inversion** in your prompts, you can navigate and 
 If you want to achieve exact same image, you will need to copy all settings and press generate. If result is different, you can write this number **2803890072** in seed option and that way you will generate exact same image. 
 
 If your pc have low specs, it's recommended to generate images only with **768x768, 512x512** or less resolution, higher resolutions like **1024x1024** will crash with out of memory error. 
+
+For generating characters it's also good to use resolutions like **256x512**, that way you will avoid generating of unnecessary things and anomalies around character. 
+
+*Result*
+
+[[/images/stable_diffusion02.png]]
