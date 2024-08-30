@@ -88,8 +88,6 @@ Pay attention to the **topology, edges, loops,** and **face count** on the image
 
 
 ## Modeling Body
-First and foremost, start by modeling the base mesh of the body.
-
 ### Arms and Legs
 
 Create a basic cylinder with 8 sides for the elbow/knee area.
