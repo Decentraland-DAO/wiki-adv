@@ -7,7 +7,7 @@ Before you start working in Blender, you should import the **Avatar Models** fro
 
 You can find **Decentraland Avatar Models** [here](https://drive.google.com/drive/u/1/folders/12hOVgZsLriBuutoqGkIYEByJF8bA-rAU) 
 
-The Avatar Models serves several purposes:
+They are required for several purposes:
 
 - Using default body parts for your model, such as hands.
 - Parenting and weight painting the final model to the Armature of avatar and exporting it to Decentraland.
@@ -52,44 +52,47 @@ The most common angle numbers are: **30, 45, 60, 80, 180.**
 
 [[/images/blender_shade_smooth.png]]
 
-For the drafting step, you can simply set the angle to 180 degrees, but for baking and the final model, you should always follow these rules. This is necessary not only for the visual appearance but also for proper baking and rendering inside the game engine.
+Using "Shade Smooth" is necessary not only for visual appearance but also required for future baking and proper rendering inside the game engine.
+
+# Decentraland Models (Import)
+guide how to import decentraland models
+
+# Preparing Collections
+work with collections
 # Modeling Base Mesh
-There are three ways from what to begin. 
+You can begin with one of three ways:
 
-**First way** is to adapt or simply use default Avatar Base Mesh model for modeling. This way requires some topology cleaning, which may end up with loss of time and unexpected results for non-experienced user.
+1. Adapt or simply use the default Decentraland avatar models for modeling. This approach requires some topology cleaning, which may result in a loss of time and unexpected outcomes for inexperienced users.
+2. Create a base mesh model from primitives and then refine it to achieve perfect topology suitable for high-poly modeling.
+3. Download the ready .blend file from [here]() and proceed to [[(Drafting) Modeling Wearables]].
 
-**Second way** is to create Base Mesh model from primitives and then polish it to have perfect topology ready for high poly modeling.
+The next steps of this article will focus on creating a base mesh with ready-to-use topology.
+### Topology Tips
+#### Number of Edges
+There are a few topology tips that you need to keep in mind. First and foremost is the number of sides (edges) for each part of the body.
 
-**Third way** is to download ready .blend from [here]() and move to [[(Drafting) Modeling Wearables]].
+- 6-8 sides (edges) for Arms
+- 12 sides (edges) for Neck
+- 14 sides (edges) for Hips
+- 8 sides (edges) for Legs
 
-It's very important to create a base mesh with perfect topology, to be able to do any manipulations with it. With prepared base mesh, you will be able to use it for any cloth pieces and easily apply core modifiers (bevel, subdivision, multiresolution) without wrong distortion and future issues on baking.
+These numbers are the base used in many old and new mobile games, which are restricted to a low triangle count. Additionally, this amount of edges works very well for a Subdivision workflow, which can then be transformed into Multiresolution for sculpting.
+#### Common Mistake
+The most common mistake beginners make is to add a model, move it away from the (0, 0, 0) coordinates, and start performing actions like extruding, adding modifiers, etc. As a result, beginners often encounter viewport navigation issues.
 
-There are few topology rules that you need to keep in mind, first of all, amount of sides (edges) for each part of body.
+Always create new models at the 0, 0, 0 position and work on them there. Once the model is ready, you can then position it correctly on the avatar.
 
-- 6-8 sides (edges) for Arms and connection
-- 12 sides (edges) for Neck and connection
-- 14 sides (edges) for Hips and connection
-- 8 sides (edges) for Legs and connection
+If you make adjustments or add additional pieces for clothes using a separate tool and feel uncomfortable with navigation or modeling, simply use the powerful isolate mode to isolate the mesh and hide everything else.
 
-This numbers is base used in many old and new mobile games, which are restricted to low triangles count. Also, this amount of edges works very well for Subdivision workflow, which then transforms to Multiresolution for sculpting.
-
-Most common mistake of beginners is to add model, move it away from (0, 0, 0) coordinates and start doing some things like extrude, adding modifiers, etc. As result, beginners end up messing with viewport navigation issues.
-
-Always create new models, in 0,0,0 position and work on them here. As soon as model is ready, you can navigate it to right place on avatar. 
-
-If you do adjustments or add additional pieces for clothes (by using separate tool), and feel uncomfortable with navigation or modeling, or anything else. Just use powerful isolate mode to isolate mesh and hide all the rest. 
-
-Pay attention to **topology, edges, loops, faces count** on images and examples provided below, follow and keep exact same topology for your **Base Mesh.** 
-
+Pay attention to the **topology, edges, loops,** and **face count** on the images and examples provided below. Follow and maintain the exact same topology for your base mesh.
 
 
 ## Modeling Body
-
-As it was mentioned before, there are lots of troubles with default Decentraland body model. It's triangulated and ready to-go to engine. But for modeling wearables it's very bad. You won't be able to use core modifiers like Bevel, Subdivision, Multiresolution with it. That means, that you won't be able to create good wearables ready for sculpting and future baking with it.
+First and foremost, start by modeling the base mesh of the body.
 
 ### Arms and Legs
 
-Create basic **Cylinder** with **8 sides** and **elbow/knee area**.
+Create a basic cylinder with 8 sides for the elbow/knee area.
 
 *Result*
 
@@ -99,7 +102,7 @@ Create basic **Cylinder** with **8 sides** and **elbow/knee area**.
 
 [[/images/step01_arms02.png]]
 
-Improve Cylinder and make it look like **Arm**, use **Decentraland Avatar Base Mesh** for shapes and silhouette reference. Make sure to **check your shapes** with **Subdivision modifier**.
+Improve the cylinder to look like an arm, use the avatar model as a reference for shapes and silhouette. Make sure to verify your shapes with the Subdivision modifier.
 
 *Result*
 
@@ -109,7 +112,7 @@ Improve Cylinder and make it look like **Arm**, use **Decentraland Avatar Base M
 
 [[/images/step01_arms04.png]]
 
-Duplicate Cylinder and prepare **Legs**, topology stays exactly the same as for Arms but some areas of legs should be wider. 
+Duplicate the cylinder to prepare the legs, the topology remains exactly the same as for the arms, but some areas of the legs should be wider.
 
 *Result*
 
@@ -119,7 +122,7 @@ Duplicate Cylinder and prepare **Legs**, topology stays exactly the same as for 
 
 [[/images/step01_legs02.png]]
 
-Position created **Cylinders** to **Decentraland Avatar Base Mesh** Arms and **Legs**, **apply** **all transforms**, and then **add Mirror modifier**.
+Position the cylinders to match the avatar model arms and legs, apply all transforms, and then add a Mirror modifier.
 
 *Result (Subdivision)*
 
