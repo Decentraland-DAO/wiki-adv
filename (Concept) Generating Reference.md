@@ -7,15 +7,14 @@ To follow this article, make sure to install Stable Diffusion, download all nece
 [[/images/stable_diffusion.png]]
 
 For ideas and references dive in [Pinterest](https://pinterest.com/) 
-You can learn  more information about writing prompts [here](https://education.civitai.com/civitais-prompt-crafting-guide-part-1-basics/)
+You can learn more information about writing prompts [here](https://education.civitai.com/civitais-prompt-crafting-guide-part-1-basics/)
 # Generating with Prompts 
-With this method you will generate images with prompts, textual inversions, LORA.
+With this method, you can generate images using prompts, textual inversions, and LORA.
+One important thing to keep in mind is that the influence of words in prompts decreases according to their order.
 
-One important thing that you should keep in mind, that words influence in prompts lowers according to order. 
-
-To generate images, follow structures explained below, this structures are useful for generating character images.
+To generate images, follow the structures explained below. These structures are useful for generating character images
 ## Positive Prompt
-That's the positive prompt structure that you should write in most cases, with exact same order, to generate characters in full length, neutral pose, and white background.
+That's the structure you should follow in most cases, with the exact same order, to generate characters in full length, neutral pose, and a white background.
 
 - extreme quality (optional)
 - 1boy or 1girl (character type)
@@ -26,30 +25,29 @@ That's the positive prompt structure that you should write in most cases, with e
 - white background (generates images with white background)
 - look at camera (optional, generates characters that look at camera)
 
-To achieve better result in details, use **detail tweaker** lora mentioned in [[Software Settings]].
+To achieve better results in details, use the **detail tweaker** lora mentioned in [[Software Settings]].
 
 - <<lora:add_detail:1>> or <<lora:add_detail:0.75>> or less/higher
-
 ## Negative Prompt
-Usually you will need to use only **textual inversions** mentioned in [[Software Settings]]. By using them, you will save a lot of time and will never write negative prompts except unusual situations.
+Usually, you will need to use **textual inversions** mentioned in the [[Software Settings]]. By using them, you will save a lot of time and will write less negative prompts.
 
 - badhandv4 
 - easynegative 
 - verybadimagenegative_v1.3
 
-Here is few basic words that you can use, if you don't want to use textual inversions.
+Here are a few basic words that you can use if you don't want to use textual inversions.
+
 - bad quality
 - low quality
 - worst quality
 - ugly hands
 - ugly face
 
-If you're looking for more negative or positive prompts you can copy them from images on [civitai](https://civitai.com/images)
+If you're looking for more negative or positive prompts, you can copy them from images on [civitai](https://civitai.com/images)
 
-You can also **change words influence** in prompt by adding them inside () and setting number of influence, **example: (white background:1.5)**
-
-## Generation Results
-Below you can take a look at generation results with different prompts.
+You can also change the influence of words in the prompt by enclosing them in parentheses() and setting the number of influence. For example: **(white background: 1.5)**
+## Generations 
+Below, you can take a look at the generation results with different prompts.
 ### Result (With Concept Sheet)
 
 **positive:** 1girl, fullbody, stand pose, cap, hoodie, joggers, concept sheet, white background, look at camera, <<lora:add_detail:0.8>>
@@ -91,22 +89,22 @@ Below you can take a look at generation results with different prompts.
 [[/images/prompt_example04.png]]
 
 # Generating with IP-Adapter 
-With **IP-Adapter** you can generates images by copying style, shapes, details from reference images. 
+With **IP-Adapter**, you can generate images by copying style, shapes, and details from reference images.
 
-This method is more user friendly and a bit more flexible, because you don't need to write huge amount of words in your prompts to achieve expected results and at the same time you can use additional words in your prompts to keep style, but for example, change clothes. 
+This method is more user-friendly and a bit more flexible because you don't need to write a huge amount of words in your prompts to achieve expected results. At the same time, you can use additional words in your prompts to maintain style, but, for example, change clothes.
 
 Enable **ControlNet** and select **IP-Adapter**. 
 
 Make sure that **preprocessor** set to **ip-adapter-clip_sd15** and **model** to **ip-adapter-plus_sd15**.
 
-After that, select any image that you want to use as reference. 
+After that, select any image that you want to use as a reference.
 
 [[/images/ip-adapter01.png]]
 
-It's very important to play with **Control Weight** and **Ending Control Step** settings. If you want to achieve very close result to reference image, **set Control Weight to 0.6 - 0.8**. If you notice that influence of image is too high, you can play with lower numbers **0.3 - 0.4**. This is recommended numbers, but, usually, numbers depends from image that used as reference. **Ending Control Step** is rarely used, but might be helpful too, you can play with this numbers of this setting too.
+It's very important to adjust the **Control Weight** and **Ending Control Step** settings. If you want to achieve a result very close to the reference image, set the Control Weight to **0.6 - 0.8**. If you notice that the influence of the image is too high, you can try lower numbers like **0.3 - 0.4**. These are recommended numbers, but usually, the numbers depend on the image used as a reference. The **Ending Control Step** is rarely used but may also be helpful; you can experiment with the numbers for this setting as well.
 
-Keep in mind, that for better generation results, you should play with more vertical resolutions **(256x512, 512x768, 512x1024)**, as their results generates characters better, with less anomalies and uneccessary objects, than on square type images.
-## Generation Results
+Keep in mind that for better generation results, you should work with higher vertical resolutions (**256x512, 512x768, 512x1024**), as these resolutions generate characters more effectively, with fewer anomalies and unnecessary objects, compared to square images.
+## Generations
 ### Result (IP-Adapter + Prompt)
 
 **positive:** 1girl, fullbody, stand pose, cap, hoodie, joggers, (white background:1.5), look at camera, <<lora:add_detail:0.8>>
@@ -138,15 +136,15 @@ Keep in mind, that for better generation results, you should play with more vert
 As you see, generated images have almost same style and details. Even without prompts. This is very useful for generating concepts from inspiration references and achieve **random** (without prompts and small control weight) or  **restricted** (with prompts and medium-high control weight) results.
 
 # Upscaling with Hires. Fix
-As you may see results in **Option 1**  and **Option 2** methods, both of them lacks of quality and looks very blurry. To fix that, you will need to use **Hires. Fix** option. 
+To complete your generated image and achieve best quality, you will need to use **Hires. Fix** upscaler. 
 
-As soon as you generated image that you like, **set image seed** with **green arrows button**
+ Set image **seed** with **green arrows button**
 
 [[/images/prompt_hires01.png]]
 
 Now **turn on Hires. Fix** option, set upscaler to **R-ESRGAN 4x+ Anime6B** (best upscaler for anime stable diffusion models) and **Denoising Strength** to **0,45** or less. If you want to achieve more random results, you can play with denoising strength numbers. Higher numbers might change source image completely.
 
-Keep **upscale by** setting on **2**, higher numbers may give out of memory error, depends on your pc. 
+Keep **upscale by** setting on **2** or lower, higher numbers may give out of memory error, depends on your GPU. 
 
 Now you can press **Generate** button to get final **1024x1024** image. 
 
@@ -164,8 +162,7 @@ Now you can press **Generate** button to get final **1024x1024** image.
 This is recommended image generation way for users with **low-end pc**. If you use **high-end pc**, you can generate images with always enabled **Hires. Fix**.
 
 # Result
-Follow this video with generation process for better understanding of workflow. 
-Image reference result from this video will be used in next modeling steps.
+Follow this video to understand the generation process better. The image reference result from this video will be used in the next modeling steps.
 
 *Generation process*
 
@@ -179,3 +176,7 @@ Image reference result from this video will be used in next modeling steps.
 
 [[/images/ip-adapter06.png]]
 
+# Summary
+Those are all the steps required for generating a character reference image with **Stable Diffusion**. By now, you should have a better understanding of how to use prompts effectively, how to write them properly, and how to utilize **IP-Adapter** and **Hires. Fix**. 
+
+Remember to use these generation methods whenever you seek inspiration from images.
