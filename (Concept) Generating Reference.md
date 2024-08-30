@@ -117,11 +117,11 @@ Keep in mind, that for better generation results, you should play with more vert
 
 [[/images/ip-adapter02.png]]
 
-*Result* (Control Weight 0.6)
+*Result (Control Weight 0.6)*
 
 [[/images/ip-adapter03.png]]
 
-*Result* (Control Weight 0.4)
+*Result (Control Weight 0.4)*
 
 [[/images/ip-adapter04.png]]
 
@@ -131,11 +131,11 @@ Keep in mind, that for better generation results, you should play with more vert
 
 **negative:** badhandv4 easynegative verybadimagenegative_v1.3
 
-*Result* (Control Weight 0.6)
+*Result (Control Weight 0.6)*
 
 [[/images/ip-adapter05.png]]
 
-As you may see, generated images have almost same style and details. Even without prompts. This is very useful for generating concepts from inspiration references and achieve **random** (without prompts and small control weight) or  **restricted** (with prompts and medium-high control weight) results.
+As you see, generated images have almost same style and details. Even without prompts. This is very useful for generating concepts from inspiration references and achieve **random** (without prompts and small control weight) or  **restricted** (with prompts and medium-high control weight) results.
 
 # Upscaling with Hires. Fix
 As you may see results in **Option 1**  and **Option 2** methods, both of them lacks of quality and looks very blurry. To fix that, you will need to use **Hires. Fix** option. 
