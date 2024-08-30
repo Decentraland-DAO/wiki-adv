@@ -1,70 +1,58 @@
-In this article you will learn how to create **Avatar Base Mesh** required for future usage in wearables modeling.
+In this article, you will learn how to create a useful base mesh that will be used for modeling wearables.
 
-To follow this article, make sure to install **Blender**. 
+To follow this article, make sure to install **Blender** and adjust Blender settings according to the [[Software Settings]].
 
 # Blender
-Before you will start doing things in Blender, you should import **Decentraland Avatar Base Mesh** and do some preparations for modeling. 
+Before you start working in Blender, you should import the **Avatar Models** from **Decentraland**. You will use it as a reference for creating your own avatar base mesh ready for high-poly modeling.
 
-You can find **Decentraland Base Meshes** [here](https://drive.google.com/drive/u/1/folders/12hOVgZsLriBuutoqGkIYEByJF8bA-rAU) 
+You can find **Decentraland Avatar Models** [here](https://drive.google.com/drive/u/1/folders/12hOVgZsLriBuutoqGkIYEByJF8bA-rAU) 
 
-As we will work according to **reference image**, import **AvatarShape_A** base mesh.
+The Avatar Models serves several purposes:
 
-Base Mesh required for several things:
-- Usage of default body parts for your model, for example, hands.
-- Parenting and weight painting final model to Base Mesh skeleton and export to Decentraland.
-- Silhouette guideline and proper connections between Avatar parts.
+- Using default body parts for your model, such as hands.
+- Parenting and weight painting the final model to the Armature of avatar and exporting it to Decentraland.
+- Providing silhouette guidelines and ensuring proper connections between avatar parts.
 
-It's not recommended to use default Avatar Base Mesh for modeling because topology of this model have reduced triangle count and model is ready to-go to engine, rather than for modeling.
+It's not recommended to use the default avatar models as the base mesh for modeling wearables because the topology of these models has a reduced triangle count and is optimized for direct use in the engine, rather than for modeling purposes.
 
 ## Tools and Modifiers
-
-You should know this tools and modifiers for modeling
-
+For modeling, you should be familiar with these tools and modifiers.
 ### Mesh
 - Plane 
 - Cube
 - UV Sphere
 - Cylinder
-
-Additional meshes/curves will be explained in next steps and articles.
 ### Tools
-- Move, Rotate, Scale (if you have selection of one or more elements, you can move, rotate or scale them)
-- Vertex Slide/Edge Slide (Transform a vertex or edges along one of its adjacent edges/faces)
-- Delete/Dissolve (Delete will delete faces/vertices/edges, while dissolve will remove them without loss of geometry but with creating n-gons)
-- Extrude (you will use this one a lot, extrudes polygons from other polygons, same for edges and vertices)
+- Move, Rotate, Scale (if you have a selection of one or more elements, you can move, rotate, or scale them)
+- Vertex Slide/Edge Slide (transform a vertex or edges along one of its adjacent edges/faces)
+- Delete/Dissolve (delete will delete faces/vertices/edges, while dissolve will remove them without loss of geometry but will create n-gons)
+- Extrude (you will use this one a lot, it extrudes polygons from other polygons, the same for edges and vertices)
 - Inset (takes the currently selected faces and creates an inset of them, with adjustable thickness and depth)
 - Loop Cut (this tool splits a loop of faces by inserting new edge loops intersecting the chosen edge)
-- Knife (useful to manually cut edge loops, useful when working with topology issues)
+- Knife (useful for manually cutting edge loops, useful when working with topology issues)
 - Merge (merge selected vertices)
-- Split (split selected faces from other face)
-- Separate (separate selected faces to another mesh)
-
-Additional tools will be explained in next steps and articles.
+- Split (split selected faces from other faces)
+- Separate (separate selected faces into another mesh)
 ### Modifiers
-- Mirror (save lots of time in creating mirrored cloth pieces)
+- Mirror (saves lots of time when creating mirrored cloth pieces)
 - Solidify (adds thickness to your model)
-- Bevel (makes model angles look smooth and beautiful, which is required for baking beautiful maps, segments amount should always stay on 3 or less, since more segments count is not actually useful/visible)
-- Subdivision (smooth entire mesh and divide each polygon to 4)
+- Bevel (makes model angles look smooth and beautiful, which is required for baking beautiful maps. The segments amount should always stay at 3 or less, as having more segments is not actually useful or visible)
+- Subdivision (smooths the entire mesh and divides each polygon into 4)
 - Array (creates an array of copies of the base object)
-- Curve (simple but efficient method of deforming a mesh along a curve object)
-- Simple Deform (do some deformations like Twist, Bend, Taper, Stretch)
-- Weighted Normals (useful to correct some issues with normals shading without topology edits)
-
-Additional modifiers will be explained in next steps and articles.
+- Curve (a simple but efficient method of deforming a mesh along a curve object)
+- Simple Deform (allows for deformations like Twist, Bend, Taper, and Stretch)
+- Weighted Normals (useful for correcting some issues with normal shading without topology edits)
 ### Shade Smooth
-Additional important setting that you should always use is Shade Smooth by Angle (or similar modifier)
+Additional important setting that you should always use is "Shade Smooth" or "Shade Smooth by Angle" (Blender 4.2+).
 
-Most common angle numbers: **30, 45, 60, 80, 180**
-- Numbers higher than 45 should be used for soft cloth pieces that don't have any sharp corners. (Shirt)
-- Numbers equal to 45 or lower should be used for cloth pieces that have sharp corners (Belts, Chains)
-- In situations when cloth piece contains soft and sharp edges, you will need to manually set Sharp Edges in required areas.
+The most common angle numbers are: **30, 45, 60, 80, 180.**
+- Numbers higher than 45 should be used for soft cloth pieces that don't have any sharp corners (e.g., a shirt).
+- Numbers equal to 45 or lower should be used for cloth pieces that have sharp corners (e.g., belts, chains).
+- In situations where a cloth piece contains both soft and sharp edges, you will need to manually set sharp edges in the required areas.
 
-For Drafting Step you can simply set angle 180, but for baking and final model you should always follow this rules, because it's required not only for visual look, but also for proper baking and engine rendering. 
+[[/images/blender_shade_smooth.png]]
 
-### Topology Cheat Sheet
-
-image
-
+For the drafting step, you can simply set the angle to 180 degrees, but for baking and the final model, you should always follow these rules. This is necessary not only for the visual appearance but also for proper baking and rendering inside the game engine.
 # Modeling Base Mesh
 There are three ways from what to begin. 
 
