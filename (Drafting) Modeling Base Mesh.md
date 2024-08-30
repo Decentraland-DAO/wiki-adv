@@ -56,7 +56,6 @@ Using "Shade Smooth" is necessary not only for visual appearance but also requir
 
 # Decentraland Models (Import)
 guide how to import decentraland models
-
 # Preparing Collections
 work with collections
 # Modeling Base Mesh
